@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Fri Oct 16 15:24:11 2026
+# Process ID         : 40988
+# Current directory  : C:/Users/11725/AppData/Local/Temp/dot_step003_63c5523509524df4825501133089dd3e/build
+# Command line       : vivado.exe -mode batch -source ../synthesize.tcl -notrace
+# Log file           : C:/Users/11725/AppData/Local/Temp/dot_step003_63c5523509524df4825501133089dd3e/build/vivado.log
+# Journal file       : C:/Users/11725/AppData/Local/Temp/dot_step003_63c5523509524df4825501133089dd3e/build\vivado.jou
+# Running On         : LAPTOP-3SL35HPD
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 25028 MB
+# Swap memory        : 12930 MB
+# Total Virtual      : 37959 MB
+# Available Virtual  : 3977 MB
+#-----------------------------------------------------------
+source ../synthesize.tcl -notrace
+Command: synth_design -top dot_mem_top -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6932
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1000.445 ; gain = 503.387
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-2716] syntax error near '*)' [C:/Users/11725/AppData/Local/Temp/dot_step003_63c5523509524df4825501133089dd3e/dot_mem_top.v:23]
+INFO: [Synth 8-9084] Verilog file 'C:/Users/11725/AppData/Local/Temp/dot_step003_63c5523509524df4825501133089dd3e/dot_mem_top.v' ignored due to errors
+ERROR: [Synth 8-12188] Failed to read verilog 'C:/Users/11725/AppData/Local/Temp/dot_step003_63c5523509524df4825501133089dd3e/dot_mem_top.v'
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1100.055 ; gain = 602.996
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+6 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Fri Oct 16 15:24:26 2026...

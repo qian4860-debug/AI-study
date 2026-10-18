@@ -1,0 +1,17 @@
+
+****** xsim v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Oct 16 15:32:42 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/step003_snapshot/xsim_script.tcl
+# xsim {step003_snapshot} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS STEP003 cycles=39592 starts=153 completed=146 invalid=256 aborted=7 requests=17397 retired=17389 host_writes=17130
+$finish called at time : 395926 ns : File "C:/Users/11725/Desktop/ѧϰ����/AI/NYCU-Lab3/study/step003/tb_dot_mem.v" Line 92
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct 16 15:32:44 2026...

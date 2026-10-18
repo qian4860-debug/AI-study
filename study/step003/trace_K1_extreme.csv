@@ -1,0 +1,5 @@
+cycle,reset,start,k_cfg,fetch_enable,host_we,host_addr,host_x,host_w,start_fire,read_fire,host_fire,read_addr,busy,start_ready,host_ready,k_latched,issued_count,retired_count,rsp_valid,rsp_last,mul_valid,mul_last,product_reg,acc,out_valid,out_data,cfg_error
+4,0,1,1,1,1,0,127,-128,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+5,0,0,136,1,1,0,127,-128,0,1,0,0,1,0,0,1,1,0,1,1,0,0,0,0,0,0,0
+6,0,0,420,1,1,0,127,-128,0,0,0,1,1,0,0,1,1,0,0,0,1,1,16384,0,0,0,0
+7,0,1,303,1,1,0,127,-128,0,0,0,1,0,1,0,1,1,1,0,0,0,0,16384,0,1,16384,0
