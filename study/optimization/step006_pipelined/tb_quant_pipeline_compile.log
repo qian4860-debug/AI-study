@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/11725/Desktop/ѧϰ����/AI/NYCU-Lab3/study/optimization/step006_pipelined/requant_i8.v" into library work
+INFO: [VRFC 10-311] analyzing module requant_i8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/11725/Desktop/ѧϰ����/AI/NYCU-Lab3/study/optimization/step006_pipelined/tb_quant_pipeline.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_quant_pipeline

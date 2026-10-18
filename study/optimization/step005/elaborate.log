@@ -1,0 +1,17 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/vivado/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_fc_int8 --timescale 1ns/1ps -s ram_variant 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.bank_ram
+Compiling module work.bank_ram(DEPTH=512,ADDR_BITS=9)
+Compiling module work.dot_banked_core_default
+Compiling module work.fc_int8_top_default
+Compiling module work.tb_fc_int8
+Built simulation snapshot ram_variant

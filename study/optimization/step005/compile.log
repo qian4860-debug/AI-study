@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/11725/Desktop/ѧϰ����/AI/NYCU-Lab3/study/optimization/step005/fc_int8_top.v" into library work
+INFO: [VRFC 10-311] analyzing module fc_int8_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/11725/Desktop/ѧϰ����/AI/NYCU-Lab3/study/optimization/step005/tb_fc_int8.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_fc_int8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/11725/Desktop/ѧϰ����/AI/NYCU-Lab3/study/optimization/step005/dot_banked_core.v" into library work
+INFO: [VRFC 10-311] analyzing module dot_banked_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/11725/Desktop/ѧϰ����/AI/NYCU-Lab3/study/optimization/step005/bank_ram.v" into library work
+INFO: [VRFC 10-311] analyzing module bank_ram

@@ -1,0 +1,169 @@
+{
+  "status": "PASS",
+  "stages": {
+    "step001": {
+      "status": "PASS",
+      "source_hashes": 6,
+      "note": "saved RTL PASS with current matching sources"
+    },
+    "step002": {
+      "status": "PASS",
+      "source_hashes": 6,
+      "note": "saved RTL PASS with current matching sources"
+    },
+    "step003": {
+      "status": "PASS",
+      "source_hashes": 9,
+      "note": "saved RTL PASS with current matching sources"
+    },
+    "step004": {
+      "status": "PASS",
+      "source_hashes": 9,
+      "note": "saved RTL PASS with current matching sources"
+    },
+    "step005": {
+      "status": "PASS",
+      "source_hashes": 10,
+      "note": "saved RTL PASS with current matching sources"
+    },
+    "step006": {
+      "status": "PASS",
+      "source_hashes": 14,
+      "note": "saved RTL PASS with current matching sources"
+    }
+  },
+  "step001_numpy": {
+    "status": "PASS",
+    "numpy": "2.3.5",
+    "cases": 73,
+    "max_result": 4195152900,
+    "generator_sha256": "f8bd715836e955f21258d2afa6fc5cfa250eb84b52a0a1cafa2eda5b60d0d205",
+    "scope": "current local lab data generator vs Python arbitrary-precision reference; convolution RTL remains scaffold"
+  },
+  "range_and_layout": {
+    "status": "PASS",
+    "all_lengths": 256,
+    "bank_shape_checks": 768,
+    "max_dot": 4194304,
+    "min_dot": -4161536,
+    "min_bias_sum": -2151645184,
+    "max_bias_sum": 2151677951,
+    "required_dot_bits": 24,
+    "required_pre_bits": 33,
+    "scope": "exhaustive dimension/mapping analysis, supplement to RTL regressions"
+  },
+  "memory_variants": {
+    "status": "PASS",
+    "variants": {
+      "step003": {
+        "status": "PASS",
+        "edges_checked": 39592,
+        "trace_fields": 28,
+        "source_sha256": {
+          "dot_serial_mem.v": "8e84624a1a65e34544e070bff79b0f07a17a1d5c2ad140ef39451d760dbc97bd",
+          "dot_mem_top.v": "5723a4e9a17bb4d1f6cfe268b9df80750e9a49b5e8f0d11118954aad7f114927",
+          "sync_byte_ram.v": "586339cc82070ca60db8570bd611f18b6eabbc4c5e10f11babf820c42e307e03",
+          "tb_dot_mem.v": "9bbb019cbb48400b6acabb33d1de3e8eb9ba327d0f27778f9d96234c4f587e55"
+        },
+        "baseline_source_sha256": {
+          "step003\\dot_serial_mem.v": "a875b7d1bd9296c13c3ad97faf05fde79cdc088f6040997842f2d98cca5d18d4",
+          "step003\\dot_mem_top.v": "de39fefbdfb8c8372f9e7765ae4f6d1a0d3e82a55b0add983221aab75d8b10cb",
+          "step003\\sync_byte_ram.v": "1b2a38c3d5ef9c56002f026b823a90b271068a7a6e116d52412619f4f5578923",
+          "step003\\tb_dot_mem.v": "baef3277d32786cca77dac6c165ace183cbcbcb98bec79cc7ca5350e969d8351"
+        }
+      },
+      "step004": {
+        "status": "PASS",
+        "edges_checked": 105512,
+        "trace_fields": 36,
+        "source_sha256": {
+          "dot_banked_core.v": "24975c10ba9c68ab9d5f3dc15fea06adf741101d10563d9ac33967356907856b",
+          "dot_banked_top.v": "a84d50d5b4b266618aaf0496a84c844fa8327ed71ea0f36e3d82403969965a01",
+          "bank_ram.v": "60e4d43f476c59f77eaedb9b443645a680692c72cf79cb2aafbf818a2a25b2c0",
+          "tb_dot_banked.v": "16067960ba12fff818cc388c2ba75927868a83fc8f9cde27da7e8a1fad72729a"
+        },
+        "baseline_source_sha256": {
+          "step004\\dot_banked_core.v": "470843df4376d547189f1d5d2d720c67673bd0dd1c81c4d85c3d34ae4872fa69",
+          "step004\\dot_banked_top.v": "e1d42386318242006ba107145c74d3b6727df5e952754bb285208d5d8f761589",
+          "step004\\bank_ram.v": "d6b5377ba8af8d53d34f0b755ad0f4affd8083cc1788ed4d199873044de74373",
+          "step004\\tb_dot_banked.v": "a1b0e8eec91e27a357a87e518d247ae94b54c0b9ee3d33d7a1441ef420b9d1cf"
+        }
+      },
+      "step005": {
+        "status": "PASS",
+        "edges_checked": 39311,
+        "trace_fields": 44,
+        "source_sha256": {
+          "fc_int8_top.v": "91db92d45488912feb89e265566ff92a43eb787bfcec705c146cef72a7f4532c",
+          "tb_fc_int8.v": "a3be17240e2ea9bdc36da618146fb71441a6dba4143e37c82edc7acb7500d3af",
+          "dot_banked_core.v": "24975c10ba9c68ab9d5f3dc15fea06adf741101d10563d9ac33967356907856b",
+          "bank_ram.v": "60e4d43f476c59f77eaedb9b443645a680692c72cf79cb2aafbf818a2a25b2c0"
+        },
+        "baseline_source_sha256": {
+          "step005\\fc_int8_top.v": "01047f25749f0aeac16a13a12be4470e92dc535cc7e85469b6119b0f606e831f",
+          "step005\\tb_fc_int8.v": "1926dfb9ffef00282aab9f93304783e970d6462570fddab9805ab17444374e0d",
+          "step004\\dot_banked_core.v": "470843df4376d547189f1d5d2d720c67673bd0dd1c81c4d85c3d34ae4872fa69",
+          "step004\\bank_ram.v": "d6b5377ba8af8d53d34f0b755ad0f4affd8083cc1788ed4d199873044de74373"
+        }
+      },
+      "step006": {
+        "status": "PASS",
+        "edges_checked": 181296,
+        "trace_fields": "per-layer golden and full event/metric equivalence",
+        "source_sha256": {
+          "requant_i8.v": "cedb6cb6403f79c845c7cb9b02f0d232afcead046f24e44900c1bf07b9174c5c",
+          "mlp2_top.v": "c797fb1bd9faadf7609e3d97b2fb9c8d3d066cfbffcc9f4bb69adc4441d3ec68",
+          "tb_mlp.v": "42e8c399a50f146f785c3bb0f927e1a1289d2076b91730fa839a41debc3b83ba",
+          "dot_banked_core.v": "24975c10ba9c68ab9d5f3dc15fea06adf741101d10563d9ac33967356907856b",
+          "bank_ram.v": "60e4d43f476c59f77eaedb9b443645a680692c72cf79cb2aafbf818a2a25b2c0",
+          "fc_int8_top.v": "91db92d45488912feb89e265566ff92a43eb787bfcec705c146cef72a7f4532c"
+        },
+        "baseline_source_sha256": {
+          "step006\\requant_i8.v": "1868ef889f08d881129d9f6152fe8f6e2ac3020efdd9876aa20c003ac9e0815b",
+          "step006\\mlp2_top.v": "03639d1f306aadda403f1cae69b7d62bffe030fdb3e56e19884d2ca9a4ab0530",
+          "step006\\tb_mlp.v": "d68779e08677dd08c3cc5db4a9e12d9fa7b599f48ae94d69cf3a52189f1eeda3",
+          "step004\\dot_banked_core.v": "470843df4376d547189f1d5d2d720c67673bd0dd1c81c4d85c3d34ae4872fa69",
+          "step004\\bank_ram.v": "d6b5377ba8af8d53d34f0b755ad0f4affd8083cc1788ed4d199873044de74373",
+          "step005\\fc_int8_top.v": "01047f25749f0aeac16a13a12be4470e92dc535cc7e85469b6119b0f606e831f"
+        }
+      }
+    }
+  },
+  "pipeline": {
+    "status": "PASS",
+    "quant": {
+      "cycles": 28746,
+      "accepted": 15367,
+      "delivered": 15252,
+      "reset_discarded": 115,
+      "invalid": 3,
+      "resets": 40,
+      "conservation": "accepted=delivered+reset_discarded"
+    },
+    "networks": 624,
+    "synthesis": {
+      "status": "PASS",
+      "tool": "Vivado 2025.1",
+      "part": "xc7a100tcsg324-1",
+      "clock_period_ns": 10.0,
+      "stage": "out_of_context_synthesis",
+      "configs": {
+        "block": {
+          "Slice_LUTs": 2203,
+          "FF": 727,
+          "DSP": 4,
+          "RAMB_cells": 16,
+          "WNS_ns": 1.759
+        },
+        "distributed": {
+          "Slice_LUTs": 3286,
+          "FF": 890,
+          "DSP": 4,
+          "RAMB_cells": 0,
+          "WNS_ns": 1.759
+        }
+      }
+    },
+    "timing_scope": "Post-synthesis clock-only 10ns estimate; not placed/routed board timing"
+  }
+}

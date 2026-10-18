@@ -1,0 +1,9 @@
+{"status":"PASS","tool":"Vivado 2025.1","part":"xc7a100tcsg324-1","stage":"out_of_context_synthesis","clock_period_ns":10.0,"configs":{
+"s003":{"Slice_LUTs":256,"FF":105,"DSP":0,"RAMB_cells":0,"WNS_ns":4.643}
+,"s004p1":{"Slice_LUTs":233,"FF":106,"DSP":0,"RAMB_cells":0,"WNS_ns":4.446}
+,"s004p2":{"Slice_LUTs":347,"FF":163,"DSP":0,"RAMB_cells":0,"WNS_ns":4.446}
+,"s004p4":{"Slice_LUTs":545,"FF":278,"DSP":0,"RAMB_cells":0,"WNS_ns":4.446}
+,"s005":{"Slice_LUTs":1109,"FF":441,"DSP":0,"RAMB_cells":0,"WNS_ns":4.406}
+,"s006block":{"Slice_LUTs":2349,"FF":633,"DSP":4,"RAMB_cells":16,"WNS_ns":-7.938}
+,"s006distributed":{"Slice_LUTs":3439,"FF":797,"DSP":4,"RAMB_cells":0,"WNS_ns":-7.938}
+}}
