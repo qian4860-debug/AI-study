@@ -1,0 +1,90 @@
+[
+  {
+    "id": "gpu",
+    "path": "C:\\Users\\11725\\Desktop\\学习资料\\a805\\L333\\GPU设计基础.pdf",
+    "pages": 245,
+    "inspected_pages": 32,
+    "extracted_characters": 44277,
+    "sha256": "e36b45e4d1f464c16fe1515948ad8550e552d745c8f3a5602524f99d060d098f"
+  },
+  {
+    "id": "ai_compiler",
+    "path": "C:\\Users\\11725\\Desktop\\学习资料\\AI编译器开发指南\\芯科技前沿技术丛书  AI编译器开发指南-- isbn13 9787111716747.pdf",
+    "pages": 318,
+    "inspected_pages": 32,
+    "extracted_characters": 39475,
+    "sha256": "cedcc778c4b0a18843ab1f7cd427867de13525e9d29a6d4ab9f1dcf64d85a4c3"
+  },
+  {
+    "id": "llvm",
+    "path": "C:\\Users\\11725\\Desktop\\学习资料\\LLVM编译器原理与实践\\芯科技前沿技术丛书  LLVM编译器原理与实践-- isbn13 9787111763543.pdf",
+    "pages": 475,
+    "inspected_pages": 32,
+    "extracted_characters": 28752,
+    "sha256": "9cc5a7160930384ab273c8b0059897abedeec4495c2192ccd54598c64d635bc2"
+  },
+  {
+    "id": "tvm",
+    "path": "C:\\Users\\11725\\Desktop\\学习资料\\TVM编译器原理与实践\\芯科技前沿技术丛书  TVM编译器原理与实践-- isbn13 9787111739128.pdf",
+    "pages": 320,
+    "inspected_pages": 32,
+    "extracted_characters": 25699,
+    "sha256": "2b05e4fab9baa00d5babb5f4fc5271fd0f060cd38195113e356f7caec38328fa"
+  },
+  {
+    "id": "cs217_matrix",
+    "path": "C:\\Users\\11725\\Desktop\\学习资料\\stanford\\cs217\\CS217_Stanford_Lec3_MatrixComp_Ardavan.pdf",
+    "pages": 78,
+    "inspected_pages": 78,
+    "extracted_characters": 43400,
+    "sha256": "2194fe96331999f0c0f0d240c796646fc6333c17cc5037206cda73a3414f899c"
+  },
+  {
+    "id": "cs217_roofline",
+    "path": "C:\\Users\\11725\\Desktop\\学习资料\\stanford\\cs217\\CS217_Stanford_Lec6_2_Roofline_TPU_Kunle.pdf",
+    "pages": 30,
+    "inspected_pages": 30,
+    "extracted_characters": 10403,
+    "sha256": "5b1a79b2c4b7e2001b8c6ac1563f32c6fd894afa412dd3e498c5b14d7e1d98db"
+  },
+  {
+    "id": "cs217_mlp",
+    "path": "C:\\Users\\11725\\Desktop\\学习资料\\stanford\\cs217\\CS217_Stanford_Lec7_MLP-CNN_Ardavan.pdf",
+    "pages": 83,
+    "inspected_pages": 83,
+    "extracted_characters": 10835,
+    "sha256": "1180b9019706674c825b1a183f6da20d41bd87c04605a42d06a2438210026f4e"
+  },
+  {
+    "id": "cs217_eyeriss",
+    "path": "C:\\Users\\11725\\Desktop\\学习资料\\stanford\\cs217\\CS217_Stanford_Lec8_Eyeriss_Yu-Hsin.pdf",
+    "pages": 111,
+    "inspected_pages": 111,
+    "extracted_characters": 23594,
+    "sha256": "f6301fdf24036f62475ea768a0e5ffa7777117b408f034d22736caed2abe831e"
+  },
+  {
+    "id": "cs231n_4",
+    "path": "C:\\Users\\11725\\Desktop\\学习资料\\stanford\\cs231n\\cs231n_2017_lecture4.pdf",
+    "pages": 100,
+    "inspected_pages": 100,
+    "extracted_characters": 15475,
+    "sha256": "9fa448d906d46bee0d6f70d218dd92464adcbc67f2866d9852e7d503fd113afa"
+  },
+  {
+    "id": "cs231n_6",
+    "path": "C:\\Users\\11725\\Desktop\\学习资料\\stanford\\cs231n\\cs231n_2017_lecture6.pdf",
+    "pages": 89,
+    "inspected_pages": 89,
+    "extracted_characters": 26545,
+    "sha256": "7d19915aa0133cbbab82f2cf7b230f0b9d8473aa48eb6ce126a11a42939d667f"
+  },
+  {
+    "id": "cs231n_8",
+    "path": "C:\\Users\\11725\\Desktop\\学习资料\\stanford\\cs231n\\cs231n_2017_lecture8.pdf",
+    "pages": 159,
+    "inspected_pages": 159,
+    "extracted_characters": 35835,
+    "sha256": "9be58581989e13c49b001ad652bab52b199f525d95bb67107a4c7e00c63e62e1"
+  }
+]
