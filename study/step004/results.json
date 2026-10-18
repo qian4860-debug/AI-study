@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "seed": 20261016,
+  "matlab": {
+    "status": "PASS",
+    "version": "25.1.0.2943329 (R2025a)",
+    "cases": 168,
+    "bank_mapping_checks": 504
+  },
+  "synthesis": {
+    "status": "PASS",
+    "tool": "Vivado 2025.1",
+    "part": "xc7a100tcsg324-1",
+    "stage": "out_of_context_synthesis",
+    "clock_period_ns": 10.0,
+    "configs": {
+      "1": {
+        "Slice_LUTs": 118,
+        "FF": 90,
+        "DSP": 0,
+        "RAMB_cells": 2
+      },
+      "2": {
+        "Slice_LUTs": 234,
+        "FF": 131,
+        "DSP": 0,
+        "RAMB_cells": 4
+      },
+      "4": {
+        "Slice_LUTs": 449,
+        "FF": 214,
+        "DSP": 0,
+        "RAMB_cells": 8
+      }
+    },
+    "timing_scope": "Post-synthesis clock-only 10 ns estimate; I/O delays and clock location unconstrained; no implementation closure"
+  },
+  "step003_prerequisite": "PASS, source hashes verified",
+  "simulator": "Vivado Simulator 2025.1",
+  "workloads": 168,
+  "random_workloads": 128,
+  "configurations": {
+    "1": {
+      "cycles_checked": 44024,
+      "complete_tasks": 173,
+      "starts": 178,
+      "aborted": 5,
+      "illegal_starts": 256,
+      "read_groups": 21045,
+      "read_elements": 21045,
+      "macs": 21040,
+      "host_writes": 21278
+    },
+    "2": {
+      "cycles_checked": 33422,
+      "complete_tasks": 173,
+      "starts": 178,
+      "aborted": 5,
+      "illegal_starts": 256,
+      "read_groups": 10577,
+      "read_elements": 21051,
+      "macs": 21041,
+      "host_writes": 21278
+    },
+    "4": {
+      "cycles_checked": 28066,
+      "complete_tasks": 173,
+      "starts": 178,
+      "aborted": 5,
+      "illegal_starts": 256,
+      "read_groups": 5331,
+      "read_elements": 21063,
+      "macs": 21043,
+      "host_writes": 21278
+    }
+  },
+  "trace_fields": 36,
+  "comparison_rows": 504,
+  "sha256": {
+    "step004\\dot_banked_core.v": "470843df4376d547189f1d5d2d720c67673bd0dd1c81c4d85c3d34ae4872fa69",
+    "step004\\bank_ram.v": "d6b5377ba8af8d53d34f0b755ad0f4affd8083cc1788ed4d199873044de74373",
+    "step004\\dot_banked_top.v": "e1d42386318242006ba107145c74d3b6727df5e952754bb285208d5d8f761589",
+    "step004\\tb_dot_banked.v": "a1b0e8eec91e27a357a87e518d247ae94b54c0b9ee3d33d7a1441ef420b9d1cf",
+    "step004\\verify_step004.py": "ecf077ef9c9afa7fb1bca0d60a7fd8f5879cc2b0421f61e311637e6608e9b901",
+    "step004\\test_step004_reference.m": "3c8d9094bd97227bc6babdc9e92b79d4e897fcd700a3bc40cf8ef5d2dabb4166",
+    "step004\\synthesize.tcl": "1ca929a1bac512df61835160a34d8e9f2cf3d2f5715f9e81755056229acd0d25",
+    "step004\\run_synthesis.ps1": "d014b5679b324554486a8242ad9c3a2421889af19bf5e48b9ca7fe3bccccba6a",
+    "step002\\dot_int8_reference.m": "5945d3439bb47990be144a030a05fc16809e2932c2e044e7bd8a57c5ef4f2aa4"
+  }
+}
