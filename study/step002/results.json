@@ -1,0 +1,1365 @@
+{
+  "status": "PASS",
+  "seed": 20261015,
+  "matlab": {
+    "status": "PASS",
+    "version": "25.1.0.2943329 (R2025a)",
+    "directed_checks": 4,
+    "completed_task_checks": 147,
+    "invalid_input_checks": 4
+  },
+  "synthesis": {
+    "status": "PASS",
+    "tool": "Vivado 2025.1",
+    "part": "xc7a100tcsg324-1",
+    "stage": "out_of_context_synthesis",
+    "clock_period_ns": 10.0,
+    "DSP": 0,
+    "LUT_cells": 161,
+    "FF": 69,
+    "Slice_LUTs": 131,
+    "timing_scope": "Post-synthesis estimate, 10 ns clock only, no I/O delays or clock location; not implementation closure"
+  },
+  "simulator": "Vivado Simulator 2025.1",
+  "cycles_checked": 31256,
+  "completed_tasks": 147,
+  "random_tasks": 128,
+  "legal_starts": 150,
+  "illegal_starts": 256,
+  "aborted_tasks": 3,
+  "accepted_pairs": 19114,
+  "tasks": [
+    {
+      "label": "T01_K1_extreme",
+      "K": 1,
+      "start_cycle": 3,
+      "expected": 16384,
+      "completion_cycle": 4,
+      "latency_cycles": 1,
+      "stall_cycles": 0
+    },
+    {
+      "label": "T02_document_trace",
+      "K": 3,
+      "start_cycle": 6,
+      "expected": -8,
+      "completion_cycle": 10,
+      "latency_cycles": 4,
+      "stall_cycles": 1
+    },
+    {
+      "label": "T03_K4_explicit_example",
+      "K": 4,
+      "start_cycle": 12,
+      "expected": -5,
+      "completion_cycle": 16,
+      "latency_cycles": 4,
+      "stall_cycles": 0
+    },
+    {
+      "label": "T04_K255",
+      "K": 255,
+      "start_cycle": 18,
+      "expected": 255,
+      "completion_cycle": 273,
+      "latency_cycles": 255,
+      "stall_cycles": 0
+    },
+    {
+      "label": "T05_positive_limit",
+      "K": 256,
+      "start_cycle": 275,
+      "expected": 4194304,
+      "completion_cycle": 531,
+      "latency_cycles": 256,
+      "stall_cycles": 0
+    },
+    {
+      "label": "T06_negative_limit",
+      "K": 256,
+      "start_cycle": 533,
+      "expected": -4161536,
+      "completion_cycle": 789,
+      "latency_cycles": 256,
+      "stall_cycles": 0
+    },
+    {
+      "label": "T08_T09_T10_snapshot_stalls_busy_start",
+      "K": 3,
+      "start_cycle": 1303,
+      "expected": -8,
+      "completion_cycle": 1346,
+      "latency_cycles": 43,
+      "stall_cycles": 40
+    },
+    {
+      "label": "T11_restart_K1",
+      "K": 3,
+      "start_cycle": 1351,
+      "expected": -8,
+      "completion_cycle": 1354,
+      "latency_cycles": 3,
+      "stall_cycles": 0
+    },
+    {
+      "label": "T11_restart_K3",
+      "K": 3,
+      "start_cycle": 1361,
+      "expected": -8,
+      "completion_cycle": 1364,
+      "latency_cycles": 3,
+      "stall_cycles": 0
+    },
+    {
+      "label": "T11_restart_K256",
+      "K": 3,
+      "start_cycle": 1624,
+      "expected": -8,
+      "completion_cycle": 1627,
+      "latency_cycles": 3,
+      "stall_cycles": 0
+    },
+    {
+      "label": "T12_back_to_back_K1",
+      "K": 1,
+      "start_cycle": 1629,
+      "expected": -1,
+      "completion_cycle": 1630,
+      "latency_cycles": 1,
+      "stall_cycles": 0
+    },
+    {
+      "label": "T12_back_to_back_K256",
+      "K": 256,
+      "start_cycle": 1632,
+      "expected": -256,
+      "completion_cycle": 1888,
+      "latency_cycles": 256,
+      "stall_cycles": 0
+    },
+    {
+      "label": "T12_back_to_back_K3",
+      "K": 3,
+      "start_cycle": 1890,
+      "expected": -3,
+      "completion_cycle": 1893,
+      "latency_cycles": 3,
+      "stall_cycles": 0
+    },
+    {
+      "label": "T12_back_to_back_K1",
+      "K": 1,
+      "start_cycle": 1895,
+      "expected": -1,
+      "completion_cycle": 1896,
+      "latency_cycles": 1,
+      "stall_cycles": 0
+    },
+    {
+      "label": "T12_back_to_back_K256",
+      "K": 256,
+      "start_cycle": 1898,
+      "expected": -256,
+      "completion_cycle": 2154,
+      "latency_cycles": 256,
+      "stall_cycles": 0
+    },
+    {
+      "label": "T12_back_to_back_K3",
+      "K": 3,
+      "start_cycle": 2156,
+      "expected": -3,
+      "completion_cycle": 2159,
+      "latency_cycles": 3,
+      "stall_cycles": 0
+    },
+    {
+      "label": "held_request_old",
+      "K": 3,
+      "start_cycle": 2161,
+      "expected": 3,
+      "completion_cycle": 2164,
+      "latency_cycles": 3,
+      "stall_cycles": 0
+    },
+    {
+      "label": "held_request_new",
+      "K": 2,
+      "start_cycle": 2165,
+      "expected": 14,
+      "completion_cycle": 2167,
+      "latency_cycles": 2,
+      "stall_cycles": 0
+    },
+    {
+      "label": "before_idle_reset",
+      "K": 1,
+      "start_cycle": 2169,
+      "expected": 56,
+      "completion_cycle": 2170,
+      "latency_cycles": 1,
+      "stall_cycles": 0
+    },
+    {
+      "label": "random_000",
+      "K": 239,
+      "start_cycle": 2174,
+      "expected": -153939,
+      "completion_cycle": 2563,
+      "latency_cycles": 389,
+      "stall_cycles": 150
+    },
+    {
+      "label": "random_001",
+      "K": 95,
+      "start_cycle": 2565,
+      "expected": 50302,
+      "completion_cycle": 2710,
+      "latency_cycles": 145,
+      "stall_cycles": 50
+    },
+    {
+      "label": "random_002",
+      "K": 38,
+      "start_cycle": 2712,
+      "expected": -11186,
+      "completion_cycle": 2783,
+      "latency_cycles": 71,
+      "stall_cycles": 33
+    },
+    {
+      "label": "random_003",
+      "K": 105,
+      "start_cycle": 2785,
+      "expected": -409,
+      "completion_cycle": 2971,
+      "latency_cycles": 186,
+      "stall_cycles": 81
+    },
+    {
+      "label": "random_004",
+      "K": 1,
+      "start_cycle": 2973,
+      "expected": -3621,
+      "completion_cycle": 2974,
+      "latency_cycles": 1,
+      "stall_cycles": 0
+    },
+    {
+      "label": "random_005",
+      "K": 219,
+      "start_cycle": 2976,
+      "expected": 184875,
+      "completion_cycle": 3339,
+      "latency_cycles": 363,
+      "stall_cycles": 144
+    },
+    {
+      "label": "random_006",
+      "K": 209,
+      "start_cycle": 3341,
+      "expected": -92962,
+      "completion_cycle": 3680,
+      "latency_cycles": 339,
+      "stall_cycles": 130
+    },
+    {
+      "label": "random_007",
+      "K": 169,
+      "start_cycle": 3682,
+      "expected": 72538,
+      "completion_cycle": 3928,
+      "latency_cycles": 246,
+      "stall_cycles": 77
+    },
+    {
+      "label": "random_008",
+      "K": 41,
+      "start_cycle": 3930,
+      "expected": -13478,
+      "completion_cycle": 3994,
+      "latency_cycles": 64,
+      "stall_cycles": 23
+    },
+    {
+      "label": "random_009",
+      "K": 121,
+      "start_cycle": 3996,
+      "expected": 72140,
+      "completion_cycle": 4187,
+      "latency_cycles": 191,
+      "stall_cycles": 70
+    },
+    {
+      "label": "random_010",
+      "K": 113,
+      "start_cycle": 4189,
+      "expected": 106755,
+      "completion_cycle": 4366,
+      "latency_cycles": 177,
+      "stall_cycles": 64
+    },
+    {
+      "label": "random_011",
+      "K": 99,
+      "start_cycle": 4368,
+      "expected": 37718,
+      "completion_cycle": 4527,
+      "latency_cycles": 159,
+      "stall_cycles": 60
+    },
+    {
+      "label": "random_012",
+      "K": 99,
+      "start_cycle": 4529,
+      "expected": -46643,
+      "completion_cycle": 4697,
+      "latency_cycles": 168,
+      "stall_cycles": 69
+    },
+    {
+      "label": "random_013",
+      "K": 72,
+      "start_cycle": 4699,
+      "expected": 26422,
+      "completion_cycle": 4814,
+      "latency_cycles": 115,
+      "stall_cycles": 43
+    },
+    {
+      "label": "random_014",
+      "K": 78,
+      "start_cycle": 4816,
+      "expected": -13499,
+      "completion_cycle": 4948,
+      "latency_cycles": 132,
+      "stall_cycles": 54
+    },
+    {
+      "label": "random_015",
+      "K": 172,
+      "start_cycle": 4950,
+      "expected": 51590,
+      "completion_cycle": 5235,
+      "latency_cycles": 285,
+      "stall_cycles": 113
+    },
+    {
+      "label": "random_016",
+      "K": 164,
+      "start_cycle": 5237,
+      "expected": 17837,
+      "completion_cycle": 5532,
+      "latency_cycles": 295,
+      "stall_cycles": 131
+    },
+    {
+      "label": "random_017",
+      "K": 153,
+      "start_cycle": 5534,
+      "expected": 16480,
+      "completion_cycle": 5807,
+      "latency_cycles": 273,
+      "stall_cycles": 120
+    },
+    {
+      "label": "random_018",
+      "K": 207,
+      "start_cycle": 5809,
+      "expected": 16933,
+      "completion_cycle": 6160,
+      "latency_cycles": 351,
+      "stall_cycles": 144
+    },
+    {
+      "label": "random_019",
+      "K": 240,
+      "start_cycle": 6162,
+      "expected": -124089,
+      "completion_cycle": 6547,
+      "latency_cycles": 385,
+      "stall_cycles": 145
+    },
+    {
+      "label": "random_020",
+      "K": 234,
+      "start_cycle": 6549,
+      "expected": -41702,
+      "completion_cycle": 6907,
+      "latency_cycles": 358,
+      "stall_cycles": 124
+    },
+    {
+      "label": "random_021",
+      "K": 67,
+      "start_cycle": 6909,
+      "expected": -60537,
+      "completion_cycle": 7006,
+      "latency_cycles": 97,
+      "stall_cycles": 30
+    },
+    {
+      "label": "random_022",
+      "K": 236,
+      "start_cycle": 7008,
+      "expected": 10204,
+      "completion_cycle": 7396,
+      "latency_cycles": 388,
+      "stall_cycles": 152
+    },
+    {
+      "label": "random_023",
+      "K": 249,
+      "start_cycle": 7398,
+      "expected": -94207,
+      "completion_cycle": 7800,
+      "latency_cycles": 402,
+      "stall_cycles": 153
+    },
+    {
+      "label": "random_024",
+      "K": 33,
+      "start_cycle": 7802,
+      "expected": -681,
+      "completion_cycle": 7852,
+      "latency_cycles": 50,
+      "stall_cycles": 17
+    },
+    {
+      "label": "random_025",
+      "K": 206,
+      "start_cycle": 7854,
+      "expected": -4578,
+      "completion_cycle": 8192,
+      "latency_cycles": 338,
+      "stall_cycles": 132
+    },
+    {
+      "label": "random_026",
+      "K": 234,
+      "start_cycle": 8194,
+      "expected": 80367,
+      "completion_cycle": 8573,
+      "latency_cycles": 379,
+      "stall_cycles": 145
+    },
+    {
+      "label": "random_027",
+      "K": 41,
+      "start_cycle": 8575,
+      "expected": -27472,
+      "completion_cycle": 8652,
+      "latency_cycles": 77,
+      "stall_cycles": 36
+    },
+    {
+      "label": "random_028",
+      "K": 80,
+      "start_cycle": 8654,
+      "expected": 92759,
+      "completion_cycle": 8783,
+      "latency_cycles": 129,
+      "stall_cycles": 49
+    },
+    {
+      "label": "random_029",
+      "K": 108,
+      "start_cycle": 8785,
+      "expected": 22406,
+      "completion_cycle": 8952,
+      "latency_cycles": 167,
+      "stall_cycles": 59
+    },
+    {
+      "label": "random_030",
+      "K": 15,
+      "start_cycle": 8954,
+      "expected": -23598,
+      "completion_cycle": 8976,
+      "latency_cycles": 22,
+      "stall_cycles": 7
+    },
+    {
+      "label": "random_031",
+      "K": 200,
+      "start_cycle": 8978,
+      "expected": -33266,
+      "completion_cycle": 9279,
+      "latency_cycles": 301,
+      "stall_cycles": 101
+    },
+    {
+      "label": "random_032",
+      "K": 81,
+      "start_cycle": 9281,
+      "expected": 15120,
+      "completion_cycle": 9422,
+      "latency_cycles": 141,
+      "stall_cycles": 60
+    },
+    {
+      "label": "random_033",
+      "K": 192,
+      "start_cycle": 9424,
+      "expected": 5137,
+      "completion_cycle": 9746,
+      "latency_cycles": 322,
+      "stall_cycles": 130
+    },
+    {
+      "label": "random_034",
+      "K": 157,
+      "start_cycle": 9748,
+      "expected": -79954,
+      "completion_cycle": 9997,
+      "latency_cycles": 249,
+      "stall_cycles": 92
+    },
+    {
+      "label": "random_035",
+      "K": 37,
+      "start_cycle": 9999,
+      "expected": 4434,
+      "completion_cycle": 10065,
+      "latency_cycles": 66,
+      "stall_cycles": 29
+    },
+    {
+      "label": "random_036",
+      "K": 155,
+      "start_cycle": 10067,
+      "expected": -93938,
+      "completion_cycle": 10323,
+      "latency_cycles": 256,
+      "stall_cycles": 101
+    },
+    {
+      "label": "random_037",
+      "K": 67,
+      "start_cycle": 10325,
+      "expected": 40881,
+      "completion_cycle": 10462,
+      "latency_cycles": 137,
+      "stall_cycles": 70
+    },
+    {
+      "label": "random_038",
+      "K": 225,
+      "start_cycle": 10464,
+      "expected": -32357,
+      "completion_cycle": 10826,
+      "latency_cycles": 362,
+      "stall_cycles": 137
+    },
+    {
+      "label": "random_039",
+      "K": 139,
+      "start_cycle": 10828,
+      "expected": -134721,
+      "completion_cycle": 11052,
+      "latency_cycles": 224,
+      "stall_cycles": 85
+    },
+    {
+      "label": "random_040",
+      "K": 172,
+      "start_cycle": 11054,
+      "expected": -74435,
+      "completion_cycle": 11322,
+      "latency_cycles": 268,
+      "stall_cycles": 96
+    },
+    {
+      "label": "random_041",
+      "K": 217,
+      "start_cycle": 11324,
+      "expected": -21980,
+      "completion_cycle": 11681,
+      "latency_cycles": 357,
+      "stall_cycles": 140
+    },
+    {
+      "label": "random_042",
+      "K": 244,
+      "start_cycle": 11683,
+      "expected": -112336,
+      "completion_cycle": 12095,
+      "latency_cycles": 412,
+      "stall_cycles": 168
+    },
+    {
+      "label": "random_043",
+      "K": 27,
+      "start_cycle": 12097,
+      "expected": -82816,
+      "completion_cycle": 12139,
+      "latency_cycles": 42,
+      "stall_cycles": 15
+    },
+    {
+      "label": "random_044",
+      "K": 153,
+      "start_cycle": 12141,
+      "expected": 35558,
+      "completion_cycle": 12396,
+      "latency_cycles": 255,
+      "stall_cycles": 102
+    },
+    {
+      "label": "random_045",
+      "K": 251,
+      "start_cycle": 12398,
+      "expected": -137780,
+      "completion_cycle": 12804,
+      "latency_cycles": 406,
+      "stall_cycles": 155
+    },
+    {
+      "label": "random_046",
+      "K": 71,
+      "start_cycle": 12806,
+      "expected": -68662,
+      "completion_cycle": 12924,
+      "latency_cycles": 118,
+      "stall_cycles": 47
+    },
+    {
+      "label": "random_047",
+      "K": 109,
+      "start_cycle": 12926,
+      "expected": 30490,
+      "completion_cycle": 13111,
+      "latency_cycles": 185,
+      "stall_cycles": 76
+    },
+    {
+      "label": "random_048",
+      "K": 3,
+      "start_cycle": 13113,
+      "expected": 15136,
+      "completion_cycle": 13118,
+      "latency_cycles": 5,
+      "stall_cycles": 2
+    },
+    {
+      "label": "random_049",
+      "K": 152,
+      "start_cycle": 13120,
+      "expected": 43546,
+      "completion_cycle": 13409,
+      "latency_cycles": 289,
+      "stall_cycles": 137
+    },
+    {
+      "label": "random_050",
+      "K": 151,
+      "start_cycle": 13411,
+      "expected": -30921,
+      "completion_cycle": 13651,
+      "latency_cycles": 240,
+      "stall_cycles": 89
+    },
+    {
+      "label": "random_051",
+      "K": 193,
+      "start_cycle": 13653,
+      "expected": -64603,
+      "completion_cycle": 13970,
+      "latency_cycles": 317,
+      "stall_cycles": 124
+    },
+    {
+      "label": "random_052",
+      "K": 150,
+      "start_cycle": 13972,
+      "expected": 25075,
+      "completion_cycle": 14220,
+      "latency_cycles": 248,
+      "stall_cycles": 98
+    },
+    {
+      "label": "random_053",
+      "K": 241,
+      "start_cycle": 14222,
+      "expected": -70038,
+      "completion_cycle": 14618,
+      "latency_cycles": 396,
+      "stall_cycles": 155
+    },
+    {
+      "label": "random_054",
+      "K": 224,
+      "start_cycle": 14620,
+      "expected": -110734,
+      "completion_cycle": 14970,
+      "latency_cycles": 350,
+      "stall_cycles": 126
+    },
+    {
+      "label": "random_055",
+      "K": 198,
+      "start_cycle": 14972,
+      "expected": 55019,
+      "completion_cycle": 15297,
+      "latency_cycles": 325,
+      "stall_cycles": 127
+    },
+    {
+      "label": "random_056",
+      "K": 190,
+      "start_cycle": 15299,
+      "expected": -81448,
+      "completion_cycle": 15564,
+      "latency_cycles": 265,
+      "stall_cycles": 75
+    },
+    {
+      "label": "random_057",
+      "K": 247,
+      "start_cycle": 15566,
+      "expected": 109860,
+      "completion_cycle": 15965,
+      "latency_cycles": 399,
+      "stall_cycles": 152
+    },
+    {
+      "label": "random_058",
+      "K": 167,
+      "start_cycle": 15967,
+      "expected": 96518,
+      "completion_cycle": 16256,
+      "latency_cycles": 289,
+      "stall_cycles": 122
+    },
+    {
+      "label": "random_059",
+      "K": 195,
+      "start_cycle": 16258,
+      "expected": 26137,
+      "completion_cycle": 16603,
+      "latency_cycles": 345,
+      "stall_cycles": 150
+    },
+    {
+      "label": "random_060",
+      "K": 184,
+      "start_cycle": 16605,
+      "expected": -30146,
+      "completion_cycle": 16911,
+      "latency_cycles": 306,
+      "stall_cycles": 122
+    },
+    {
+      "label": "random_061",
+      "K": 44,
+      "start_cycle": 16913,
+      "expected": 11052,
+      "completion_cycle": 16980,
+      "latency_cycles": 67,
+      "stall_cycles": 23
+    },
+    {
+      "label": "random_062",
+      "K": 195,
+      "start_cycle": 16982,
+      "expected": 35839,
+      "completion_cycle": 17349,
+      "latency_cycles": 367,
+      "stall_cycles": 172
+    },
+    {
+      "label": "random_063",
+      "K": 95,
+      "start_cycle": 17351,
+      "expected": 3010,
+      "completion_cycle": 17502,
+      "latency_cycles": 151,
+      "stall_cycles": 56
+    },
+    {
+      "label": "random_064",
+      "K": 119,
+      "start_cycle": 17504,
+      "expected": 24774,
+      "completion_cycle": 17697,
+      "latency_cycles": 193,
+      "stall_cycles": 74
+    },
+    {
+      "label": "random_065",
+      "K": 223,
+      "start_cycle": 17699,
+      "expected": 10095,
+      "completion_cycle": 18072,
+      "latency_cycles": 373,
+      "stall_cycles": 150
+    },
+    {
+      "label": "random_066",
+      "K": 233,
+      "start_cycle": 18074,
+      "expected": 37870,
+      "completion_cycle": 18485,
+      "latency_cycles": 411,
+      "stall_cycles": 178
+    },
+    {
+      "label": "random_067",
+      "K": 245,
+      "start_cycle": 18487,
+      "expected": 77618,
+      "completion_cycle": 18865,
+      "latency_cycles": 378,
+      "stall_cycles": 133
+    },
+    {
+      "label": "random_068",
+      "K": 181,
+      "start_cycle": 18867,
+      "expected": 55459,
+      "completion_cycle": 19175,
+      "latency_cycles": 308,
+      "stall_cycles": 127
+    },
+    {
+      "label": "random_069",
+      "K": 87,
+      "start_cycle": 19177,
+      "expected": -19214,
+      "completion_cycle": 19329,
+      "latency_cycles": 152,
+      "stall_cycles": 65
+    },
+    {
+      "label": "random_070",
+      "K": 244,
+      "start_cycle": 19331,
+      "expected": -26483,
+      "completion_cycle": 19743,
+      "latency_cycles": 412,
+      "stall_cycles": 168
+    },
+    {
+      "label": "random_071",
+      "K": 63,
+      "start_cycle": 19745,
+      "expected": -62486,
+      "completion_cycle": 19830,
+      "latency_cycles": 85,
+      "stall_cycles": 22
+    },
+    {
+      "label": "random_072",
+      "K": 28,
+      "start_cycle": 19832,
+      "expected": -331,
+      "completion_cycle": 19876,
+      "latency_cycles": 44,
+      "stall_cycles": 16
+    },
+    {
+      "label": "random_073",
+      "K": 54,
+      "start_cycle": 19878,
+      "expected": 29207,
+      "completion_cycle": 19970,
+      "latency_cycles": 92,
+      "stall_cycles": 38
+    },
+    {
+      "label": "random_074",
+      "K": 112,
+      "start_cycle": 19972,
+      "expected": 17172,
+      "completion_cycle": 20152,
+      "latency_cycles": 180,
+      "stall_cycles": 68
+    },
+    {
+      "label": "random_075",
+      "K": 88,
+      "start_cycle": 20154,
+      "expected": 46732,
+      "completion_cycle": 20285,
+      "latency_cycles": 131,
+      "stall_cycles": 43
+    },
+    {
+      "label": "random_076",
+      "K": 138,
+      "start_cycle": 20287,
+      "expected": 115611,
+      "completion_cycle": 20519,
+      "latency_cycles": 232,
+      "stall_cycles": 94
+    },
+    {
+      "label": "random_077",
+      "K": 115,
+      "start_cycle": 20521,
+      "expected": -4135,
+      "completion_cycle": 20698,
+      "latency_cycles": 177,
+      "stall_cycles": 62
+    },
+    {
+      "label": "random_078",
+      "K": 227,
+      "start_cycle": 20700,
+      "expected": -7919,
+      "completion_cycle": 21091,
+      "latency_cycles": 391,
+      "stall_cycles": 164
+    },
+    {
+      "label": "random_079",
+      "K": 222,
+      "start_cycle": 21093,
+      "expected": 57959,
+      "completion_cycle": 21453,
+      "latency_cycles": 360,
+      "stall_cycles": 138
+    },
+    {
+      "label": "random_080",
+      "K": 173,
+      "start_cycle": 21455,
+      "expected": -23876,
+      "completion_cycle": 21728,
+      "latency_cycles": 273,
+      "stall_cycles": 100
+    },
+    {
+      "label": "random_081",
+      "K": 44,
+      "start_cycle": 21730,
+      "expected": -12892,
+      "completion_cycle": 21810,
+      "latency_cycles": 80,
+      "stall_cycles": 36
+    },
+    {
+      "label": "random_082",
+      "K": 84,
+      "start_cycle": 21812,
+      "expected": -36771,
+      "completion_cycle": 21946,
+      "latency_cycles": 134,
+      "stall_cycles": 50
+    },
+    {
+      "label": "random_083",
+      "K": 160,
+      "start_cycle": 21948,
+      "expected": -56674,
+      "completion_cycle": 22216,
+      "latency_cycles": 268,
+      "stall_cycles": 108
+    },
+    {
+      "label": "random_084",
+      "K": 3,
+      "start_cycle": 22218,
+      "expected": -620,
+      "completion_cycle": 22221,
+      "latency_cycles": 3,
+      "stall_cycles": 0
+    },
+    {
+      "label": "random_085",
+      "K": 137,
+      "start_cycle": 22223,
+      "expected": -11846,
+      "completion_cycle": 22440,
+      "latency_cycles": 217,
+      "stall_cycles": 80
+    },
+    {
+      "label": "random_086",
+      "K": 224,
+      "start_cycle": 22442,
+      "expected": -70980,
+      "completion_cycle": 22784,
+      "latency_cycles": 342,
+      "stall_cycles": 118
+    },
+    {
+      "label": "random_087",
+      "K": 37,
+      "start_cycle": 22786,
+      "expected": 4894,
+      "completion_cycle": 22848,
+      "latency_cycles": 62,
+      "stall_cycles": 25
+    },
+    {
+      "label": "random_088",
+      "K": 134,
+      "start_cycle": 22850,
+      "expected": 28185,
+      "completion_cycle": 23078,
+      "latency_cycles": 228,
+      "stall_cycles": 94
+    },
+    {
+      "label": "random_089",
+      "K": 191,
+      "start_cycle": 23080,
+      "expected": -25287,
+      "completion_cycle": 23379,
+      "latency_cycles": 299,
+      "stall_cycles": 108
+    },
+    {
+      "label": "random_090",
+      "K": 225,
+      "start_cycle": 23381,
+      "expected": 57839,
+      "completion_cycle": 23775,
+      "latency_cycles": 394,
+      "stall_cycles": 169
+    },
+    {
+      "label": "random_091",
+      "K": 229,
+      "start_cycle": 23777,
+      "expected": -48745,
+      "completion_cycle": 24166,
+      "latency_cycles": 389,
+      "stall_cycles": 160
+    },
+    {
+      "label": "random_092",
+      "K": 139,
+      "start_cycle": 24168,
+      "expected": 49435,
+      "completion_cycle": 24398,
+      "latency_cycles": 230,
+      "stall_cycles": 91
+    },
+    {
+      "label": "random_093",
+      "K": 12,
+      "start_cycle": 24400,
+      "expected": -33233,
+      "completion_cycle": 24416,
+      "latency_cycles": 16,
+      "stall_cycles": 4
+    },
+    {
+      "label": "random_094",
+      "K": 168,
+      "start_cycle": 24418,
+      "expected": 152612,
+      "completion_cycle": 24685,
+      "latency_cycles": 267,
+      "stall_cycles": 99
+    },
+    {
+      "label": "random_095",
+      "K": 1,
+      "start_cycle": 24687,
+      "expected": -2232,
+      "completion_cycle": 24688,
+      "latency_cycles": 1,
+      "stall_cycles": 0
+    },
+    {
+      "label": "random_096",
+      "K": 1,
+      "start_cycle": 24690,
+      "expected": -4320,
+      "completion_cycle": 24691,
+      "latency_cycles": 1,
+      "stall_cycles": 0
+    },
+    {
+      "label": "random_097",
+      "K": 76,
+      "start_cycle": 24693,
+      "expected": -36476,
+      "completion_cycle": 24826,
+      "latency_cycles": 133,
+      "stall_cycles": 57
+    },
+    {
+      "label": "random_098",
+      "K": 33,
+      "start_cycle": 24828,
+      "expected": -39812,
+      "completion_cycle": 24888,
+      "latency_cycles": 60,
+      "stall_cycles": 27
+    },
+    {
+      "label": "random_099",
+      "K": 188,
+      "start_cycle": 24890,
+      "expected": -69672,
+      "completion_cycle": 25234,
+      "latency_cycles": 344,
+      "stall_cycles": 156
+    },
+    {
+      "label": "random_100",
+      "K": 12,
+      "start_cycle": 25236,
+      "expected": -33886,
+      "completion_cycle": 25260,
+      "latency_cycles": 24,
+      "stall_cycles": 12
+    },
+    {
+      "label": "random_101",
+      "K": 43,
+      "start_cycle": 25262,
+      "expected": 10604,
+      "completion_cycle": 25335,
+      "latency_cycles": 73,
+      "stall_cycles": 30
+    },
+    {
+      "label": "random_102",
+      "K": 179,
+      "start_cycle": 25337,
+      "expected": -24001,
+      "completion_cycle": 25623,
+      "latency_cycles": 286,
+      "stall_cycles": 107
+    },
+    {
+      "label": "random_103",
+      "K": 134,
+      "start_cycle": 25625,
+      "expected": 40973,
+      "completion_cycle": 25858,
+      "latency_cycles": 233,
+      "stall_cycles": 99
+    },
+    {
+      "label": "random_104",
+      "K": 121,
+      "start_cycle": 25860,
+      "expected": -65649,
+      "completion_cycle": 26053,
+      "latency_cycles": 193,
+      "stall_cycles": 72
+    },
+    {
+      "label": "random_105",
+      "K": 5,
+      "start_cycle": 26055,
+      "expected": -13659,
+      "completion_cycle": 26068,
+      "latency_cycles": 13,
+      "stall_cycles": 8
+    },
+    {
+      "label": "random_106",
+      "K": 65,
+      "start_cycle": 26070,
+      "expected": 22655,
+      "completion_cycle": 26151,
+      "latency_cycles": 81,
+      "stall_cycles": 16
+    },
+    {
+      "label": "random_107",
+      "K": 254,
+      "start_cycle": 26153,
+      "expected": -117792,
+      "completion_cycle": 26545,
+      "latency_cycles": 392,
+      "stall_cycles": 138
+    },
+    {
+      "label": "random_108",
+      "K": 225,
+      "start_cycle": 26547,
+      "expected": 56121,
+      "completion_cycle": 26936,
+      "latency_cycles": 389,
+      "stall_cycles": 164
+    },
+    {
+      "label": "random_109",
+      "K": 134,
+      "start_cycle": 26938,
+      "expected": 128499,
+      "completion_cycle": 27157,
+      "latency_cycles": 219,
+      "stall_cycles": 85
+    },
+    {
+      "label": "random_110",
+      "K": 151,
+      "start_cycle": 27159,
+      "expected": -4702,
+      "completion_cycle": 27386,
+      "latency_cycles": 227,
+      "stall_cycles": 76
+    },
+    {
+      "label": "random_111",
+      "K": 237,
+      "start_cycle": 27388,
+      "expected": -49910,
+      "completion_cycle": 27769,
+      "latency_cycles": 381,
+      "stall_cycles": 144
+    },
+    {
+      "label": "random_112",
+      "K": 188,
+      "start_cycle": 27771,
+      "expected": -109364,
+      "completion_cycle": 28073,
+      "latency_cycles": 302,
+      "stall_cycles": 114
+    },
+    {
+      "label": "random_113",
+      "K": 59,
+      "start_cycle": 28075,
+      "expected": -81993,
+      "completion_cycle": 28182,
+      "latency_cycles": 107,
+      "stall_cycles": 48
+    },
+    {
+      "label": "random_114",
+      "K": 210,
+      "start_cycle": 28184,
+      "expected": -87719,
+      "completion_cycle": 28518,
+      "latency_cycles": 334,
+      "stall_cycles": 124
+    },
+    {
+      "label": "random_115",
+      "K": 158,
+      "start_cycle": 28520,
+      "expected": 44151,
+      "completion_cycle": 28800,
+      "latency_cycles": 280,
+      "stall_cycles": 122
+    },
+    {
+      "label": "random_116",
+      "K": 150,
+      "start_cycle": 28802,
+      "expected": 103849,
+      "completion_cycle": 29072,
+      "latency_cycles": 270,
+      "stall_cycles": 120
+    },
+    {
+      "label": "random_117",
+      "K": 9,
+      "start_cycle": 29074,
+      "expected": 4597,
+      "completion_cycle": 29086,
+      "latency_cycles": 12,
+      "stall_cycles": 3
+    },
+    {
+      "label": "random_118",
+      "K": 215,
+      "start_cycle": 29088,
+      "expected": -16469,
+      "completion_cycle": 29428,
+      "latency_cycles": 340,
+      "stall_cycles": 125
+    },
+    {
+      "label": "random_119",
+      "K": 16,
+      "start_cycle": 29430,
+      "expected": 26340,
+      "completion_cycle": 29451,
+      "latency_cycles": 21,
+      "stall_cycles": 5
+    },
+    {
+      "label": "random_120",
+      "K": 176,
+      "start_cycle": 29453,
+      "expected": 28344,
+      "completion_cycle": 29735,
+      "latency_cycles": 282,
+      "stall_cycles": 106
+    },
+    {
+      "label": "random_121",
+      "K": 137,
+      "start_cycle": 29737,
+      "expected": -33220,
+      "completion_cycle": 29983,
+      "latency_cycles": 246,
+      "stall_cycles": 109
+    },
+    {
+      "label": "random_122",
+      "K": 169,
+      "start_cycle": 29985,
+      "expected": 84954,
+      "completion_cycle": 30260,
+      "latency_cycles": 275,
+      "stall_cycles": 106
+    },
+    {
+      "label": "random_123",
+      "K": 20,
+      "start_cycle": 30262,
+      "expected": -15291,
+      "completion_cycle": 30301,
+      "latency_cycles": 39,
+      "stall_cycles": 19
+    },
+    {
+      "label": "random_124",
+      "K": 129,
+      "start_cycle": 30303,
+      "expected": 39524,
+      "completion_cycle": 30522,
+      "latency_cycles": 219,
+      "stall_cycles": 90
+    },
+    {
+      "label": "random_125",
+      "K": 211,
+      "start_cycle": 30524,
+      "expected": 63117,
+      "completion_cycle": 30867,
+      "latency_cycles": 343,
+      "stall_cycles": 132
+    },
+    {
+      "label": "random_126",
+      "K": 190,
+      "start_cycle": 30869,
+      "expected": -38226,
+      "completion_cycle": 31181,
+      "latency_cycles": 312,
+      "stall_cycles": 122
+    },
+    {
+      "label": "random_127",
+      "K": 46,
+      "start_cycle": 31183,
+      "expected": -27839,
+      "completion_cycle": 31254,
+      "latency_cycles": 71,
+      "stall_cycles": 25
+    }
+  ],
+  "python": "3.14.0a1 (tags/v3.14.0a1:8cdaca8, Oct 15 2024, 20:08:21) [MSC v.1941 64 bit (AMD64)]",
+  "sha256": {
+    "dot_serial_cfg.v": "93cc030c7726c0bb1bddc2d13d155333202f84b7c18aa3a1ac2451b04653e633",
+    "tb_dot_serial_cfg.v": "ca6b3616c8fec890d5561d381a128c1924c3cbb8930b7ed45d81b1122c1f8cd6",
+    "verify_step002.py": "dabd5a610c791d4cdeb710a7e77e03d56b23b4adac97f3f822806b00ae1db1ba",
+    "dot_int8_reference.m": "5945d3439bb47990be144a030a05fc16809e2932c2e044e7bd8a57c5ef4f2aa4",
+    "test_step002_reference.m": "f3fd4ee715e5a5f9996adda5e961d8d0ae7ba5071e6fb2a743c7a471787f31db",
+    "synthesize.tcl": "64d34cdfedd75aa3ab97f09696d20d6d4ffa53f5b1ed4066d6f33fd14fd1907f"
+  }
+}
