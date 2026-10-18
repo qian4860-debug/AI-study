@@ -1,0 +1,289 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Oct 19 01:24:30 2026
+| Host         : LAPTOP-3SL35HPD running 64-bit major release  (build 9200)
+| Command      : report_timing -max_paths 3 -file ../paths_block.rpt
+| Design       : mlp2_top
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             1.746ns  (required time - arrival time)
+  Source:                 quant/shift_q_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            quant/b_increment_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        8.214ns  (logic 4.164ns (50.694%)  route 4.050ns (49.306%))
+  Logic Levels:           15  (CARRY4=11 LUT4=1 LUT6=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=466, unset)          0.973     0.973    quant/clk
+                         FDRE                                         r  quant/shift_q_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  quant/shift_q_reg[2]/Q
+                         net (fo=152, unplaced)       1.075     2.526    quant/shift_q[2]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.821 r  quant/b_increment3_carry_i_9/O
+                         net (fo=1, unplaced)         0.665     3.486    quant/b_increment3_carry_i_9_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.637     4.123 r  quant/b_increment3_carry/CO[3]
+                         net (fo=1, unplaced)         0.000     4.123    quant/b_increment3_carry_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.240 r  quant/b_increment3_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     4.240    quant/b_increment3_carry__0_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.357 r  quant/b_increment3_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.357    quant/b_increment3_carry__1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.474 r  quant/b_increment3_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.474    quant/b_increment3_carry__2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.591 r  quant/b_increment3_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     4.591    quant/b_increment3_carry__3_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.708 r  quant/b_increment3_carry__4/CO[3]
+                         net (fo=1, unplaced)         0.000     4.708    quant/b_increment3_carry__4_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     5.045 r  quant/b_increment3_carry__5/O[1]
+                         net (fo=3, unplaced)         0.629     5.674    quant/b_increment3_carry__5_n_6
+                         LUT4 (Prop_lut4_I0_O)        0.306     5.980 r  quant/b_increment1_carry__2_i_15/O
+                         net (fo=1, unplaced)         0.449     6.429    quant/b_increment1_carry__2_i_15_n_0
+                         LUT6 (Prop_lut6_I5_O)        0.124     6.553 r  quant/b_increment1_carry__2_i_3/O
+                         net (fo=1, unplaced)         0.469     7.022    quant/b_increment1_carry__2_i_3_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.520     7.542 r  quant/b_increment1_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     7.542    quant/b_increment1_carry__2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.659 r  quant/b_increment1_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     7.659    quant/b_increment1_carry__3_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     7.776 r  quant/b_increment1_carry__4/CO[3]
+                         net (fo=1, unplaced)         0.000     7.776    quant/b_increment1_carry__4_n_0
+                         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.281     8.057 r  quant/b_increment1_carry__5/CO[0]
+                         net (fo=1, unplaced)         0.763     8.820    quant/b_increment10_in
+                         LUT6 (Prop_lut6_I4_O)        0.367     9.187 r  quant/b_increment_i_1/O
+                         net (fo=1, unplaced)         0.000     9.187    quant/b_increment_i_1_n_0
+                         FDRE                                         r  quant/b_increment_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=466, unset)          0.924    10.924    quant/clk
+                         FDRE                                         r  quant/b_increment_reg/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.044    10.933    quant/b_increment_reg
+  -------------------------------------------------------------------
+                         required time                         10.933    
+                         arrival time                          -9.187    
+  -------------------------------------------------------------------
+                         slack                                  1.746    
+
+Slack (MET) :             2.125ns  (required time - arrival time)
+  Source:                 quant/shift_q_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            quant/b_tie_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.835ns  (logic 4.401ns (56.171%)  route 3.434ns (43.829%))
+  Logic Levels:           19  (CARRY4=14 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=466, unset)          0.973     0.973    quant/clk
+                         FDRE                                         r  quant/shift_q_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  quant/shift_q_reg[2]/Q
+                         net (fo=152, unplaced)       1.075     2.526    quant/shift_q[2]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.821 r  quant/b_increment3_carry_i_9/O
+                         net (fo=1, unplaced)         0.665     3.486    quant/b_increment3_carry_i_9_n_0
+                         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.637     4.123 r  quant/b_increment3_carry/CO[3]
+                         net (fo=1, unplaced)         0.000     4.123    quant/b_increment3_carry_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.240 r  quant/b_increment3_carry__0/CO[3]
+                         net (fo=1, unplaced)         0.000     4.240    quant/b_increment3_carry__0_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.357 r  quant/b_increment3_carry__1/CO[3]
+                         net (fo=1, unplaced)         0.000     4.357    quant/b_increment3_carry__1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.474 r  quant/b_increment3_carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     4.474    quant/b_increment3_carry__2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.591 r  quant/b_increment3_carry__3/CO[3]
+                         net (fo=1, unplaced)         0.000     4.591    quant/b_increment3_carry__3_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.708 r  quant/b_increment3_carry__4/CO[3]
+                         net (fo=1, unplaced)         0.000     4.708    quant/b_increment3_carry__4_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.825 r  quant/b_increment3_carry__5/CO[3]
+                         net (fo=1, unplaced)         0.000     4.825    quant/b_increment3_carry__5_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     4.942 r  quant/b_increment3_carry__6/CO[3]
+                         net (fo=1, unplaced)         0.000     4.942    quant/b_increment3_carry__6_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.059 r  quant/b_increment3_carry__7/CO[3]
+                         net (fo=1, unplaced)         0.000     5.059    quant/b_increment3_carry__7_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.176 r  quant/b_increment3_carry__8/CO[3]
+                         net (fo=1, unplaced)         0.000     5.176    quant/b_increment3_carry__8_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.293 r  quant/b_increment3_carry__9/CO[3]
+                         net (fo=1, unplaced)         0.000     5.293    quant/b_increment3_carry__9_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.549 r  quant/b_increment3_carry__10/O[2]
+                         net (fo=2, unplaced)         0.463     6.012    quant/b_increment3_carry__10_n_5
+                         LUT5 (Prop_lut5_I4_O)        0.293     6.305 r  quant/b_increment1_carry__4_i_17/O
+                         net (fo=2, unplaced)         0.460     6.765    quant/b_increment1_carry__4_i_17_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124     6.889 r  quant/i__carry__2_i_5/O
+                         net (fo=1, unplaced)         0.449     7.338    quant/i__carry__2_i_5_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124     7.462 r  quant/i__carry__2_i_1/O
+                         net (fo=1, unplaced)         0.000     7.462    quant/i__carry__2_i_1_n_0
+                         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376     7.838 r  quant/b_increment2_inferred__1/i__carry__2/CO[3]
+                         net (fo=1, unplaced)         0.000     7.838    quant/b_increment2_inferred__1/i__carry__2_n_0
+                         CARRY4 (Prop_carry4_CI_CO[0])
+                                                      0.281     8.119 r  quant/b_increment2_inferred__1/i__carry__3/CO[0]
+                         net (fo=2, unplaced)         0.322     8.441    quant/b_increment2
+                         LUT6 (Prop_lut6_I1_O)        0.367     8.808 r  quant/b_tie_i_1/O
+                         net (fo=1, unplaced)         0.000     8.808    quant/b_tie_i_1_n_0
+                         FDRE                                         r  quant/b_tie_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=466, unset)          0.924    10.924    quant/clk
+                         FDRE                                         r  quant/b_tie_reg/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.044    10.933    quant/b_tie_reg
+  -------------------------------------------------------------------
+                         required time                         10.933    
+                         arrival time                          -8.808    
+  -------------------------------------------------------------------
+                         slack                                  2.125    
+
+Slack (MET) :             2.192ns  (required time - arrival time)
+  Source:                 quant/product_q_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            quant/b_high_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        7.768ns  (logic 3.554ns (45.752%)  route 4.214ns (54.248%))
+  Logic Levels:           17  (CARRY4=10 LUT1=1 LUT3=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=466, unset)          0.973     0.973    quant/clk
+                         FDRE                                         r  quant/product_q_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 f  quant/product_q_reg[0]/Q
+                         net (fo=5, unplaced)         0.339     1.790    quant/product_q_reg_n_0_[0]
+                         LUT1 (Prop_lut1_I0_O)        0.295     2.085 r  quant/i__carry_i_20/O
+                         net (fo=1, unplaced)         0.333     2.418    quant/i__carry_i_20_n_0
+                         CARRY4 (Prop_carry4_CYINIT_CO[3])
+                                                      0.595     3.013 r  quant/i__carry_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     3.013    quant/i__carry_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.130 r  quant/i__carry_i_7__1/CO[3]
+                         net (fo=1, unplaced)         0.000     3.130    quant/i__carry_i_7__1_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.247 r  quant/i__carry_i_6__0/CO[3]
+                         net (fo=1, unplaced)         0.000     3.247    quant/i__carry_i_6__0_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.364 r  quant/i__carry__0_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     3.364    quant/i__carry__0_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.481 r  quant/i__carry__0_i_7/CO[3]
+                         net (fo=1, unplaced)         0.000     3.481    quant/i__carry__0_i_7_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.598 r  quant/i__carry__0_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.598    quant/i__carry__0_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.715 r  quant/i__carry__1_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000     3.715    quant/i__carry__1_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.832 r  quant/i__carry__1_i_7/CO[3]
+                         net (fo=1, unplaced)         0.000     3.832    quant/i__carry__1_i_7_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.949 r  quant/i__carry__1_i_6/CO[3]
+                         net (fo=1, unplaced)         0.000     3.949    quant/i__carry__1_i_6_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331     4.280 r  quant/i__carry__2_i_10/O[3]
+                         net (fo=5, unplaced)         0.476     4.756    quant/b_low2[40]
+                         LUT3 (Prop_lut3_I0_O)        0.299     5.055 r  quant/b_increment1_carry__4_i_16/O
+                         net (fo=4, unplaced)         0.473     5.528    quant/b_increment1_carry__4_i_16_n_0
+                         LUT6 (Prop_lut6_I5_O)        0.124     5.652 f  quant/b_high_i_37/O
+                         net (fo=3, unplaced)         0.750     6.402    quant/b_high_i_37_n_0
+                         LUT5 (Prop_lut5_I3_O)        0.124     6.526 r  quant/b_high_i_10/O
+                         net (fo=2, unplaced)         0.975     7.501    quant/b_high_i_10_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124     7.625 f  quant/b_high_i_27/O
+                         net (fo=1, unplaced)         0.449     8.074    quant/b_high_i_27_n_0
+                         LUT6 (Prop_lut6_I5_O)        0.124     8.198 r  quant/b_high_i_6/O
+                         net (fo=1, unplaced)         0.419     8.617    quant/b_high_i_6_n_0
+                         LUT6 (Prop_lut6_I5_O)        0.124     8.741 r  quant/b_high_i_1/O
+                         net (fo=1, unplaced)         0.000     8.741    quant/b_high_i_1_n_0
+                         FDRE                                         r  quant/b_high_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=466, unset)          0.924    10.924    quant/clk
+                         FDRE                                         r  quant/b_high_reg/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_D)        0.044    10.933    quant/b_high_reg
+  -------------------------------------------------------------------
+                         required time                         10.933    
+                         arrival time                          -8.741    
+  -------------------------------------------------------------------
+                         slack                                  2.192    
+
+
+
+

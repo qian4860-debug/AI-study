@@ -1,0 +1,34 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Oct 19 01:24:52 2026
+| Host         : LAPTOP-3SL35HPD running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file ../hierarchy_hybrid.rpt
+| Design       : mlp2_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------+------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|      Instance     |      Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------+------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| mlp2_top          |            (top) |       1263 |       1143 |     120 |    0 | 437 |      0 |      4 |          2 |
+|   (mlp2_top)      |            (top) |          5 |          5 |       0 |    0 |  74 |      0 |      0 |          0 |
+|   engine          |        fc_shared |        706 |        586 |     120 |    0 | 303 |      0 |      4 |          0 |
+|     (engine)      |        fc_shared |         94 |         70 |      24 |    0 |  58 |      0 |      0 |          0 |
+|     bank[1].x_ram | sync_ram_style_1 |         57 |         33 |      24 |    0 |   8 |      0 |      0 |          0 |
+|     core          |  dot_banked_core |        428 |        428 |       0 |    0 | 213 |      0 |      0 |          0 |
+|   quant           |       requant_i8 |        552 |        552 |       0 |    0 |  60 |      0 |      0 |          2 |
++-------------------+------------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

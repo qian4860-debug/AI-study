@@ -1,0 +1,141 @@
+{
+  "status": "PASS",
+  "seed": 20261019,
+  "configs": {
+    "block": {
+      "status": "PASS",
+      "RAM_MODE": 0,
+      "main_tasks": 632,
+      "original_tasks": 624,
+      "added_full_channel_tasks": 8,
+      "invalid": 8,
+      "aborted": 132,
+      "supplemental_reset_restarts": 5,
+      "cancelled_quant_in_supplemental": 3,
+      "simulation_edges": 198386,
+      "heldout_rtl_samples": 512,
+      "heldout_rtl_accuracy": 0.953125,
+      "cycle_deltas_vs_dual": [
+        0
+      ],
+      "golden_output_positions": 6144,
+      "original_pre_and_quant_golden": "unchanged exact Python integers with adapted structural probes"
+    },
+    "hybrid": {
+      "status": "PASS",
+      "RAM_MODE": 1,
+      "main_tasks": 632,
+      "original_tasks": 624,
+      "added_full_channel_tasks": 8,
+      "invalid": 8,
+      "aborted": 132,
+      "supplemental_reset_restarts": 5,
+      "cancelled_quant_in_supplemental": 3,
+      "simulation_edges": 198386,
+      "heldout_rtl_samples": 512,
+      "heldout_rtl_accuracy": 0.953125,
+      "cycle_deltas_vs_dual": [
+        0
+      ],
+      "golden_output_positions": 6144,
+      "original_pre_and_quant_golden": "unchanged exact Python integers with adapted structural probes"
+    },
+    "distributed": {
+      "status": "PASS",
+      "RAM_MODE": 2,
+      "main_tasks": 632,
+      "original_tasks": 624,
+      "added_full_channel_tasks": 8,
+      "invalid": 8,
+      "aborted": 132,
+      "supplemental_reset_restarts": 5,
+      "cancelled_quant_in_supplemental": 3,
+      "simulation_edges": 198386,
+      "heldout_rtl_samples": 512,
+      "heldout_rtl_accuracy": 0.953125,
+      "cycle_deltas_vs_dual": [
+        0
+      ],
+      "golden_output_positions": 6144,
+      "original_pre_and_quant_golden": "unchanged exact Python integers with adapted structural probes"
+    }
+  },
+  "prior_artifacts_verified": 223,
+  "sha256": {
+    "step004\\dot_banked_core.v": "470843df4376d547189f1d5d2d720c67673bd0dd1c81c4d85c3d34ae4872fa69",
+    "optimization\\step006_pipelined\\requant_i8.v": "9353eac5f84d7ccdbaf5496aed467bbd039086d2252c8300db833a2ae8eaae59",
+    "step007\\sync_ram_style.v": "eb787372c3ee5859038b3722556e6721677af739735e4dccf6538bc673756b34",
+    "step007\\fc_shared.v": "09c7a48291d0cd27ba4b96bd3ea20a85f8405d6ffe1b6b9a25f4a71acda305f3",
+    "step007\\mlp2_top.v": "dfe2b4e4ba40cadd147aedeb86269a866715578494c7bf0dcbf2a18b50c40fe3",
+    "step007\\tb_shared.v": "95094a8fa0826d2336f9eb0bcc8d9cb28192cfaabd554d14fbd704544f7b0517",
+    "step007\\verify_step007.py": "c829d9d7ba730ca5d2ddd4233ec32c79c9207d3c6e08eaef37c7877351cbb973",
+    "step007\\cases.txt": "e8e38d24306079a7cec08365461f4db9addfb09cc548fc33da0963f1c30fba9b",
+    "step007\\additional_vectors.json": "72bd5830ef96396f6ceb84bc6a3c3dafae1ec06c5106a1c4a311c5f12bc1b15b",
+    "step006\\reference.py": "72b0ab1ab7eeb79ba91e7be8970c3aefc4d19efdbab5ef4bd5e45edd8d8cd3b3",
+    "step006\\test_dataset.json": "c95fe7ff5bf0b85a7e6924a13658c0f70f8f4b48d673d9f36cd73b03e71dc53a",
+    "step006\\training_results.json": "fad9c29b51d9d6d3d1475972fb621a6c80568c37754390dc185d81fd2c672f68",
+    "optimization\\step006_pipelined\\results.json": "325697a2b1dad84524421ca01a8b3c1ee4509546f9af9e4b43d11f91f8121ad5",
+    "optimization\\step006_pipelined\\synthesis_results.json": "6282a9c5ab04054294673871d01bc9f7c8274918b5912c55dfe5e80abf9393f9",
+    "optimization\\step006_pipelined\\metrics.csv": "b5c89662cdfaaafa4ddaa25c48b01628f8453566ca5226e9023426f51b2a1c80",
+    "optimization\\step006_pipelined\\build\\mlp_events.csv": "12274beeffadae15d92f4ef3ca1cf106c6607e48148b992d92a33396e4d6a330",
+    "step006\\build\\mlp_cases.txt": "322373fde11cb23a093c90f74a507d668dd89f9087cd96de44d93df6a582ff0f",
+    "step007\\synthesize.tcl": "dd1ff3b4a817358d43b484712b482e44324faafa1a80173473cd8eaef66a4193",
+    "step007\\run_synthesis.ps1": "a3ce4970d2604e15df36e71b164a5ce47727794586cf6984f2f579f9b788d93b"
+  },
+  "synthesis": {
+    "status": "PASS",
+    "tool": "Vivado 2025.1",
+    "part": "xc7a100tcsg324-1",
+    "clock_period_ns": 10.0,
+    "stage": "out_of_context_synthesis",
+    "configs": {
+      "block": {
+        "RAM_MODE": 0,
+        "Slice_LUTs": 1147,
+        "FF": 405,
+        "DSP": 2,
+        "RAMB_cells": 8,
+        "WNS_ns": 1.746,
+        "dot_core_instances": 1,
+        "quantizer_instances": 1
+      },
+      "hybrid": {
+        "RAM_MODE": 1,
+        "Slice_LUTs": 1263,
+        "FF": 437,
+        "DSP": 2,
+        "RAMB_cells": 4,
+        "WNS_ns": 1.746,
+        "dot_core_instances": 1,
+        "quantizer_instances": 1
+      },
+      "distributed": {
+        "RAM_MODE": 2,
+        "Slice_LUTs": 2256,
+        "FF": 497,
+        "DSP": 2,
+        "RAMB_cells": 0,
+        "WNS_ns": 1.746,
+        "dot_core_instances": 1,
+        "quantizer_instances": 1
+      }
+    },
+    "source_sha256": {
+      "step007\\sync_ram_style.v": "eb787372c3ee5859038b3722556e6721677af739735e4dccf6538bc673756b34",
+      "step007\\fc_shared.v": "09c7a48291d0cd27ba4b96bd3ea20a85f8405d6ffe1b6b9a25f4a71acda305f3",
+      "step007\\mlp2_top.v": "dfe2b4e4ba40cadd147aedeb86269a866715578494c7bf0dcbf2a18b50c40fe3",
+      "step007\\synthesize.tcl": "dd1ff3b4a817358d43b484712b482e44324faafa1a80173473cd8eaef66a4193",
+      "step004\\dot_banked_core.v": "470843df4376d547189f1d5d2d720c67673bd0dd1c81c4d85c3d34ae4872fa69",
+      "optimization\\step006_pipelined\\requant_i8.v": "9353eac5f84d7ccdbaf5496aed467bbd039086d2252c8300db833a2ae8eaae59",
+      "step007\\run_synthesis.ps1": "a3ce4970d2604e15df36e71b164a5ce47727794586cf6984f2f579f9b788d93b"
+    }
+  },
+  "dual_baseline": {
+    "Slice_LUTs": 2203,
+    "FF": 727,
+    "DSP": 4,
+    "RAMB_cells": 16,
+    "WNS_ns": 1.759
+  },
+  "scope": "same frozen model and host commands; clock-only post-synthesis estimates, no board/DRAM/energy claim"
+}

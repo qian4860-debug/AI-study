@@ -1,0 +1,33 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Oct 19 01:24:22 2026
+| Host         : LAPTOP-3SL35HPD running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file ../hierarchy_block.rpt
+| Design       : mlp2_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------+-----------------+------------+------------+---------+------+-----+--------+--------+------------+
+|   Instance   |      Module     | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------+-----------------+------------+------------+---------+------+-----+--------+--------+------------+
+| mlp2_top     |           (top) |       1147 |       1123 |      24 |    0 | 405 |      0 |      8 |          2 |
+|   (mlp2_top) |           (top) |          5 |          5 |       0 |    0 |  74 |      0 |      0 |          0 |
+|   engine     |       fc_shared |        593 |        569 |      24 |    0 | 271 |      0 |      8 |          0 |
+|     (engine) |       fc_shared |         94 |         70 |      24 |    0 |  58 |      0 |      0 |          0 |
+|     core     | dot_banked_core |        428 |        428 |       0 |    0 | 213 |      0 |      0 |          0 |
+|   quant      |      requant_i8 |        549 |        549 |       0 |    0 |  60 |      0 |      0 |          2 |
++--------------+-----------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

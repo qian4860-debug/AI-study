@@ -1,0 +1,38 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Oct 19 01:25:23 2026
+| Host         : LAPTOP-3SL35HPD running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file ../hierarchy_distributed.rpt
+| Design       : mlp2_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------+----------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|      Instance     |              Module              | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------+----------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| mlp2_top          |                            (top) |       2256 |       1368 |     888 |    0 | 497 |      0 |      0 |          2 |
+|   (mlp2_top)      |                            (top) |          5 |          5 |       0 |    0 |  74 |      0 |      0 |          0 |
+|   engine          |                        fc_shared |       1682 |        794 |     888 |    0 | 363 |      0 |      0 |          0 |
+|     (engine)      |                        fc_shared |        273 |        249 |      24 |    0 |  58 |      0 |      0 |          0 |
+|     bank[0].w_ram |   sync_ram_style__parameterized0 |        215 |         23 |     192 |    0 |   8 |      0 |      0 |          0 |
+|     bank[1].w_ram | sync_ram_style__parameterized0_0 |        219 |         27 |     192 |    0 |   8 |      0 |      0 |          0 |
+|     bank[1].x_ram |                 sync_ram_style_1 |         56 |         32 |      24 |    0 |   8 |      0 |      0 |          0 |
+|     bank[2].w_ram | sync_ram_style__parameterized0_2 |        214 |         22 |     192 |    0 |   8 |      0 |      0 |          0 |
+|     bank[3].w_ram | sync_ram_style__parameterized0_4 |        219 |         27 |     192 |    0 |   8 |      0 |      0 |          0 |
+|     core          |                  dot_banked_core |        457 |        457 |       0 |    0 | 241 |      0 |      0 |          0 |
+|   quant           |                       requant_i8 |        569 |        569 |       0 |    0 |  60 |      0 |      0 |          2 |
++-------------------+----------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+
