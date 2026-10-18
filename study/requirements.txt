@@ -1,0 +1,1 @@
+# No Python package dependencies. Python 3.9+ and an RTL simulator are required.
