@@ -14,7 +14,7 @@ vfastLog*
 work/
 coverage
 *.drawio
-test*
+# Tests and datasets are versioned; never ignore test*.
 input.txt
 xrun.*
 verdiLog
@@ -50,3 +50,14 @@ build_unc_backup/
 __pycache__/
 *.pyc
 *.py[cod]
+
+# Derived copies of local course/book content; keep provenance catalogs only.
+/study/step006/research/*
+!/study/step006/research/catalog.json
+!/study/step006/research/mit_catalog.json
+# Rebuildable simulator products. Frozen evidence under build/ is added explicitly.
+/study/**/xsim.dir/
+/study/**/*.wdb
+/study/**/*.pb
+/study/**/*.jou
+/study/**/*.str
