@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "sha256": {
+    "README.md": "82110a852199da9aef58585812aa84052987db004645de9a05cb5828b12e2a7b",
+    "resident_model.py": "bceec612f619661d63402f315d1bce3666f07a415dce98547394f74368ff3f53",
+    "results.json": "ce21da5b14c31e9971549f41f5366c7af6f1e36754fe330a0c55fbfa2239a6a1",
+    "verify_step008a.py": "6b967f8b48f45bb780275a4f1e384b4ad0ac4519c15ac95725bfed7f878be438",
+    "build\\case_catalog.json": "10166d991810910b2e7f89b8420ea93bf49eafcc75910eef5f5554d2102a59ad",
+    "build\\compile.log": "608b8445dcd5ea433de865238e6c26d4035637ad2e39bf11778eb482d9dfd144",
+    "build\\dfx_runtime.txt": "398361591b57b6e989320060693b33c7a147d7ab7114c847cf421c46acb8987e",
+    "build\\elaborate.log": "68461d92d174032ef8e12187749e2bf11fcdbb5986f57899ff73f3caec48fec3",
+    "build\\mlp_cases.txt": "a9b6f76cb019fafa5c4b18f9cb3523de99e3234ab878cb286b4973b0f1faae3f",
+    "build\\mlp_events.csv": "51e6999057d7a6afc32645dbd6d6401469dfb401461583f91d5baafa59da7941",
+    "build\\mlp_metrics.csv": "f0e57b22a675c8c408fe29e1de07d8b2b7b081ac5b440aa7b048a0109abfc6b9",
+    "build\\resident_metrics.csv": "e5dd53c3f4c056b7f5c01de2982eded8b524a777184faf9d1f0a4c1f91222810",
+    "build\\scenario_flags.txt": "aa703a12d9e016521176376a2b7ec0c677fba6e2af7748f6340846593ff1b441",
+    "build\\simulation.log": "1c0d3c54dff68e457caeb9fd5b81721999a8e1cf0a80f7dbc888510daddb89a5",
+    "build\\tb_resident.v": "5c51395120f1f912ba5c5c5a5ce7e1b1a8f4e9d1e41526ce3848e5d818904f53",
+    "build\\xelab.log": "68461d92d174032ef8e12187749e2bf11fcdbb5986f57899ff73f3caec48fec3",
+    "build\\xsim.log": "8c8daf35d416833e3f97b387da5955bb42e834c7d8dfcc2dfd60f3cc584deab9",
+    "build\\xvlog.log": "b5dc97127bc2943014edec39232a19ea4741f6274d4d5a581e79c52d12da299b"
+  }
+}
