@@ -1,0 +1,1 @@
+{"status":"PASS","tool":"Vivado 2025.1","part":"xc7a100tcsg324-1","top":"fc_int8_top","stage":"out_of_context_synthesis","clock_period_ns":10.0,"Slice_LUTs":566,"FF":362,"DSP":0,"RAMB_cells":8}
