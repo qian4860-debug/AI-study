@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "prerequisites": {
+    "step007": 61,
+    "step008a": 18,
+    "step008b": 86
+  },
+  "runs": {
+    "trained_auto": {
+      "status": "PASS",
+      "core": "step008b_k2o2",
+      "ram_mode": 1,
+      "deployment_id": "5bd3407ab9b31d5f5f6be617f8e5eccd39b9fa348c4390370d5dedf83806687a",
+      "shape": [
+        16,
+        8,
+        2
+      ],
+      "input_samples": 512,
+      "main_tasks": 519,
+      "compute_cycles": 79,
+      "cold_occupied": 250,
+      "warm_occupied": 96,
+      "warm_measured": 96,
+      "model_parameter_writes": 154,
+      "labelled_samples": 512,
+      "correct": 488,
+      "accuracy": 0.953125,
+      "summary": "PASS MLP completed=519 invalid=8 aborted=5 cache_resets=2 cycles=51828 supplemental=5",
+      "simulation_edges": 51828
+    },
+    "trained_baseline": {
+      "status": "PASS",
+      "core": "step007_k4o1",
+      "ram_mode": 1,
+      "deployment_id": "efac966d539c486be075039d95f0dd850a2bb45f9e276dd93a8d731baf3d8a78",
+      "shape": [
+        16,
+        8,
+        2
+      ],
+      "input_samples": 512,
+      "main_tasks": 519,
+      "compute_cycles": 104,
+      "cold_occupied": 275,
+      "warm_occupied": 121,
+      "warm_measured": 121,
+      "model_parameter_writes": 154,
+      "labelled_samples": 512,
+      "correct": 488,
+      "accuracy": 0.953125,
+      "summary": "PASS MLP completed=519 invalid=8 aborted=5 cache_resets=2 cycles=64982 supplemental=5",
+      "simulation_edges": 64982
+    },
+    "fallback_auto": {
+      "status": "PASS",
+      "core": "step007_k4o1",
+      "ram_mode": 1,
+      "deployment_id": "517340332b159349a297727e5cdcc10cba692b2e8a18c8561d1ac605482f5769",
+      "shape": [
+        255,
+        1,
+        1
+      ],
+      "input_samples": 16,
+      "main_tasks": 23,
+      "compute_cycles": 85,
+      "cold_occupied": 599,
+      "warm_occupied": 341,
+      "warm_measured": 341,
+      "model_parameter_writes": 258,
+      "labelled_samples": 0,
+      "correct": 0,
+      "accuracy": null,
+      "summary": "PASS MLP completed=23 invalid=8 aborted=5 cache_resets=2 cycles=9984 supplemental=5",
+      "simulation_edges": 9984
+    },
+    "odd_auto": {
+      "status": "PASS",
+      "core": "step008b_k2o2",
+      "ram_mode": 1,
+      "deployment_id": "07ba199cd22c3981abd2bed5c21cbccd7edbce8e80d2a66c73f88a43cda77cb4",
+      "shape": [
+        5,
+        3,
+        3
+      ],
+      "input_samples": 16,
+      "main_tasks": 23,
+      "compute_cycles": 44,
+      "cold_occupied": 80,
+      "warm_occupied": 50,
+      "warm_measured": 50,
+      "model_parameter_writes": 30,
+      "labelled_samples": 0,
+      "correct": 0,
+      "accuracy": null,
+      "summary": "PASS MLP completed=23 invalid=8 aborted=5 cache_resets=2 cycles=1733 supplemental=5",
+      "simulation_edges": 1733
+    }
+  },
+  "dependency_sha256": {
+    "optimization/step006_pipelined/requant_i8.v": "9353eac5f84d7ccdbaf5496aed467bbd039086d2252c8300db833a2ae8eaae59",
+    "step004/dot_banked_core.v": "470843df4376d547189f1d5d2d720c67673bd0dd1c81c4d85c3d34ae4872fa69",
+    "step006/reference.py": "72b0ab1ab7eeb79ba91e7be8970c3aefc4d19efdbab5ef4bd5e45edd8d8cd3b3",
+    "step006/test_dataset.json": "c95fe7ff5bf0b85a7e6924a13658c0f70f8f4b48d673d9f36cd73b03e71dc53a",
+    "step006/trained_model.json": "f1d20a18150e342e75f17b1cd4ef0135648f16de134aeea29f85a3bacabe2723",
+    "step007/fc_shared.v": "09c7a48291d0cd27ba4b96bd3ea20a85f8405d6ffe1b6b9a25f4a71acda305f3",
+    "step007/mlp2_top.v": "dfe2b4e4ba40cadd147aedeb86269a866715578494c7bf0dcbf2a18b50c40fe3",
+    "step007/sync_ram_style.v": "eb787372c3ee5859038b3722556e6721677af739735e4dccf6538bc673756b34",
+    "step007/tb_shared.v": "95094a8fa0826d2336f9eb0bcc8d9cb28192cfaabd554d14fbd704544f7b0517",
+    "step008a/resident_model.py": "bceec612f619661d63402f315d1bce3666f07a415dce98547394f74368ff3f53",
+    "step008a/verify_step008a.py": "6b967f8b48f45bb780275a4f1e384b4ad0ac4519c15ac95725bfed7f878be438",
+    "step008b/dot_tile_core.v": "3a1e2bd06c4cbf04ac2b35d47bf003f673587c2cbfa1c3957d2c3fe6818976a8",
+    "step008b/fc_shared.v": "7f681c73355247a2581da34b93c26e0d37e7ff6dea99608b850f09819f9aaba6",
+    "step008b/select_variant.py": "7c19c34e6b455902ad659b872938bd62a314dfee0a7fefbc8d90bb8bdf150c2d"
+  },
+  "implementation_sha256": {
+    "deployment.py": "fb9fa28bbd41afa46d7b68d2439b9396cedebb111a146bbfcd61f684b2680ba9",
+    "verify_step009.py": "317ff92e66ed2acf62a63fcb5693aa7c5fe9a9d734805b7dde7b0f22b1006386",
+    "test_deployment.py": "4b290ee2456840629b93c198edebe569cbc71ef096d054cb92840a9803eaf982",
+    "run_all.ps1": "9f5aa8665e1863ed72945c0271877d1b66db89c833cb0d497066a48a0fb2c6df",
+    "deployments/fallback_auto.json": "b644cf74cd9d64f3fddb02f883c506d4d2e250310d7117f72f002cc071e6b16d",
+    "deployments/odd_auto.json": "3c1882896c1fcb351fb72380af9a7a423e1f08fe7cd6fe0140897ae3e2df4045",
+    "deployments/trained_auto.json": "9967569df907f424dd512ca8bc8462c0bf1013562596f6de584144d5ae6d3b61",
+    "deployments/trained_baseline.json": "fe3e620eee1bf99bb96530a543f8b6a3b7b5941d05fc84f592892af63895c207",
+    "inputs/fallback.json": "df77c0feaafe79f1b9d193e8cf6b69c818f3eda712804b20238f2cac4018585d",
+    "inputs/odd.json": "2320d4ccec971dac33fd1d7312910596c15a7e8b4fde7bfe2216eb5ff65ece9d"
+  },
+  "scope": "Deployment-driven actual RTL simulation; fused two-FC, no board driver or FPGA runtime switching"
+}

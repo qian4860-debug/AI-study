@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "core": "step007_k4o1",
+  "ram_mode": 1,
+  "deployment_id": "efac966d539c486be075039d95f0dd850a2bb45f9e276dd93a8d731baf3d8a78",
+  "shape": [
+    16,
+    8,
+    2
+  ],
+  "input_samples": 512,
+  "main_tasks": 519,
+  "compute_cycles": 104,
+  "cold_occupied": 275,
+  "warm_occupied": 121,
+  "warm_measured": 121,
+  "model_parameter_writes": 154,
+  "labelled_samples": 512,
+  "correct": 488,
+  "accuracy": 0.953125,
+  "summary": "PASS MLP completed=519 invalid=8 aborted=5 cache_resets=2 cycles=64982 supplemental=5",
+  "simulation_edges": 64982
+}

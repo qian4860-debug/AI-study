@@ -1,0 +1,11 @@
+test_acknowledgement_and_recovery (__main__.DeploymentTests.test_acknowledgement_and_recovery) ... ok
+test_model_quantizer_build_changes_require_reload (__main__.DeploymentTests.test_model_quantizer_build_changes_require_reload) ... ok
+test_package_payload_and_build_tampering (__main__.DeploymentTests.test_package_payload_and_build_tampering) ... ok
+test_reject_unsupported_descriptors (__main__.DeploymentTests.test_reject_unsupported_descriptors) ... ok
+test_selection_and_determinism (__main__.DeploymentTests.test_selection_and_determinism) ... ok
+test_sparse_bank_image_matches_host_address_decoder (__main__.DeploymentTests.test_sparse_bank_image_matches_host_address_decoder) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.049s
+
+OK

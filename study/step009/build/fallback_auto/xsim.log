@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Mon Oct 19 12:12:19 2026
+# Process ID         : 23988
+# Current directory  : D:/学习资料/AI/NYCU-Lab3/study/step009/build/fallback_auto
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/deploy_sim/xsim_script.tcl}
+# Log file           : D:/学习资料/AI/NYCU-Lab3/study/step009/build/fallback_auto/xsim.log
+# Journal file       : D:/学习资料/AI/NYCU-Lab3/study/step009/build/fallback_auto\xsim.jou
+# Running On         : LAPTOP-3SL35HPD
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 25028 MB
+# Swap memory        : 13958 MB
+# Total Virtual      : 38986 MB
+# Available Virtual  : 10792 MB
+#-----------------------------------------------------------
+source xsim.dir/deploy_sim/xsim_script.tcl
+# xsim {deploy_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS MLP completed=23 invalid=8 aborted=5 cache_resets=2 cycles=9984 supplemental=5 cancelled_quant=2
+$finish called at time : 99840 ns : File "D:/学习资料/AI/NYCU-Lab3/study/step009/build/fallback_auto/tb_resident.v" Line 190
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Oct 19 12:12:21 2026...
