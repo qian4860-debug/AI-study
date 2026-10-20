@@ -1,0 +1,8 @@
+test_clipping_rounding_and_class_ties (__main__.HarTests.test_clipping_rounding_and_class_ties) ... ok
+test_subject_isolation (__main__.HarTests.test_subject_isolation) ... ok
+test_train_only_statistics (__main__.HarTests.test_train_only_statistics) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.211s
+
+OK

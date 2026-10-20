@@ -1,0 +1,168 @@
+{
+  "status": "PASS",
+  "dataset": "UCI HAR public course distribution; real IMU feature benchmark",
+  "test_count": 2947,
+  "train_count": 5619,
+  "validation_count": 1733,
+  "subject_splits": {
+    "train": [
+      1,
+      3,
+      6,
+      7,
+      8,
+      14,
+      15,
+      16,
+      17,
+      21,
+      22,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "validation": [
+      5,
+      11,
+      19,
+      23,
+      30
+    ],
+    "test": [
+      2,
+      4,
+      9,
+      10,
+      12,
+      13,
+      18,
+      20,
+      24
+    ]
+  },
+  "test_float_accuracy": 0.8177807940278249,
+  "test_int8_accuracy": 0.8174414658975229,
+  "test_rtl_accuracy": 0.8174414658975229,
+  "majority_class_baseline_accuracy": 0.18221920597217509,
+  "prediction_agreement": 0.9843909060061079,
+  "rtl_integer_logit_matches": 17682,
+  "confusion_matrix": [
+    [
+      411,
+      25,
+      60,
+      0,
+      0,
+      0
+    ],
+    [
+      90,
+      325,
+      56,
+      0,
+      0,
+      0
+    ],
+    [
+      36,
+      92,
+      292,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      416,
+      74,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      77,
+      455,
+      0
+    ],
+    [
+      0,
+      27,
+      0,
+      0,
+      0,
+      510
+    ]
+  ],
+  "hidden_saturations": 0,
+  "output_saturations": 0,
+  "input_clips": 133,
+  "deployment": {
+    "status": "PASS",
+    "core": "step008b_k2o2",
+    "ram_mode": 1,
+    "deployment_id": "b2d1dcb0229ea88e635c16fea156d2bb2386c7bf770fc5bc64beb9af41cc0c26",
+    "shape": [
+      18,
+      8,
+      6
+    ],
+    "input_samples": 2947,
+    "main_tasks": 2954,
+    "compute_cycles": 105,
+    "cold_occupied": 330,
+    "warm_occupied": 124,
+    "warm_measured": 124,
+    "model_parameter_writes": 206,
+    "labelled_samples": 0,
+    "correct": 0,
+    "accuracy": null,
+    "summary": "PASS MLP completed=2954 invalid=8 aborted=5 cache_resets=2 cycles=371138 supplemental=5",
+    "simulation_edges": 371138
+  },
+  "implementation_sha256": {
+    "prepare_data.py": "da43e0b991bcbebcfca6e7c18498e793e73f34634a977883cb48eee92d3b8a87",
+    "train_har.py": "bdbd22171f77d8b61918670e550be5d911a0b646d245682d4e5af54b2c105125",
+    "verify_har.py": "fc4331077509a84ca913bad343056c4942b834ea45e057da55624fc82b1bb6b3",
+    "test_har.py": "357b7162c679c13419dd37bf96d558f508fed14f4e8d57f4347299f4b811182d",
+    "run_all.ps1": "064dc29b0300b21acb3a1eab266c22ee33f3a1f6b3491f6a6f91eb9cf9a0d2f6",
+    "experiment.json": "ff8669e0ee28045f8d0d96de45cc6c69c5b8d5462a0d700cb3c140798d87231d"
+  },
+  "frozen_artifact_sha256": {
+    "data/provenance.json": "7e9cdb84d57e36d6aa70fc5029983260cce8d2eb49e1428b7db452ffcaff83c1",
+    "data/train.csv": "159dcea455bf36bfe63e2f91d308e59f8c3baa3890017b1a29d135c7c8742c79",
+    "data/test.csv": "e9746a98398d2d173b9e3b827088eb22f22dfabd8bfece0a163dd2e1e6ea3764",
+    "training_results.json": "b069504c5da9814ad4236ac310aa57f6299ef98273203014dd120babe401a5b4",
+    "preprocessing.json": "d3b2907ee4fddb9c0d6b75c7ecb8ee7def70ff323f2ee20a43b7b42fdc90c657",
+    "float_model.json": "3cf2f7961b8a3df2142a6fc434750f96e778ffc1d705e0ef4e5f26e9f253ad0d",
+    "trained_model.json": "d809008c578792450d061a30986952c895ac7a15a5bda0c01fa2cc9f9e6ff628",
+    "deployment.json": "9a27fbf8b75dcb742708fb9e37f735b79d98d807f59172de53525778d0800cd9",
+    "split_membership.json": "89583534803de28f0b436618f3a95384d54c42cd7f613c0d9535595b7d6e4ff7",
+    "rtl_inputs.json": "841c8b58982bb2b1938c3799876ff618c6e3202b5640070862ba6fe281d80f26",
+    "predictions.csv": "a30b40eea4577f365204d175f9a368b62c18f1277eebf10657b3e1b22fe775c1"
+  },
+  "dependency_sha256": {
+    "optimization/step006_pipelined/requant_i8.v": "9353eac5f84d7ccdbaf5496aed467bbd039086d2252c8300db833a2ae8eaae59",
+    "step004/dot_banked_core.v": "470843df4376d547189f1d5d2d720c67673bd0dd1c81c4d85c3d34ae4872fa69",
+    "step006/reference.py": "72b0ab1ab7eeb79ba91e7be8970c3aefc4d19efdbab5ef4bd5e45edd8d8cd3b3",
+    "step006/test_dataset.json": "c95fe7ff5bf0b85a7e6924a13658c0f70f8f4b48d673d9f36cd73b03e71dc53a",
+    "step006/trained_model.json": "f1d20a18150e342e75f17b1cd4ef0135648f16de134aeea29f85a3bacabe2723",
+    "step007/fc_shared.v": "09c7a48291d0cd27ba4b96bd3ea20a85f8405d6ffe1b6b9a25f4a71acda305f3",
+    "step007/mlp2_top.v": "dfe2b4e4ba40cadd147aedeb86269a866715578494c7bf0dcbf2a18b50c40fe3",
+    "step007/sync_ram_style.v": "eb787372c3ee5859038b3722556e6721677af739735e4dccf6538bc673756b34",
+    "step007/tb_shared.v": "95094a8fa0826d2336f9eb0bcc8d9cb28192cfaabd554d14fbd704544f7b0517",
+    "step008a/resident_model.py": "bceec612f619661d63402f315d1bce3666f07a415dce98547394f74368ff3f53",
+    "step008a/verify_step008a.py": "6b967f8b48f45bb780275a4f1e384b4ad0ac4519c15ac95725bfed7f878be438",
+    "step008b/dot_tile_core.v": "3a1e2bd06c4cbf04ac2b35d47bf003f673587c2cbfa1c3957d2c3fe6818976a8",
+    "step008b/fc_shared.v": "7f681c73355247a2581da34b93c26e0d37e7ff6dea99608b850f09819f9aaba6",
+    "step008b/select_variant.py": "7c19c34e6b455902ad659b872938bd62a314dfee0a7fefbc8d90bb8bdf150c2d",
+    "step009/deployment.py": "fb9fa28bbd41afa46d7b68d2439b9396cedebb111a146bbfcd61f684b2680ba9",
+    "step009/verify_step009.py": "317ff92e66ed2acf62a63fcb5693aa7c5fe9a9d734805b7dde7b0f22b1006386",
+    "step009/artifact_manifest.json": "3033967c18eae136b37020bee9ed397523cc13ba96f19001b96a78b17d08d992"
+  },
+  "scope": "Host preprocessing on supplied normalized features, real RTL FC/quantization. No raw feature extractor, gyro calibration or board timing."
+}

@@ -1,0 +1,24 @@
+{
+  "seed": 20261020,
+  "validation_subjects": [
+    5,
+    11,
+    19,
+    23,
+    30
+  ],
+  "epochs": 800,
+  "learning_rate": 0.01,
+  "l2": 0.0001,
+  "shape": [
+    18,
+    8,
+    6
+  ],
+  "float_selection": "validation accuracy then cross entropy",
+  "input_clip_abs": 3.96875,
+  "quality_gate": {
+    "minimum_int8_accuracy": 0.7,
+    "maximum_accuracy_loss": 0.05
+  }
+}
