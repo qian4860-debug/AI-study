@@ -24,7 +24,7 @@ git show tiny-int8-npu/study-step010:study/step010/README.md
 
 ## 后续开发
 
-在AI-study仓库中的`projects/tiny-int8-npu`内修改、验证，再从AI-study根目录提交；每个已完成逻辑步骤本地提交，里程碑使用`tiny-int8-npu/`前缀标签。推送/发布/合并遵循用户授权范围。此次授权包含本工程导入与对应版本上传，不作为以后所有变更自动发布的授权。
+在AI-study仓库中的`projects/tiny-int8-npu`内修改、验证，再从AI-study根目录提交。用户于2026-10-21明确授权后续版本也同步GitHub：每个已完成并验证的逻辑步骤建立本地提交后，常规推送`origin/main`并核对远程；重要里程碑使用`tiny-int8-npu/`前缀标签并一并同步。此范围内无需逐步再问是否推送。认证、网络或远程冲突导致同步失败时，保留本地提交并报告未同步状态；其他仓库、强制覆盖、Release发布或其他PR合并不在这项授权内。详见仓库根目录AGENTS.md。
 
 原目录只作为历史副本；若确需继续在那里开发，先明确同步方式，不直接把旧仓库根目录推到AI-study/main。
 
