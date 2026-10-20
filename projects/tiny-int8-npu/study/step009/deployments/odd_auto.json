@@ -1,0 +1,92 @@
+{
+  "schema": "nycu.deployment",
+  "version": 1,
+  "model": {
+    "version": 1,
+    "dtype": "int8",
+    "zero_point": 0,
+    "shape": [
+      5,
+      3,
+      3
+    ],
+    "layers": [
+      {
+        "weight": [
+          [
+            83,
+            86,
+            -26,
+            -42,
+            -39
+          ],
+          [
+            -7,
+            74,
+            -46,
+            17,
+            78
+          ],
+          [
+            98,
+            6,
+            76,
+            -109,
+            -36
+          ]
+        ],
+        "bias": [
+          -23,
+          17,
+          17
+        ],
+        "relu": true,
+        "multiplier": 65535,
+        "shift": 31
+      },
+      {
+        "weight": [
+          [
+            -70,
+            -55,
+            50
+          ],
+          [
+            88,
+            -126,
+            65
+          ],
+          [
+            -45,
+            3,
+            -59
+          ]
+        ],
+        "bias": [
+          2147483647,
+          -2147483648,
+          -2147483648
+        ],
+        "relu": false,
+        "multiplier": 3,
+        "shift": 7
+      }
+    ]
+  },
+  "arithmetic": {
+    "input_dtype": "int8",
+    "weight_dtype": "int8",
+    "bias_dtype": "int32",
+    "dot_bits": 24,
+    "pre_bits": 33,
+    "rounding": "nearest_even",
+    "saturation": "int8",
+    "zero_point": 0,
+    "quantization": "per_tensor"
+  },
+  "execution": {
+    "core": "auto",
+    "ram_mode": 1,
+    "fused": true
+  }
+}

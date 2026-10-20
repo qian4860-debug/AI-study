@@ -1,0 +1,7 @@
+{
+  "step008b/dot_tile_core.v": "3a1e2bd06c4cbf04ac2b35d47bf003f673587c2cbfa1c3957d2c3fe6818976a8",
+  "optimization/step006_pipelined/requant_i8.v": "9353eac5f84d7ccdbaf5496aed467bbd039086d2252c8300db833a2ae8eaae59",
+  "step007/sync_ram_style.v": "eb787372c3ee5859038b3722556e6721677af739735e4dccf6538bc673756b34",
+  "step008b/fc_shared.v": "7f681c73355247a2581da34b93c26e0d37e7ff6dea99608b850f09819f9aaba6",
+  "step007/mlp2_top.v": "dfe2b4e4ba40cadd147aedeb86269a866715578494c7bf0dcbf2a18b50c40fe3"
+}

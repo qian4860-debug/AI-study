@@ -1,0 +1,25 @@
+Vivado Simulator v2025.1.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/vivado/2025.1/Vivado/bin/unwrapped/win64.o/xelab.exe tb_dot_banked --timescale 1ns/1ps -s step004_snapshot 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.bank_ram(DEPTH=256,ADDR_BITS=8)
+Compiling module work.dot_banked_core(LANES=1)
+Compiling module work.dot_banked_top(LANES=1)
+Compiling module work.banked_checker(P=1)
+Compiling module work.bank_ram(DEPTH=128,ADDR_BITS=7)
+Compiling module work.dot_banked_core(LANES=2)
+Compiling module work.dot_banked_top(LANES=2)
+Compiling module work.banked_checker(P=2)
+Compiling module work.bank_ram
+Compiling module work.dot_banked_core_default
+Compiling module work.dot_banked_top_default
+Compiling module work.banked_checker_default
+Compiling module work.tb_dot_banked
+Built simulation snapshot step004_snapshot

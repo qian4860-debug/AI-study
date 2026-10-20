@@ -1,0 +1,40 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Oct 19 02:23:10 2026
+| Host         : LAPTOP-3SL35HPD running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file ../hierarchy_distributed.rpt
+| Design       : mlp2_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------+----------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|      Instance     |              Module              | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------+----------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| mlp2_top          |                            (top) |       2414 |       1502 |     912 |    0 | 562 |      0 |      0 |          2 |
+|   (mlp2_top)      |                            (top) |          5 |          5 |       0 |    0 |  74 |      0 |      0 |          0 |
+|   engine          |                        fc_shared |       1834 |        922 |     912 |    0 | 428 |      0 |      0 |          0 |
+|     (engine)      |                        fc_shared |        308 |        260 |      48 |    0 |  91 |      0 |      0 |          0 |
+|     bank[0].w_ram |   sync_ram_style__parameterized0 |        238 |         46 |     192 |    0 |   8 |      0 |      0 |          0 |
+|     bank[1].w_ram | sync_ram_style__parameterized0_0 |        263 |         71 |     192 |    0 |   8 |      0 |      0 |          0 |
+|     bank[1].x_ram |                 sync_ram_style_1 |         50 |         26 |      24 |    0 |   8 |      0 |      0 |          0 |
+|     bank[2].w_ram | sync_ram_style__parameterized0_2 |        245 |         53 |     192 |    0 |   8 |      0 |      0 |          0 |
+|     bank[2].x_ram |                 sync_ram_style_3 |         54 |         30 |      24 |    0 |   8 |      0 |      0 |          0 |
+|     bank[3].w_ram | sync_ram_style__parameterized0_4 |        244 |         52 |     192 |    0 |   8 |      0 |      0 |          0 |
+|     bank[3].x_ram |                 sync_ram_style_5 |         55 |         31 |      24 |    0 |   8 |      0 |      0 |          0 |
+|     core          |                    dot_tile_core |        331 |        331 |       0 |    0 | 273 |      0 |      0 |          0 |
+|   quant           |                       requant_i8 |        575 |        575 |       0 |    0 |  60 |      0 |      0 |          2 |
++-------------------+----------------------------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

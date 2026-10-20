@@ -1,0 +1,58 @@
+{
+  "library_root": "D:\\学习资料\\资料",
+  "read_only": true,
+  "no_reference_code_copied": true,
+  "licensing": "No explicit license files found in inspected LS7/LeNet trees. MIT text exists under HiPU/hpu_software; hardware license coverage not established.",
+  "sources": [
+    {
+      "id": "architecture_book",
+      "read_locations": "PDF128/131/133/135/246/247; printed112/115/117/119/230/231; sections5.1,5.2.1-3,8.2.1",
+      "method": "scanned PDF; rendered six complete pages and visually inspected",
+      "adoption": "matrix-loop mapping, reuse and banking concepts; no reproduced figures/text",
+      "path": "D:\\学习资料\\资料\\AI处理器硬件架构设计15590195 书签.pdf",
+      "sha256": "49330142aa70ca2228f79f049e616c890902dc97d85b7ca3c41fca98e2a4c6ab",
+      "size_bytes": 116455533
+    },
+    {
+      "id": "ls7_design",
+      "read_locations": "综述/模块结构图/处理流程/对外接口; OOXML paragraphs7/15/32/49 (not printed page numbers)",
+      "method": "read-only word/document.xml paragraphs including interface tables",
+      "adoption": "operator-control vs data path and optional direct forwarding; no code copied",
+      "path": "D:\\学习资料\\资料\\LS-7-NPU实战项目\\NPU设计文档.docx",
+      "sha256": "b630337973eb85c10e55cb14332b076b2aca224a82ba22c55dbe677c5a927c73",
+      "size_bytes": 159881
+    },
+    {
+      "id": "lenet_fc",
+      "read_locations": "lines1-14,31-111,119-140",
+      "method": "read-only source",
+      "adoption": "review wide FC/weight interface and fixed-address scheduling; not compatible as a drop-in core",
+      "path": "D:\\学习资料\\资料\\LeNet-5 CNN加速器源码及文档\\Conv_integration_0104\\ANNfull.v",
+      "sha256": "41f0258e18c68b62f2c7ce35038559304c8a39dca6d8ff18bb1535b34d1f77c9",
+      "size_bytes": 2740
+    },
+    {
+      "id": "lenet_top",
+      "read_locations": "lines3-4,35-43,53-67",
+      "method": "read-only source",
+      "adoption": "16-to-32 IEEE conversion and fixed-cycle phase control are differences to current contract",
+      "path": "D:\\学习资料\\资料\\LeNet-5 CNN加速器源码及文档\\Conv_integration_0104\\Lenet.v",
+      "sha256": "c14181252cc01b63c2c2cbc9e045ed1f1c31c1490391163d9d626534258ab2be",
+      "size_bytes": 1497
+    },
+    {
+      "id": "hipu_archive",
+      "read_locations": "members HiPU/README.md sections1/2.3/start3.1; HiPU/hpu_software/README.md; HiPU/hpu_software/LICENSE",
+      "method": "ZIP directory and three in-memory member reads only; no extraction or execution",
+      "adoption": "future system/quantization study; no design or performance result transplanted",
+      "path": "D:\\学习资料\\资料\\77830AI处理器：硬件架构设计资源\\AI处理器：硬件架构设计资源\\HiPU.zip",
+      "sha256": "bac3a6f58fb2afc27c563ded23da1b8ce62efc98cc073fda0d906e676963019d",
+      "size_bytes": 51492354,
+      "members_sha256": {
+        "HiPU/README.md": "a5ef8c937322abde1b10a512a6fa6dc9af762c280c64ca8b1057d028c3276315",
+        "HiPU/hpu_software/README.md": "18833fc8b97b750fad95d82f78f8231c63b76f715ac8163da2995f6bc0b3b5cb",
+        "HiPU/hpu_software/LICENSE": "91a9ce7fd724ddf8c4b88181249649cba5da40b96202d4feb370227a408c01cf"
+      }
+    }
+  ]
+}

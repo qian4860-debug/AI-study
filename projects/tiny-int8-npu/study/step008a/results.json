@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "main_tasks": 519,
+  "heldout_samples": 512,
+  "heldout_correct": 488,
+  "heldout_accuracy": 0.953125,
+  "warm_heldout_tasks": 511,
+  "policy_checks": 10,
+  "cache_reset_scenarios": 2,
+  "deep_reset_restart_scenarios": 5,
+  "cold_compute": 104,
+  "cold_occupied": 275,
+  "warm_compute": [
+    104
+  ],
+  "warm_occupied": [
+    121
+  ],
+  "model_reload_writes": 154,
+  "layout": "k4o1",
+  "summary": "PASS MLP completed=519 invalid=8 aborted=5 cache_resets=2 cycles=64982 supplemental=5 cancelled_quant=4",
+  "scope": "unchanged step007 RTL; host-side model residency and real simulator host handshakes",
+  "sha256": {
+    "step004\\dot_banked_core.v": "470843df4376d547189f1d5d2d720c67673bd0dd1c81c4d85c3d34ae4872fa69",
+    "optimization\\step006_pipelined\\requant_i8.v": "9353eac5f84d7ccdbaf5496aed467bbd039086d2252c8300db833a2ae8eaae59",
+    "step007\\sync_ram_style.v": "eb787372c3ee5859038b3722556e6721677af739735e4dccf6538bc673756b34",
+    "step007\\fc_shared.v": "09c7a48291d0cd27ba4b96bd3ea20a85f8405d6ffe1b6b9a25f4a71acda305f3",
+    "step007\\mlp2_top.v": "dfe2b4e4ba40cadd147aedeb86269a866715578494c7bf0dcbf2a18b50c40fe3",
+    "step008a\\resident_model.py": "bceec612f619661d63402f315d1bce3666f07a415dce98547394f74368ff3f53",
+    "step008a\\verify_step008a.py": "6b967f8b48f45bb780275a4f1e384b4ad0ac4519c15ac95725bfed7f878be438",
+    "step006\\reference.py": "72b0ab1ab7eeb79ba91e7be8970c3aefc4d19efdbab5ef4bd5e45edd8d8cd3b3",
+    "step006\\trained_model.json": "f1d20a18150e342e75f17b1cd4ef0135648f16de134aeea29f85a3bacabe2723",
+    "step006\\test_dataset.json": "c95fe7ff5bf0b85a7e6924a13658c0f70f8f4b48d673d9f36cd73b03e71dc53a"
+  }
+}

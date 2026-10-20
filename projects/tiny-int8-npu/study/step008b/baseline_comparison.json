@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "tasks": 975,
+  "unpaused_tasks": 908,
+  "faster": 854,
+  "slower": 53,
+  "same": 1,
+  "worst": {
+    "id": 877,
+    "K": 255,
+    "H": 1,
+    "O": 1,
+    "flow": 0,
+    "fused": 1,
+    "baseline_cycles": 85,
+    "tile_cycles": 149,
+    "no_stall_speedup": 0.5704697986577181,
+    "baseline_x_reads": 256,
+    "tile_x_reads": 256,
+    "w_reads": 256
+  },
+  "best": {
+    "id": 792,
+    "K": 5,
+    "H": 2,
+    "O": 8,
+    "flow": 0,
+    "fused": 1,
+    "baseline_cycles": 80,
+    "tile_cycles": 50,
+    "no_stall_speedup": 1.6,
+    "baseline_x_reads": 26,
+    "tile_x_reads": 13,
+    "w_reads": 26
+  },
+  "scope": "Both actual RTLs, identical cases; throughput ratios only for flow=0. Stalled cases have different global-cycle injection phases.",
+  "sha256": {
+    "step004\\dot_banked_core.v": "470843df4376d547189f1d5d2d720c67673bd0dd1c81c4d85c3d34ae4872fa69",
+    "optimization\\step006_pipelined\\requant_i8.v": "9353eac5f84d7ccdbaf5496aed467bbd039086d2252c8300db833a2ae8eaae59",
+    "step007\\sync_ram_style.v": "eb787372c3ee5859038b3722556e6721677af739735e4dccf6538bc673756b34",
+    "step007\\fc_shared.v": "09c7a48291d0cd27ba4b96bd3ea20a85f8405d6ffe1b6b9a25f4a71acda305f3",
+    "step007\\mlp2_top.v": "dfe2b4e4ba40cadd147aedeb86269a866715578494c7bf0dcbf2a18b50c40fe3",
+    "step007\\tb_shared.v": "95094a8fa0826d2336f9eb0bcc8d9cb28192cfaabd554d14fbd704544f7b0517",
+    "step008b\\verify_baseline_grid.py": "6a242b1c61b3522db2f0e4c288c2891180b54b4e1c3b2baaa694aec05b1a55e3",
+    "step008b\\verify_step008b.py": "c063bcec7367d98d622da4a6161a9bc0e622a8b0d341b75ba4a9a7b8e78ddd2a",
+    "step008b\\verification_results.json": "6cb9f52f8cb332f6a2127558ca269649e7a3e09c3b48b2511d1efe24df647c79",
+    "step008b\\cases.txt": "2fd00509a2976ae97d84fd891c18fa89c9a825de45e86fc1b1e07fc113d919a1",
+    "step008b\\build\\hybrid\\mlp_metrics.csv": "95d5d8c861ba9f1510dbf56498b82bb6e4b41833a6dfd614d59e663175aec49c",
+    "step008b\\build\\hybrid\\mlp_events.csv": "613a14ebd11f69cd955635f21a6ea36a5af39840df00623c0b37fcd7e4023a6d"
+  }
+}

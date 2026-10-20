@@ -1,0 +1,4 @@
+{"status":"PASS","tool":"Vivado 2025.1","part":"xc7a100tcsg324-1","clock_period_ns":10.0,"stage":"out_of_context_synthesis","configs":{
+"block":{"Slice_LUTs":2203,"FF":727,"DSP":4,"RAMB_cells":16,"WNS_ns":1.759}
+,"distributed":{"Slice_LUTs":3286,"FF":890,"DSP":4,"RAMB_cells":0,"WNS_ns":1.759}
+}}

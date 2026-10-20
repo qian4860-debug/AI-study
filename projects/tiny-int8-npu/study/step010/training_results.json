@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "numpy": "2.3.5",
+  "config": {
+    "seed": 20261020,
+    "validation_subjects": [
+      5,
+      11,
+      19,
+      23,
+      30
+    ],
+    "epochs": 800,
+    "learning_rate": 0.01,
+    "l2": 0.0001,
+    "shape": [
+      18,
+      8,
+      6
+    ],
+    "float_selection": "validation accuracy then cross entropy",
+    "input_clip_abs": 3.96875,
+    "quality_gate": {
+      "minimum_int8_accuracy": 0.7,
+      "maximum_accuracy_loss": 0.05
+    }
+  },
+  "train_count": 5619,
+  "validation_count": 1733,
+  "implementation_sha256": {
+    "train_har.py": "bdbd22171f77d8b61918670e550be5d911a0b646d245682d4e5af54b2c105125",
+    "prepare_data.py": "da43e0b991bcbebcfca6e7c18498e793e73f34634a977883cb48eee92d3b8a87"
+  },
+  "selected_epoch": 732,
+  "train": {
+    "float_accuracy": 0.9156433529097704,
+    "int8_accuracy": 0.9124399359316604
+  },
+  "validation": {
+    "float_accuracy": 0.8822850548182343,
+    "int8_accuracy": 0.875937680323139
+  },
+  "train_class_counts": [
+    935,
+    816,
+    738,
+    986,
+    1071,
+    1073
+  ],
+  "majority_class": 5,
+  "scales": {
+    "input": 0.03125,
+    "weight1": 0.03125,
+    "hidden": 0.125,
+    "weight2": 0.03125,
+    "output": 0.25
+  },
+  "fit_sha256": {
+    "data/train.csv": "159dcea455bf36bfe63e2f91d308e59f8c3baa3890017b1a29d135c7c8742c79",
+    "experiment.json": "ff8669e0ee28045f8d0d96de45cc6c69c5b8d5462a0d700cb3c140798d87231d"
+  },
+  "output_sha256": {
+    "preprocessing.json": "d3b2907ee4fddb9c0d6b75c7ecb8ee7def70ff323f2ee20a43b7b42fdc90c657",
+    "float_model.json": "3cf2f7961b8a3df2142a6fc434750f96e778ffc1d705e0ef4e5f26e9f253ad0d",
+    "trained_model.json": "d809008c578792450d061a30986952c895ac7a15a5bda0c01fa2cc9f9e6ff628",
+    "deployment.json": "9a27fbf8b75dcb742708fb9e37f735b79d98d807f59172de53525778d0800cd9",
+    "split_membership.json": "89583534803de28f0b436618f3a95384d54c42cd7f613c0d9535595b7d6e4ff7"
+  },
+  "scope": "No official test inputs or labels opened during fit/calibration; one fixed experiment"
+}

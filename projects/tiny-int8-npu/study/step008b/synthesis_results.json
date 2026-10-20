@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "tool": "Vivado 2025.1",
+  "part": "xc7a100tcsg324-1",
+  "clock_period_ns": 10.0,
+  "stage": "out_of_context_synthesis",
+  "configs": {
+    "block": {
+      "RAM_MODE": 0,
+      "Slice_LUTs": 1280,
+      "FF": 464,
+      "DSP": 2,
+      "RAMB_cells": 8,
+      "WNS_ns": 1.749,
+      "tile_core_instances": 1,
+      "quantizer_instances": 1
+    },
+    "hybrid": {
+      "RAM_MODE": 1,
+      "Slice_LUTs": 1395,
+      "FF": 496,
+      "DSP": 2,
+      "RAMB_cells": 4,
+      "WNS_ns": 1.749,
+      "tile_core_instances": 1,
+      "quantizer_instances": 1
+    },
+    "distributed": {
+      "RAM_MODE": 2,
+      "Slice_LUTs": 2414,
+      "FF": 562,
+      "DSP": 2,
+      "RAMB_cells": 0,
+      "WNS_ns": 1.749,
+      "tile_core_instances": 1,
+      "quantizer_instances": 1
+    }
+  },
+  "source_sha256": {
+    "step008b\\dot_tile_core.v": "3a1e2bd06c4cbf04ac2b35d47bf003f673587c2cbfa1c3957d2c3fe6818976a8",
+    "step008b\\fc_shared.v": "7f681c73355247a2581da34b93c26e0d37e7ff6dea99608b850f09819f9aaba6",
+    "step008b\\synthesize.tcl": "55a03a52e220277f63e5bba996b9262fc3ee6bcd571ee20e919717df695ccd04",
+    "optimization\\step006_pipelined\\requant_i8.v": "9353eac5f84d7ccdbaf5496aed467bbd039086d2252c8300db833a2ae8eaae59",
+    "step007\\sync_ram_style.v": "eb787372c3ee5859038b3722556e6721677af739735e4dccf6538bc673756b34",
+    "step007\\mlp2_top.v": "dfe2b4e4ba40cadd147aedeb86269a866715578494c7bf0dcbf2a18b50c40fe3",
+    "step008b\\run_synthesis.ps1": "4117a6795a662c5c013f04248cc5439f9bf472188f2720b5e114e8e9ab907831"
+  }
+}

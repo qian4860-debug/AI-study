@@ -1,0 +1,4 @@
+Fatal Startup Error: 
+Dynamic exception type: class std::runtime_error
+std::exception::what: System Error: File system inconsistency
+ERROR: MATLAB error Exit Status: 0x00000001

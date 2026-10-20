@@ -1,0 +1,36 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+| Date         : Mon Oct 19 02:22:39 2026
+| Host         : LAPTOP-3SL35HPD running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -file ../hierarchy_hybrid.rpt
+| Design       : mlp2_top
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++-------------------+------------------+------------+------------+---------+------+-----+--------+--------+------------+
+|      Instance     |      Module      | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | DSP Blocks |
++-------------------+------------------+------------+------------+---------+------+-----+--------+--------+------------+
+| mlp2_top          |            (top) |       1395 |       1251 |     144 |    0 | 496 |      0 |      4 |          2 |
+|   (mlp2_top)      |            (top) |          5 |          5 |       0 |    0 |  74 |      0 |      0 |          0 |
+|   engine          |        fc_shared |        817 |        673 |     144 |    0 | 362 |      0 |      4 |          0 |
+|     (engine)      |        fc_shared |        129 |         81 |      48 |    0 |  91 |      0 |      0 |          0 |
+|     bank[1].x_ram | sync_ram_style_1 |         64 |         40 |      24 |    0 |   8 |      0 |      0 |          0 |
+|     bank[2].x_ram | sync_ram_style_3 |         54 |         30 |      24 |    0 |   8 |      0 |      0 |          0 |
+|     bank[3].x_ram | sync_ram_style_5 |         59 |         35 |      24 |    0 |   8 |      0 |      0 |          0 |
+|     core          |    dot_tile_core |        292 |        292 |       0 |    0 | 239 |      0 |      0 |          0 |
+|   quant           |       requant_i8 |        573 |        573 |       0 |    0 |  60 |      0 |      0 |          2 |
++-------------------+------------------+------------+------------+---------+------+-----+--------+--------+------------+
+
+

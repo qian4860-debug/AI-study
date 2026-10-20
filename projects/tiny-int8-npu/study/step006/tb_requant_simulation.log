@@ -1,0 +1,17 @@
+
+****** xsim v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Sun Oct 18 15:47:58 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/tb_requant_snapshot/xsim_script.tcl
+# xsim {tb_requant_snapshot} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS QUANT cycles=25516
+$finish called at time : 255166 ns : File "C:/Users/11725/Desktop/ѧϰ����/AI/NYCU-Lab3/study/step006/tb_requant.v" Line 23
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 18 15:47:59 2026...

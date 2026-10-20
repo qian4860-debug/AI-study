@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# xsim v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Oct 18 15:43:14 2026
+# Process ID         : 34616
+# Current directory  : C:/Users/11725/Desktop/学习资料/AI/NYCU-Lab3/study/optimization/step004/build
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/ram_variant/xsim_script.tcl}
+# Log file           : C:/Users/11725/Desktop/学习资料/AI/NYCU-Lab3/study/optimization/step004/build/xsim.log
+# Journal file       : C:/Users/11725/Desktop/学习资料/AI/NYCU-Lab3/study/optimization/step004/build\xsim.jou
+# Running On         : LAPTOP-3SL35HPD
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 25028 MB
+# Swap memory        : 16178 MB
+# Total Virtual      : 41206 MB
+# Available Virtual  : 1323 MB
+#-----------------------------------------------------------
+source xsim.dir/ram_variant/xsim_script.tcl
+# xsim {ram_variant} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS STEP004 P=4 cycles=28066 starts=178 completed=173 invalid=256 aborted=5 reads=5331 elements=21063 macs=21043 host_writes=21278
+PASS STEP004 P=2 cycles=33422 starts=178 completed=173 invalid=256 aborted=5 reads=10577 elements=21051 macs=21041 host_writes=21278
+PASS STEP004 P=1 cycles=44024 starts=178 completed=173 invalid=256 aborted=5 reads=21045 elements=21045 macs=21040 host_writes=21278
+PASS ALL_CONFIGS
+$finish called at time : 440246 ns : File "C:/Users/11725/Desktop/学习资料/AI/NYCU-Lab3/study/optimization/step004/tb_dot_banked.v" Line 119
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 18 15:43:18 2026...

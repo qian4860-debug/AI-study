@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "dataset": "synthetic uniform16 nonlinear binary; not sensor data",
+  "seed": 20261018,
+  "numpy": "2.3.5",
+  "train": 1024,
+  "validation": 256,
+  "test": 512,
+  "epochs": 500,
+  "selected_epoch": 480,
+  "validation_float_accuracy": 0.98046875,
+  "test_float_accuracy": 0.953125,
+  "test_int8_accuracy": 0.953125,
+  "test_prediction_agreement": 0.99609375,
+  "scales": {
+    "input": 0.015625,
+    "weight1": 0.03125,
+    "hidden": 0.125,
+    "weight2": 0.03125,
+    "output": 0.5
+  },
+  "saturation_hidden": 0,
+  "saturation_output": 0,
+  "calibration": "training split only; model selected by validation; test evaluated after frozen selection",
+  "split_sha256": {
+    "train": "2862abeb23849069af667156b2df700e726afc4de2a81be743f98483d633be47",
+    "validation": "ef701ae89e297dde978db88709a6d136779bee8776412bb5b20ecfb42197ca45",
+    "test": "2ed24db445a95bb4d821ff272687bed5c5fb4b7850add217a1046a227620d5d3"
+  }
+}

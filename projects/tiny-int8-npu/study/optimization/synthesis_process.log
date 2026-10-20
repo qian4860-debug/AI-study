@@ -1,0 +1,1925 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Oct 18 15:40:40 2026
+# Process ID         : 8780
+# Current directory  : C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/build
+# Command line       : vivado.exe -mode batch -source ../synthesize.tcl -notrace
+# Log file           : C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/build/vivado.log
+# Journal file       : C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/build\vivado.jou
+# Running On         : LAPTOP-3SL35HPD
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 25028 MB
+# Swap memory        : 15097 MB
+# Total Virtual      : 40125 MB
+# Available Virtual  : 2443 MB
+#-----------------------------------------------------------
+source ../synthesize.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 492.461 ; gain = 209.559
+Command: synth_design -top dot_mem_top -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24856
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 998.734 ; gain = 503.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dot_mem_top' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step003/dot_mem_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sync_byte_ram' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step003/sync_byte_ram.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'sync_byte_ram' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step003/sync_byte_ram.v:3]
+INFO: [Synth 8-6157] synthesizing module 'dot_serial_mem' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step003/dot_serial_mem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'dot_serial_mem' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step003/dot_serial_mem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'dot_mem_top' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step003/dot_mem_top.v:3]
+WARNING: [Synth 8-6014] Unused sequential element retired_count_reg was removed.  [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step003/dot_serial_mem.v:36]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1106.219 ; gain = 610.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1106.219 ; gain = 610.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1106.219 ; gain = 610.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1106.219 ; gain = 610.773
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1316.215 ; gain = 820.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+---------------+----------------+----------------------+--------------+
+|Module Name | RTL Object    | Inference      | Size (Depth x Width) | Primitives   | 
++------------+---------------+----------------+----------------------+--------------+
+|dot_mem_top | w_ram/mem_reg | User Attribute | 256 x 8              | RAM64M x 12  | 
+|dot_mem_top | x_ram/mem_reg | User Attribute | 256 x 8              | RAM64M x 12  | 
++------------+---------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1316.215 ; gain = 820.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+---------------+----------------+----------------------+--------------+
+|Module Name | RTL Object    | Inference      | Size (Depth x Width) | Primitives   | 
++------------+---------------+----------------+----------------------+--------------+
+|dot_mem_top | w_ram/mem_reg | User Attribute | 256 x 8              | RAM64M x 12  | 
+|dot_mem_top | x_ram/mem_reg | User Attribute | 256 x 8              | RAM64M x 12  | 
++------------+---------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1316.215 ; gain = 820.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1531.582 ; gain = 1036.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1531.582 ; gain = 1036.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1531.582 ; gain = 1036.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1531.582 ; gain = 1036.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1531.582 ; gain = 1036.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1531.582 ; gain = 1036.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    27|
+|2     |LUT1   |     3|
+|3     |LUT2   |    81|
+|4     |LUT3   |    35|
+|5     |LUT4   |    39|
+|6     |LUT5   |     7|
+|7     |LUT6   |    53|
+|8     |RAM64M |    24|
+|9     |FDRE   |   105|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+----------------+------+
+|      |Instance |Module          |Cells |
++------+---------+----------------+------+
+|1     |top      |                |   374|
+|2     |  core   |dot_serial_mem  |   285|
+|3     |  w_ram  |sync_byte_ram   |    50|
+|4     |  x_ram  |sync_byte_ram_0 |    39|
++------+---------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1531.582 ; gain = 1036.137
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1531.582 ; gain = 1036.137
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1531.582 ; gain = 1036.137
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1547.641 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1637.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 24 instances
+
+Synth Design complete | Checksum: 6c1506c2
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1637.746 ; gain = 1145.285
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1957.398 ; gain = 319.652
+PASS MEMORY_SYNTH s003 LUT=256 FF=105 DSP=0 RAM=0 WNS=4.643
+Command: synth_design -top dot_banked_top -generic LANES=1 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dot_banked_top' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_top.v:1]
+	Parameter LANES bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bank_ram' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/bank_ram.v:1]
+	Parameter DEPTH bound to: 256 - type: integer 
+	Parameter ADDR_BITS bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bank_ram' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/bank_ram.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dot_banked_core' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_core.v:3]
+	Parameter LANES bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dot_banked_core' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_core.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'dot_banked_top' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_top.v:1]
+WARNING: [Synth 8-6014] Unused sequential element retired_groups_reg was removed.  [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_core.v:67]
+WARNING: [Synth 8-6014] Unused sequential element retired_elements_reg was removed.  [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_core.v:67]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------+-----------------------+----------------+----------------------+--------------+
+|Module Name    | RTL Object            | Inference      | Size (Depth x Width) | Primitives   | 
++---------------+-----------------------+----------------+----------------------+--------------+
+|dot_banked_top | bank[0].w_ram/mem_reg | User Attribute | 256 x 8              | RAM64M x 12  | 
+|dot_banked_top | bank[0].x_ram/mem_reg | User Attribute | 256 x 8              | RAM64M x 12  | 
++---------------+-----------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++---------------+-----------------------+----------------+----------------------+--------------+
+|Module Name    | RTL Object            | Inference      | Size (Depth x Width) | Primitives   | 
++---------------+-----------------------+----------------+----------------------+--------------+
+|dot_banked_top | bank[0].w_ram/mem_reg | User Attribute | 256 x 8              | RAM64M x 12  | 
+|dot_banked_top | bank[0].x_ram/mem_reg | User Attribute | 256 x 8              | RAM64M x 12  | 
++---------------+-----------------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    22|
+|2     |LUT1   |     2|
+|3     |LUT2   |    56|
+|4     |LUT3   |    10|
+|5     |LUT4   |    43|
+|6     |LUT5   |    12|
+|7     |LUT6   |    53|
+|8     |RAM64M |    24|
+|9     |FDRE   |   106|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1961.547 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1961.547 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1961.547 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1961.547 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1961.547 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 24 instances
+
+Synth Design complete | Checksum: 2d58e2c8
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1961.547 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1977.078 ; gain = 15.531
+PASS MEMORY_SYNTH s004p1 LUT=233 FF=106 DSP=0 RAM=0 WNS=4.446
+Command: synth_design -top dot_banked_top -generic LANES=2 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dot_banked_top' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_top.v:1]
+	Parameter LANES bound to: 2 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bank_ram' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/bank_ram.v:1]
+	Parameter DEPTH bound to: 128 - type: integer 
+	Parameter ADDR_BITS bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bank_ram' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/bank_ram.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dot_banked_core' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_core.v:3]
+	Parameter LANES bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dot_banked_core' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_core.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'dot_banked_top' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_top.v:1]
+WARNING: [Synth 8-6014] Unused sequential element retired_groups_reg was removed.  [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_core.v:67]
+WARNING: [Synth 8-6014] Unused sequential element retired_elements_reg was removed.  [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_core.v:67]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------+-----------------------+----------------+----------------------+-------------+
+|Module Name    | RTL Object            | Inference      | Size (Depth x Width) | Primitives  | 
++---------------+-----------------------+----------------+----------------------+-------------+
+|dot_banked_top | bank[0].w_ram/mem_reg | User Attribute | 128 x 8              | RAM64M x 6  | 
+|dot_banked_top | bank[0].x_ram/mem_reg | User Attribute | 128 x 8              | RAM64M x 6  | 
+|dot_banked_top | bank[1].w_ram/mem_reg | User Attribute | 128 x 8              | RAM64M x 6  | 
+|dot_banked_top | bank[1].x_ram/mem_reg | User Attribute | 128 x 8              | RAM64M x 6  | 
++---------------+-----------------------+----------------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++---------------+-----------------------+----------------+----------------------+-------------+
+|Module Name    | RTL Object            | Inference      | Size (Depth x Width) | Primitives  | 
++---------------+-----------------------+----------------+----------------------+-------------+
+|dot_banked_top | bank[0].w_ram/mem_reg | User Attribute | 128 x 8              | RAM64M x 6  | 
+|dot_banked_top | bank[0].x_ram/mem_reg | User Attribute | 128 x 8              | RAM64M x 6  | 
+|dot_banked_top | bank[1].w_ram/mem_reg | User Attribute | 128 x 8              | RAM64M x 6  | 
+|dot_banked_top | bank[1].x_ram/mem_reg | User Attribute | 128 x 8              | RAM64M x 6  | 
++---------------+-----------------------+----------------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    49|
+|2     |LUT1   |     2|
+|3     |LUT2   |   137|
+|4     |LUT3   |    54|
+|5     |LUT4   |    70|
+|6     |LUT5   |    24|
+|7     |LUT6   |    57|
+|8     |RAM64M |    24|
+|9     |FDRE   |   163|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1977.078 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1977.078 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1977.078 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1977.078 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1977.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 24 instances
+
+Synth Design complete | Checksum: 15a7f1b3
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1977.078 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1992.332 ; gain = 15.254
+PASS MEMORY_SYNTH s004p2 LUT=347 FF=163 DSP=0 RAM=0 WNS=4.446
+Command: synth_design -top dot_banked_top -generic LANES=4 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'dot_banked_top' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_top.v:1]
+	Parameter LANES bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'bank_ram' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/bank_ram.v:1]
+	Parameter DEPTH bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bank_ram' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/bank_ram.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dot_banked_core' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_core.v:3]
+	Parameter LANES bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dot_banked_core' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_core.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'dot_banked_top' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_top.v:1]
+WARNING: [Synth 8-6014] Unused sequential element retired_groups_reg was removed.  [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_core.v:67]
+WARNING: [Synth 8-6014] Unused sequential element retired_elements_reg was removed.  [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step004/dot_banked_core.v:67]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   11 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 4     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------+-----------------------+----------------+----------------------+-------------+
+|Module Name    | RTL Object            | Inference      | Size (Depth x Width) | Primitives  | 
++---------------+-----------------------+----------------+----------------------+-------------+
+|dot_banked_top | bank[1].w_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
+|dot_banked_top | bank[1].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
+|dot_banked_top | bank[0].w_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
+|dot_banked_top | bank[0].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
+|dot_banked_top | bank[2].w_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
+|dot_banked_top | bank[2].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
+|dot_banked_top | bank[3].w_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
+|dot_banked_top | bank[3].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
++---------------+-----------------------+----------------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++---------------+-----------------------+----------------+----------------------+-------------+
+|Module Name    | RTL Object            | Inference      | Size (Depth x Width) | Primitives  | 
++---------------+-----------------------+----------------+----------------------+-------------+
+|dot_banked_top | bank[1].w_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
+|dot_banked_top | bank[1].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
+|dot_banked_top | bank[0].w_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
+|dot_banked_top | bank[0].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
+|dot_banked_top | bank[2].w_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
+|dot_banked_top | bank[2].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
+|dot_banked_top | bank[3].w_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
+|dot_banked_top | bank[3].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3  | 
++---------------+-----------------------+----------------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    94|
+|2     |LUT1   |     6|
+|3     |LUT2   |   249|
+|4     |LUT3   |    52|
+|5     |LUT4   |   143|
+|6     |LUT5   |    33|
+|7     |LUT6   |   113|
+|8     |RAM64M |    24|
+|9     |FDRE   |   278|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1992.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1992.332 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1992.332 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1992.332 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 118 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1992.332 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 24 instances
+
+Synth Design complete | Checksum: 6814f8d9
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1992.332 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2004.922 ; gain = 12.590
+PASS MEMORY_SYNTH s004p4 LUT=545 FF=278 DSP=0 RAM=0 WNS=4.446
+Command: synth_design -top fc_int8_top -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fc_int8_top' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/fc_int8_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bank_ram' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/bank_ram.v:1]
+	Parameter DEPTH bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bank_ram' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/bank_ram.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bank_ram__parameterized0' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/bank_ram.v:1]
+	Parameter DEPTH bound to: 512 - type: integer 
+	Parameter ADDR_BITS bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bank_ram__parameterized0' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/bank_ram.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dot_banked_core' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/dot_banked_core.v:3]
+	Parameter LANES bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dot_banked_core' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/dot_banked_core.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/fc_int8_top.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'fc_int8_top' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/fc_int8_top.v:3]
+WARNING: [Synth 8-6014] Unused sequential element retired_groups_reg was removed.  [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/dot_banked_core.v:67]
+WARNING: [Synth 8-6014] Unused sequential element retired_elements_reg was removed.  [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/dot_banked_core.v:67]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fc_int8_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                  LAUNCH |                               01 |                               01
+                WAIT_DOT |                               10 |                               10
+                    EMIT |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fc_int8_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   33 Bit       Adders := 1     
+	   3 Input   11 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 5     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---RAMs : 
+	              256 Bit	(8 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   33 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-----------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object            | Inference      | Size (Depth x Width) | Primitives   | 
++------------+-----------------------+----------------+----------------------+--------------+
+|fc_int8_top | biases_reg            | Implied        | 8 x 32               | RAM32M x 6   | 
+|fc_int8_top | bank[1].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top | bank[1].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top | bank[0].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top | bank[0].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top | bank[2].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top | bank[2].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top | bank[3].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top | bank[3].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
++------------+-----------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-----------------------+----------------+----------------------+--------------+
+|Module Name | RTL Object            | Inference      | Size (Depth x Width) | Primitives   | 
++------------+-----------------------+----------------+----------------------+--------------+
+|fc_int8_top | biases_reg            | Implied        | 8 x 32               | RAM32M x 6   | 
+|fc_int8_top | bank[1].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top | bank[1].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top | bank[0].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top | bank[0].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top | bank[2].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top | bank[2].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top | bank[3].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top | bank[3].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
++------------+-----------------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   112|
+|2     |LUT1     |    10|
+|3     |LUT2     |   283|
+|4     |LUT3     |    91|
+|5     |LUT4     |   184|
+|6     |LUT5     |    45|
+|7     |LUT6     |   220|
+|8     |MUXF7    |    32|
+|9     |RAM32M   |     5|
+|10    |RAM32X1D |     2|
+|11    |RAM64M   |   108|
+|12    |FDRE     |   441|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2004.922 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2004.922 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2004.922 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2004.922 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 259 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2004.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 115 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 5 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 108 instances
+
+Synth Design complete | Checksum: ea10ecab
+INFO: [Common 17-83] Releasing license: Synthesis
+95 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 2004.922 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2029.535 ; gain = 24.613
+PASS MEMORY_SYNTH s005 LUT=1109 FF=441 DSP=0 RAM=0 WNS=4.406
+Command: synth_design -top mlp2_top -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mlp2_top' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step006/mlp2_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fc_int8_top' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/fc_int8_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bank_ram' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/baseline/bank_ram.v:1]
+	Parameter DEPTH bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bank_ram' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/baseline/bank_ram.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bank_ram__parameterized0' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/baseline/bank_ram.v:1]
+	Parameter DEPTH bound to: 512 - type: integer 
+	Parameter ADDR_BITS bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bank_ram__parameterized0' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/baseline/bank_ram.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dot_banked_core' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/baseline/dot_banked_core.v:3]
+	Parameter LANES bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dot_banked_core' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/baseline/dot_banked_core.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/fc_int8_top.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'fc_int8_top' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/fc_int8_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'requant_i8' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step006/requant_i8.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'requant_i8' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step006/requant_i8.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mlp2_top' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step006/mlp2_top.v:3]
+WARNING: [Synth 8-6014] Unused sequential element retired_groups_reg was removed.  [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/baseline/dot_banked_core.v:67]
+WARNING: [Synth 8-6014] Unused sequential element retired_elements_reg was removed.  [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/baseline/dot_banked_core.v:67]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fc_int8_top'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mlp2_top'
+INFO: [Synth 8-7082] The signal mem_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                  LAUNCH |                               01 |                               01
+                WAIT_DOT |                               10 |                               10
+                    EMIT |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fc_int8_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+                  START1 |                           100000 |                              001
+                    RUN1 |                           010000 |                              010
+               WAIT_HOST |                           001000 |                              011
+                  START2 |                           000100 |                              100
+                    RUN2 |                           000010 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'mlp2_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   51 Bit       Adders := 2     
+	   2 Input   50 Bit       Adders := 6     
+	   2 Input   33 Bit       Adders := 2     
+	   3 Input   11 Bit       Adders := 6     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 10    
+	               16 Bit    Registers := 2     
+	                9 Bit    Registers := 7     
+	                8 Bit    Registers := 18    
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 37    
++---RAMs : 
+	               4K Bit	(512 X 8 bit)          RAMs := 8     
+	              512 Bit	(64 X 8 bit)          RAMs := 8     
+	              256 Bit	(8 X 32 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   51 Bit        Muxes := 2     
+	   2 Input   50 Bit        Muxes := 2     
+	   2 Input   33 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 6     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 22    
+	   4 Input    1 Bit        Muxes := 28    
+	   6 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP product, operation Mode is: A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+INFO: [Synth 8-7082] The signal bank[0].x_ram/mem_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal bank[1].x_ram/mem_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal bank[2].x_ram/mem_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-7082] The signal bank[3].x_ram/mem_reg is implemented as Block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (6 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+ Sort Area is  product_0 : 0 0 : 2549 4685 : Used 1 time 0
+ Sort Area is  product_0 : 0 1 : 2136 4685 : Used 1 time 0
+ Sort Area is  product_3 : 0 0 : 2549 4685 : Used 1 time 0
+ Sort Area is  product_3 : 0 1 : 2136 4685 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|fc_int8_top: | bank[0].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[0].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[1].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[1].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[2].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[2].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[3].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[3].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[0].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[0].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[1].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[1].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[2].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[2].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[3].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[3].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-------------+------------+-----------+----------------------+-------------+
+|Module Name  | RTL Object | Inference | Size (Depth x Width) | Primitives  | 
++-------------+------------+-----------+----------------------+-------------+
+|fc_int8_top: | biases_reg | Implied   | 8 x 32               | RAM32M x 6  | 
+|fc_int8_top: | biases_reg | Implied   | 8 x 32               | RAM32M x 6  | 
++-------------+------------+-----------+----------------------+-------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|requant_i8  | A*B            | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|requant_i8  | (PCIN>>17)+A*B | 17     | 16     | -      | -      | 33     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|requant_i8  | A*B            | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|requant_i8  | (PCIN>>17)+A*B | 17     | 16     | -      | -      | 33     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name  | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|fc_int8_top: | bank[0].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[0].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[1].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[1].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[2].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[2].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[3].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[3].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[0].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[0].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[1].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[1].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[2].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[2].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[3].x_ram/mem_reg | 64 x 8(READ_FIRST)     | W |   | 64 x 8(WRITE_FIRST)    |   | R | Port A and B     | 1      | 0      | 
+|fc_int8_top: | bank[3].w_ram/mem_reg | 512 x 8(READ_FIRST)    | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++-------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++-------------+------------+-----------+----------------------+-------------+
+|Module Name  | RTL Object | Inference | Size (Depth x Width) | Primitives  | 
++-------------+------------+-----------+----------------------+-------------+
+|fc_int8_top: | biases_reg | Implied   | 8 x 32               | RAM32M x 6  | 
+|fc_int8_top: | biases_reg | Implied   | 8 x 32               | RAM32M x 6  | 
++-------------+------------+-----------+----------------------+-------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance fc1/bank[0].x_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc1/bank[0].w_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc1/bank[1].x_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc1/bank[1].w_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc1/bank[2].x_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc1/bank[2].w_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc1/bank[3].x_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc1/bank[3].w_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc2/bank[0].x_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc2/bank[0].w_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc2/bank[1].x_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc2/bank[1].w_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc2/bank[2].x_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc2/bank[2].w_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc2/bank[3].x_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fc2/bank[3].w_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|requant_i8  | A'*B'          | 17     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|requant_i8  | PCIN>>17+A'*B' | 16     | 18     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|requant_i8  | A'*B'          | 17     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|requant_i8  | PCIN>>17+A'*B' | 16     | 18     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   367|
+|2     |DSP48E1  |     4|
+|3     |LUT1     |   225|
+|4     |LUT2     |   586|
+|5     |LUT3     |   281|
+|6     |LUT4     |   518|
+|7     |LUT5     |   372|
+|8     |LUT6     |   841|
+|9     |RAM32M   |    10|
+|10    |RAM32X1D |     4|
+|11    |RAMB18E1 |    16|
+|12    |FDRE     |   632|
+|13    |FDSE     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2029.535 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2029.535 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 2029.535 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 401 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2029.535 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete | Checksum: 917c3b04
+INFO: [Common 17-83] Releasing license: Synthesis
+145 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2029.535 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2029.535 ; gain = 0.000
+PASS MEMORY_SYNTH s006block LUT=2349 FF=633 DSP=4 RAM=16 WNS=-7.938
+Command: synth_design -top mlp2_top -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'mlp2_top' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step006/mlp2_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fc_int8_top' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/fc_int8_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bank_ram' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/bank_ram.v:1]
+	Parameter DEPTH bound to: 64 - type: integer 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bank_ram' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/bank_ram.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bank_ram__parameterized0' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/bank_ram.v:1]
+	Parameter DEPTH bound to: 512 - type: integer 
+	Parameter ADDR_BITS bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'bank_ram__parameterized0' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/bank_ram.v:1]
+INFO: [Synth 8-6157] synthesizing module 'dot_banked_core' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/dot_banked_core.v:3]
+	Parameter LANES bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dot_banked_core' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/dot_banked_core.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/fc_int8_top.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'fc_int8_top' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/fc_int8_top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'requant_i8' [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step006/requant_i8.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'requant_i8' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step006/requant_i8.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mlp2_top' (0#1) [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step006/mlp2_top.v:3]
+WARNING: [Synth 8-6014] Unused sequential element retired_groups_reg was removed.  [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/dot_banked_core.v:67]
+WARNING: [Synth 8-6014] Unused sequential element retired_elements_reg was removed.  [C:/Users/11725/AppData/Local/Temp/memory_optimization_86da5217f52c4625980cc8da8425a5a7/step005/dot_banked_core.v:67]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fc_int8_top'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'mlp2_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                  LAUNCH |                               01 |                               01
+                WAIT_DOT |                               10 |                               10
+                    EMIT |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'fc_int8_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+                  START1 |                           100000 |                              001
+                    RUN1 |                           010000 |                              010
+               WAIT_HOST |                           001000 |                              011
+                  START2 |                           000100 |                              100
+                    RUN2 |                           000010 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'mlp2_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   51 Bit       Adders := 2     
+	   2 Input   50 Bit       Adders := 6     
+	   2 Input   33 Bit       Adders := 2     
+	   3 Input   11 Bit       Adders := 6     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 4     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               33 Bit    Registers := 4     
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 10    
+	               16 Bit    Registers := 2     
+	                9 Bit    Registers := 7     
+	                8 Bit    Registers := 18    
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 37    
++---RAMs : 
+	              256 Bit	(8 X 32 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   51 Bit        Muxes := 2     
+	   2 Input   50 Bit        Muxes := 2     
+	   2 Input   33 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 6     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 22    
+	   4 Input    1 Bit        Muxes := 28    
+	   6 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP product, operation Mode is: A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: Generating DSP product, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator product is absorbed into DSP product.
+DSP Report: operator product is absorbed into DSP product.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+ Sort Area is  product_0 : 0 0 : 2549 4685 : Used 1 time 0
+ Sort Area is  product_0 : 0 1 : 2136 4685 : Used 1 time 0
+ Sort Area is  product_3 : 0 0 : 2549 4685 : Used 1 time 0
+ Sort Area is  product_3 : 0 1 : 2136 4685 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-------------+-----------------------+----------------+----------------------+--------------+
+|Module Name  | RTL Object            | Inference      | Size (Depth x Width) | Primitives   | 
++-------------+-----------------------+----------------+----------------------+--------------+
+|fc_int8_top: | biases_reg            | Implied        | 8 x 32               | RAM32M x 6   | 
+|fc_int8_top: | bank[1].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[1].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top: | bank[0].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[0].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top: | bank[2].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[2].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top: | bank[3].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[3].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top: | biases_reg            | Implied        | 8 x 32               | RAM32M x 6   | 
+|fc_int8_top: | bank[1].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[1].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top: | bank[0].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[0].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top: | bank[2].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[2].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top: | bank[3].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[3].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
++-------------+-----------------------+----------------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|requant_i8  | A*B            | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|requant_i8  | (PCIN>>17)+A*B | 17     | 16     | -      | -      | 33     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|requant_i8  | A*B            | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|requant_i8  | (PCIN>>17)+A*B | 17     | 16     | -      | -      | 33     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-------------+-----------------------+----------------+----------------------+--------------+
+|Module Name  | RTL Object            | Inference      | Size (Depth x Width) | Primitives   | 
++-------------+-----------------------+----------------+----------------------+--------------+
+|fc_int8_top: | biases_reg            | Implied        | 8 x 32               | RAM32M x 6   | 
+|fc_int8_top: | bank[1].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[1].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top: | bank[0].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[0].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top: | bank[2].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[2].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top: | bank[3].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[3].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top: | biases_reg            | Implied        | 8 x 32               | RAM32M x 6   | 
+|fc_int8_top: | bank[1].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[1].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top: | bank[0].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[0].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top: | bank[2].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[2].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
+|fc_int8_top: | bank[3].w_ram/mem_reg | User Attribute | 512 x 8              | RAM64M x 24  | 
+|fc_int8_top: | bank[3].x_ram/mem_reg | User Attribute | 64 x 8               | RAM64M x 3   | 
++-------------+-----------------------+----------------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|requant_i8  | A'*B'          | 17     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|requant_i8  | PCIN>>17+A'*B' | 16     | 18     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|requant_i8  | A'*B'          | 17     | 16     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|requant_i8  | PCIN>>17+A'*B' | 16     | 18     | -      | -      | 33     | 1    | 1    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   367|
+|2     |DSP48E1  |     4|
+|3     |LUT1     |   231|
+|4     |LUT2     |   590|
+|5     |LUT3     |   287|
+|6     |LUT4     |   523|
+|7     |LUT5     |   411|
+|8     |LUT6     |  1005|
+|9     |MUXF7    |    64|
+|10    |RAM32M   |    10|
+|11    |RAM32X1D |     4|
+|12    |RAM64M   |   216|
+|13    |FDRE     |   796|
+|14    |FDSE     |     1|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2029.535 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2029.535 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2029.535 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 2029.535 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 665 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2030.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 230 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 216 instances
+
+Synth Design complete | Checksum: 3acf0d04
+INFO: [Common 17-83] Releasing license: Synthesis
+174 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2030.949 ; gain = 1.414
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2030.949 ; gain = 0.000
+PASS MEMORY_SYNTH s006distributed LUT=3439 FF=797 DSP=4 RAM=0 WNS=-7.938
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 18 15:44:52 2026...

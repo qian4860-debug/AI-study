@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/11725/Desktop/ѧϰ����/AI/NYCU-Lab3/study/step003/dot_serial_mem.v" into library work
+INFO: [VRFC 10-311] analyzing module dot_serial_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/11725/Desktop/ѧϰ����/AI/NYCU-Lab3/study/step003/sync_byte_ram.v" into library work
+INFO: [VRFC 10-311] analyzing module sync_byte_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/11725/Desktop/ѧϰ����/AI/NYCU-Lab3/study/step003/dot_mem_top.v" into library work
+INFO: [VRFC 10-311] analyzing module dot_mem_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/11725/Desktop/ѧϰ����/AI/NYCU-Lab3/study/step003/tb_dot_mem.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_dot_mem

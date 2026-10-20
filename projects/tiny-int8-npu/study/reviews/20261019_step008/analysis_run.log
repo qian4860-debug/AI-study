@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "scope": "analytical exploration; no step008 RTL, synthesis, power or accuracy gain is claimed",
+  "prior_artifacts_verified": 61,
+  "layout_shapes_checked": 6144,
+  "weight_capacity_per_layout": 4096,
+  "prior_tasks_crosschecked": 632,
+  "trained_16_8_2_screen": [
+    {
+      "P_K": 4,
+      "P_O": 1,
+      "issue_groups": 36,
+      "x_read_bytes": 144,
+      "w_read_bytes": 144,
+      "operand_read_bytes": 288,
+      "MACs": 144,
+      "quant_values": 10,
+      "total_cycles": 104
+    },
+    {
+      "P_K": 2,
+      "P_O": 2,
+      "issue_groups": 36,
+      "x_read_bytes": 72,
+      "w_read_bytes": 144,
+      "operand_read_bytes": 216,
+      "MACs": 144,
+      "quant_values": 10,
+      "total_cycles": "NOT_IMPLEMENTED"
+    },
+    {
+      "P_K": 1,
+      "P_O": 4,
+      "issue_groups": 40,
+      "x_read_bytes": 40,
+      "w_read_bytes": 144,
+      "operand_read_bytes": 184,
+      "MACs": 144,
+      "quant_values": 10,
+      "total_cycles": "NOT_IMPLEMENTED"
+    }
+  ],
+  "hot_load_hypothesis": {
+    "measured_cold_edges": 275,
+    "derived_warm_edges": 121,
+    "parameter_writes_avoided": 154,
+    "derived_ratio": 2.272727272727273,
+    "requires": "dedicated retained-model RTL regression, model identity/change checks, reset/reload protocol",
+    "scope": "formula for existing interface with no stalls; not a newly measured warm-run result"
+  },
+  "source_sha256": {
+    "reviews\\20261019_step008\\analyze_dataflows.py": "eb65d70ffc35145332848efcc95bdd310715f7f2cf1ac6d1ce4ee8528471e809",
+    "step007\\metrics.csv": "52d13a0bf7b4b8f8bbff53148d6652a5d3eff83f2b36c0a25efc6ad54df6232d",
+    "step007\\artifact_manifest.json": "a5308b0293990accc7eeb38354c1410452c961fb4ce22c3f450e1f1c618bbac0",
+    "step007\\results.json": "759452d807f80b0f00fe50f11876e7a6bee7bb480bcf38e92ba17f506e121d97"
+  }
+}

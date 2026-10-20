@@ -1,0 +1,23 @@
+[
+  {
+    "path": "D:/学习资料/AI/数字陀螺ASIC与AI计算架构_教材源文与实验/IC_DSP_AI_Technical_Manual.md",
+    "sections": [
+      "1.1",
+      "1.2",
+      "16.1",
+      "16.2",
+      "16.3",
+      "16.4"
+    ],
+    "sha256": "e122d0d7ce8ba411aeaaf76de50cefd8609f075b6240453203668b7696c155de",
+    "access": "read only; selected sections"
+  },
+  {
+    "path": "D:/学习资料/资料/全角陀螺/全角陀螺从理论到产品与ASIC设计教材.md",
+    "sections": [
+      "7.3"
+    ],
+    "sha256": "a8196af51282c435595ed6df08771472f7be2295c053244ca6f1a3a13e5d0c10",
+    "access": "read only; selected sections"
+  }
+]

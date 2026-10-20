@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# xsim v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Oct 18 15:48:04 2026
+# Process ID         : 31524
+# Current directory  : C:/Users/11725/Desktop/学习资料/AI/NYCU-Lab3/study/step006/build
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/tb_mlp_snapshot/xsim_script.tcl}
+# Log file           : C:/Users/11725/Desktop/学习资料/AI/NYCU-Lab3/study/step006/build/xsim.log
+# Journal file       : C:/Users/11725/Desktop/学习资料/AI/NYCU-Lab3/study/step006/build\xsim.jou
+# Running On         : LAPTOP-3SL35HPD
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 25028 MB
+# Swap memory        : 16178 MB
+# Total Virtual      : 41206 MB
+# Available Virtual  : 3363 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_mlp_snapshot/xsim_script.tcl
+# xsim {tb_mlp_snapshot} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS MLP completed=624 invalid=8 aborted=125 cycles=181296
+$finish called at time : 1812960 ns : File "C:/Users/11725/Desktop/学习资料/AI/NYCU-Lab3/study/step006/tb_mlp.v" Line 112
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Oct 18 15:48:06 2026...

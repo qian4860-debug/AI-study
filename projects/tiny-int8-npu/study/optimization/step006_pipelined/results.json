@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "quant": {
+    "cycles": 28746,
+    "accepted": 15367,
+    "delivered": 15252,
+    "reset_discarded": 115,
+    "invalid": 3,
+    "resets": 40,
+    "conservation": "accepted=delivered+reset_discarded"
+  },
+  "networks": 624,
+  "intermediate_values": 6016,
+  "heldout_rtl_samples": 512,
+  "heldout_rtl_accuracy": 0.953125,
+  "mlp_summary": "PASS MLP completed=624 invalid=8 aborted=125 cycles=183812",
+  "stages": 3,
+  "numerical_equivalence": "all hidden/final/index events equal original step006; every pre value checked by unchanged TB",
+  "sha256": {
+    "step004\\dot_banked_core.v": "470843df4376d547189f1d5d2d720c67673bd0dd1c81c4d85c3d34ae4872fa69",
+    "step004\\bank_ram.v": "d6b5377ba8af8d53d34f0b755ad0f4affd8083cc1788ed4d199873044de74373",
+    "step005\\fc_int8_top.v": "01047f25749f0aeac16a13a12be4470e92dc535cc7e85469b6119b0f606e831f",
+    "optimization\\step006_pipelined\\requant_i8.v": "9353eac5f84d7ccdbaf5496aed467bbd039086d2252c8300db833a2ae8eaae59",
+    "optimization\\step006_pipelined\\mlp2_top.v": "29df291573148af491f7e828ef39f3eae889a7814fedb96f67da544d95678a84",
+    "step006\\tb_mlp.v": "d68779e08677dd08c3cc5db4a9e12d9fa7b599f48ae94d69cf3a52189f1eeda3",
+    "optimization\\step006_pipelined\\verify_pipeline.py": "cf28888c8b57ba16bca274ded87deea1202e9765ea166e5d86d54b05870ad7ae",
+    "optimization\\step006_pipelined\\tb_quant_pipeline.v": "c26c2f8c107d33519a58a24deabd7637442765085199ab8edeaec780842ef8f5",
+    "step006\\reference.py": "72b0ab1ab7eeb79ba91e7be8970c3aefc4d19efdbab5ef4bd5e45edd8d8cd3b3",
+    "step006\\verify_step006.py": "84889772db4c30d27cd90a54afe2593921a57df18d9bae20b1f07d12b4279585",
+    "step006\\results.json": "aa134e214a79f5469de2100cd13f760c7ac1f310947937969546eb36ade3fa73",
+    "step006\\build\\mlp_cases.txt": "322373fde11cb23a093c90f74a507d668dd89f9087cd96de44d93df6a582ff0f",
+    "step006\\build\\quant_matlab.csv": "2007e54b2f16a4720f69f9583c039f555d1abfc877b41e723b5b668253c00a9d"
+  }
+}

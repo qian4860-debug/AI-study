@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "seed": 20261018,
+  "prerequisite": "step005 PASS with matching source SHA256",
+  "ir_rejection_checks": 8,
+  "quant": {
+    "cycles": 25516,
+    "accepted": 15367,
+    "invalid": 3,
+    "ties": 572,
+    "saturated": 10269,
+    "resets": 26
+  },
+  "networks": 624,
+  "intermediate_values": 6016,
+  "heldout_rtl_samples": 512,
+  "heldout_rtl_accuracy": 0.953125,
+  "training": {
+    "status": "PASS",
+    "dataset": "synthetic uniform16 nonlinear binary; not sensor data",
+    "seed": 20261018,
+    "numpy": "2.3.5",
+    "train": 1024,
+    "validation": 256,
+    "test": 512,
+    "epochs": 500,
+    "selected_epoch": 480,
+    "validation_float_accuracy": 0.98046875,
+    "test_float_accuracy": 0.953125,
+    "test_int8_accuracy": 0.953125,
+    "test_prediction_agreement": 0.99609375,
+    "scales": {
+      "input": 0.015625,
+      "weight1": 0.03125,
+      "hidden": 0.125,
+      "weight2": 0.03125,
+      "output": 0.5
+    },
+    "saturation_hidden": 0,
+    "saturation_output": 0,
+    "calibration": "training split only; model selected by validation; test evaluated after frozen selection",
+    "split_sha256": {
+      "train": "2862abeb23849069af667156b2df700e726afc4de2a81be743f98483d633be47",
+      "validation": "ef701ae89e297dde978db88709a6d136779bee8776412bb5b20ecfb42197ca45",
+      "test": "2ed24db445a95bb4d821ff272687bed5c5fb4b7850add217a1046a227620d5d3"
+    }
+  },
+  "comparison_pairs": 48,
+  "mlp_summary": "PASS MLP completed=624 invalid=8 aborted=125 cycles=181296",
+  "simulator": "Vivado Simulator 2025.1",
+  "scope": "RTL simulation; no board, sensor or timing closure claim",
+  "matlab": {
+    "status": "PASS",
+    "version": "25.1.0.2943329 (R2025a)",
+    "quant_checks": 15367,
+    "input_sha256": "2007e54b2f16a4720f69f9583c039f555d1abfc877b41e723b5b668253c00a9d"
+  },
+  "sha256": {
+    "step004\\dot_banked_core.v": "470843df4376d547189f1d5d2d720c67673bd0dd1c81c4d85c3d34ae4872fa69",
+    "step004\\bank_ram.v": "d6b5377ba8af8d53d34f0b755ad0f4affd8083cc1788ed4d199873044de74373",
+    "step005\\fc_int8_top.v": "01047f25749f0aeac16a13a12be4470e92dc535cc7e85469b6119b0f606e831f",
+    "step006\\requant_i8.v": "1868ef889f08d881129d9f6152fe8f6e2ac3020efdd9876aa20c003ac9e0815b",
+    "step006\\mlp2_top.v": "03639d1f306aadda403f1cae69b7d62bffe030fdb3e56e19884d2ca9a4ab0530",
+    "step006\\tb_mlp.v": "d68779e08677dd08c3cc5db4a9e12d9fa7b599f48ae94d69cf3a52189f1eeda3",
+    "step006\\tb_requant.v": "da4831b7e75872e86748a3d9b3ff7b0c0c2c8ea8e734db0532f715153fe73e5f",
+    "step006\\reference.py": "72b0ab1ab7eeb79ba91e7be8970c3aefc4d19efdbab5ef4bd5e45edd8d8cd3b3",
+    "step006\\verify_step006.py": "84889772db4c30d27cd90a54afe2593921a57df18d9bae20b1f07d12b4279585",
+    "step006\\train_tiny.py": "af1679fcbd4a14080f52b426e16d51b4fa49b2acb074006933c37e2df62c05fc",
+    "step006\\trained_model.json": "f1d20a18150e342e75f17b1cd4ef0135648f16de134aeea29f85a3bacabe2723",
+    "step006\\test_dataset.json": "c95fe7ff5bf0b85a7e6924a13658c0f70f8f4b48d673d9f36cd73b03e71dc53a",
+    "step006\\training_results.json": "fad9c29b51d9d6d3d1475972fb621a6c80568c37754390dc185d81fd2c672f68",
+    "step006\\test_step006_reference.m": "b6d3b4b7752da9977f12684aacad30e00202f0150bd404c0c8d00b6d52fab370"
+  }
+}

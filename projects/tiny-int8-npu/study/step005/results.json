@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "seed": 20261018,
+  "matlab": {
+    "status": "PASS",
+    "version": "25.1.0.2943329 (R2025a)",
+    "layers": 128,
+    "outputs": 523,
+    "invalid_checks": 3
+  },
+  "synthesis": {
+    "status": "PASS",
+    "tool": "Vivado 2025.1",
+    "part": "xc7a100tcsg324-1",
+    "top": "fc_int8_top",
+    "stage": "out_of_context_synthesis",
+    "clock_period_ns": 10.0,
+    "Slice_LUTs": 566,
+    "FF": 362,
+    "DSP": 0,
+    "RAMB_cells": 8,
+    "timing_scope": "Post-synthesis clock-only 10 ns estimate; no I/O delays or clock location; no implementation closure"
+  },
+  "step004_prerequisite": "PASS; saved source hashes verified",
+  "simulator": "Vivado Simulator 2025.1",
+  "layers": 128,
+  "main_output_checks": 523,
+  "random_layers": 96,
+  "completed_layers": 135,
+  "legal_starts": 142,
+  "aborted_layers": 7,
+  "illegal_starts": 265,
+  "outputs": 545,
+  "cycles_checked": 39311,
+  "trace_fields": 44,
+  "host_writes": 29509,
+  "read_groups": 5470,
+  "read_pairs": 20998,
+  "output_stall_cycles": 165,
+  "sha256": {
+    "step005\\fc_int8_top.v": "01047f25749f0aeac16a13a12be4470e92dc535cc7e85469b6119b0f606e831f",
+    "step005\\tb_fc_int8.v": "1926dfb9ffef00282aab9f93304783e970d6462570fddab9805ab17444374e0d",
+    "step005\\verify_step005.py": "41ff5660b5c013647818aa41ba192121bd4152926b82495a2dfc2208e170d568",
+    "step005\\fc_int8_reference.m": "d0ce26a63b5877978a304e76ea6f987a7ddd8951ad29b137c9886f70fcb70236",
+    "step005\\test_step005_reference.m": "65284c248c02dbff533bbc089a91f19b6556bcc8b45fc1e64fa8aea2d8e73887",
+    "step005\\synthesize.tcl": "52a7816d7a8bb2c371583f39711676fe2e0197f4ed72e0b5a316c3cab8c21df1",
+    "step005\\run_synthesis.ps1": "c9a3a1d2bf6db19e0f46f64ebb1715bac598c354e3a85398573adf78c4cd4697",
+    "step004\\dot_banked_core.v": "470843df4376d547189f1d5d2d720c67673bd0dd1c81c4d85c3d34ae4872fa69",
+    "step004\\bank_ram.v": "d6b5377ba8af8d53d34f0b755ad0f4affd8083cc1788ed4d199873044de74373",
+    "step004\\verify_step004.py": "ecf077ef9c9afa7fb1bca0d60a7fd8f5879cc2b0421f61e311637e6608e9b901"
+  }
+}
