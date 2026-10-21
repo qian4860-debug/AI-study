@@ -1,0 +1,101 @@
+{
+  "schema": "gyro.calibration.dataset",
+  "version": 1,
+  "kind": "synthetic",
+  "source": "Locally generated known truth; accelerated temperature ramp, quadratic bias plus unmatched cubic/hysteresis, batch offsets and white noise",
+  "sample_rate_hz": 100,
+  "units": {
+    "time": "s",
+    "angular_rate": "rad/s",
+    "temperature": "degC"
+  },
+  "frame": {
+    "name": "sensor_body",
+    "handedness": "right",
+    "axes": [
+      "x",
+      "y",
+      "z"
+    ]
+  },
+  "reference": {
+    "kind": "synthetic_ground_truth",
+    "description": "Known analytic angular rates from generate_synthetic.py; not sensor measurements"
+  },
+  "sessions": [
+    {
+      "device_id": "SYNTH_A",
+      "session_id": "train_up",
+      "split": "train",
+      "condition": "synthetic thermal stationary"
+    },
+    {
+      "device_id": "SYNTH_A",
+      "session_id": "train_down",
+      "split": "train",
+      "condition": "synthetic thermal stationary"
+    },
+    {
+      "device_id": "SYNTH_A",
+      "session_id": "train_wave",
+      "split": "train",
+      "condition": "synthetic thermal stationary"
+    },
+    {
+      "device_id": "SYNTH_A",
+      "session_id": "validation_mix",
+      "split": "validation",
+      "condition": "synthetic thermal dynamic"
+    },
+    {
+      "device_id": "SYNTH_A",
+      "session_id": "test_static",
+      "split": "test",
+      "condition": "synthetic thermal stationary"
+    },
+    {
+      "device_id": "SYNTH_A",
+      "session_id": "test_dynamic",
+      "split": "test",
+      "condition": "synthetic thermal dynamic"
+    },
+    {
+      "device_id": "SYNTH_B",
+      "session_id": "train_up",
+      "split": "train",
+      "condition": "synthetic thermal stationary"
+    },
+    {
+      "device_id": "SYNTH_B",
+      "session_id": "train_down",
+      "split": "train",
+      "condition": "synthetic thermal stationary"
+    },
+    {
+      "device_id": "SYNTH_B",
+      "session_id": "train_wave",
+      "split": "train",
+      "condition": "synthetic thermal stationary"
+    },
+    {
+      "device_id": "SYNTH_B",
+      "session_id": "validation_mix",
+      "split": "validation",
+      "condition": "synthetic thermal dynamic"
+    },
+    {
+      "device_id": "SYNTH_B",
+      "session_id": "test_static",
+      "split": "test",
+      "condition": "synthetic thermal stationary"
+    },
+    {
+      "device_id": "SYNTH_B",
+      "session_id": "test_dynamic",
+      "split": "test",
+      "condition": "synthetic thermal dynamic"
+    }
+  ],
+  "data_file": "samples.csv",
+  "data_sha256": "13a218628f66671429b49b7380772cc2fde0c7b1036bca564ec1bcfd0c52cea3"
+}

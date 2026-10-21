@@ -1,0 +1,17 @@
+{
+  "schema": "gyro.calibration.dataset",
+  "version": 1,
+  "kind": "measured",
+  "source": "填写传感器型号、采集设备及批次来源",
+  "sample_rate_hz": 100,
+  "units": {"time": "s", "angular_rate": "rad/s", "temperature": "degC"},
+  "frame": {"name": "sensor_body", "handedness": "right", "axes": ["x", "y", "z"]},
+  "reference": {"kind": "stationary_zero_assumption", "description": "填写静止条件；只有明确标为stationary=1的样本假设参考角速度为0"},
+  "sessions": [
+    {"device_id": "DEVICE_01", "session_id": "train_cycle", "split": "train", "condition": "填写独立温度循环与安装条件"},
+    {"device_id": "DEVICE_01", "session_id": "validation_cycle", "split": "validation", "condition": "填写独立温度循环与安装条件"},
+    {"device_id": "DEVICE_01", "session_id": "test_cycle", "split": "test", "condition": "填写独立温度循环与安装条件"}
+  ],
+  "data_file": "samples.csv",
+  "data_sha256": "REPLACE_WITH_ACTUAL_CSV_SHA256"
+}

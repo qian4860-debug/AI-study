@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/ѧϰ����/AI/AI-study/projects/tiny-int8-npu/study/step012/gyro_bias_core.v" into library work
+INFO: [VRFC 10-311] analyzing module gyro_bias_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/ѧϰ����/AI/AI-study/projects/tiny-int8-npu/study/step012/tb_gyro_bias.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_gyro_bias

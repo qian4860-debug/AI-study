@@ -1,0 +1,42 @@
+{
+  "seed": 20261021,
+  "coefficient_truth": {
+    "SYNTH_A": [
+      [
+        0.025,
+        0.008,
+        0.006
+      ],
+      [
+        -0.018,
+        -0.006,
+        0.004
+      ],
+      [
+        0.01,
+        0.004,
+        -0.003
+      ]
+    ],
+    "SYNTH_B": [
+      [
+        -0.016,
+        0.006,
+        -0.005
+      ],
+      [
+        0.021,
+        0.009,
+        0.004
+      ],
+      [
+        -0.008,
+        -0.005,
+        0.006
+      ]
+    ]
+  },
+  "generator_sha256": "0bdc94269c329695f1e5e8fd02aa52eaea22c7daee0bb965055d247773acb472",
+  "config_sha256": "d012a925597f0abd36c76c7b436c1ffafd1fa30e7525432014d6b761b452c0d5",
+  "note": "All data are synthetic. Temperature ramps are deliberately accelerated; no physical noise/thermal model is validated."
+}

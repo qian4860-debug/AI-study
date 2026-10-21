@@ -1,0 +1,17 @@
+{
+  "seed": 20261021,
+  "sample_rate_hz": 100,
+  "samples_per_session": 600,
+  "temperature_center_C": 25.0,
+  "temperature_scale_C": 20.0,
+  "polynomial_degrees": [1, 2],
+  "maximum_design_condition": 1000000.0,
+  "minimum_fit_samples": 100,
+  "maximum_timestamp_relative_jitter": 0.05,
+  "rate_fraction_bits": 24,
+  "temperature_fraction_bits": 14,
+  "maximum_normalized_temperature": 1.5,
+  "fixed_float_bias_error_limit_rad_s": 0.000002,
+  "boundary_random_cases": 300,
+  "scope": "Synthetic engineering validation only. No physical gyro calibration, board timing, Allan analysis or full SO(3) attitude estimation."
+}

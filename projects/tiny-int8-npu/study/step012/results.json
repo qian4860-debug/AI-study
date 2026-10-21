@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "dataset_kind": "synthetic",
+  "physical_calibration_complete": false,
+  "software_result_sha256": "d1b046f4674791419a9b0271b592b0bb986dac484a8173dcc35cdd8255cf0e1c",
+  "rtl": {
+    "status": "PASS",
+    "sensor_cases": 7200,
+    "stress_cases": 475,
+    "total_cases": 7675,
+    "exact_scalar_matches": 7675,
+    "reset_cancel_restart_scenarios": 6,
+    "compute_cycles": 5,
+    "stalled_output_cases": 5756,
+    "saturated_stress_cases": 239,
+    "sensor_vectors_sha256": "c2be46c022b41ce21bfa9f959784d083da6e962bfc872a8581c65c70530cef54",
+    "rtl_source_sha256": {
+      "gyro_bias_core.v": "7588d464971818cd724b354dd72abb55a101cd32d9f896a4668573351a2ec911",
+      "tb_gyro_bias.v": "f1789fc65d9d3930a299ec1efc007c7c592064b824e3ba516189691fa21931e8"
+    },
+    "scope": "Actual Vivado RTL simulation of new scalar Q24/Q14 polynomial kernel. One multiply operator, not a measured one-DSP claim; no synthesis or board result."
+  },
+  "unit_tests": 8,
+  "stage": "Data contract + synthetic traditional baselines + scalar fixed-point RTL",
+  "next": "Import actual sensor measurements; do not claim physical calibration from synthetic results"
+}

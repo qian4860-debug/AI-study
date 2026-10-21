@@ -1,0 +1,15 @@
+{
+  "selected_degree": 2,
+  "selection": "validation aggregate three-axis RMSE; tie chooses lower degree; no refit",
+  "source_data_sha256": "13a218628f66671429b49b7380772cc2fde0c7b1036bca564ec1bcfd0c52cea3",
+  "metadata_sha256": "69865dbc137f84cc3a1ef5f77ae167570825424a0e428558ea8461976ae964d0",
+  "implementation_sha256": {
+    "calibration.py": "1c5f497b143fcb27bc8b9ac9f10f681f766c81e772738f160683ad49d5da3083",
+    "experiment.json": "d012a925597f0abd36c76c7b436c1ffafd1fa30e7525432014d6b761b452c0d5"
+  },
+  "model_sha256": {
+    "constant_model.json": "d89403b6649b6c8d0ae11fc017439a8a335799f81e2bd05c96b91153d5567b58",
+    "temperature_model.json": "667e55e3ff31524584161af0f7318069f010896941d501e06b8684cd021b535d",
+    "candidates.json": "59d3e46259db8687447ab2d9f61ead642a9346288d20b25a40b8af8020725cd6"
+  }
+}

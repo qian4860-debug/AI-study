@@ -1,0 +1,13 @@
+test_deg_s_conversion_and_stationary_assumption (__main__.CalibrationContracts.test_deg_s_conversion_and_stationary_assumption) ... ok
+test_independent_fraction_rne_and_saturation (__main__.CalibrationContracts.test_independent_fraction_rne_and_saturation) ... ok
+test_known_synthetic_coefficients_recovered_and_validation_selects_quadratic (__main__.CalibrationContracts.test_known_synthetic_coefficients_recovered_and_validation_selects_quadratic) ... ok
+test_nonfinite_duplicate_time_and_gap_rejected (__main__.CalibrationContracts.test_nonfinite_duplicate_time_and_gap_rejected) ... ok
+test_rank_unknown_device_and_temperature_extrapolation (__main__.CalibrationContracts.test_rank_unknown_device_and_temperature_extrapolation) ... ok
+test_session_split_and_reference_provenance_rejected (__main__.CalibrationContracts.test_session_split_and_reference_provenance_rejected) ... ok
+test_training_coefficients_unchanged_by_heldout_values (__main__.CalibrationContracts.test_training_coefficients_unchanged_by_heldout_values) ... ok
+test_units_frame_and_sample_rate_rejected (__main__.CalibrationContracts.test_units_frame_and_sample_rate_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 1.375s
+
+OK

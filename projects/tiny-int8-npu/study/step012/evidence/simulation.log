@@ -1,0 +1,17 @@
+
+****** xsim v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Wed Oct 21 15:26:53 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/gyro_sim/xsim_script.tcl
+# xsim {gyro_sim} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+PASS GYRO completed=7675 reset_scenarios=6 latency=5
+$finish called at time : 653550 ns : File "D:/ѧϰ����/AI/AI-study/projects/tiny-int8-npu/study/step012/tb_gyro_bias.v" Line 68
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Oct 21 15:26:55 2026...

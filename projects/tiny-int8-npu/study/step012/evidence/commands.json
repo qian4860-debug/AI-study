@@ -1,0 +1,21 @@
+[
+  [
+    "D:\\vivado\\2025.1\\Vivado\\bin\\xvlog.bat",
+    "--sv",
+    "D:\\学习资料\\AI\\AI-study\\projects\\tiny-int8-npu\\study\\step012\\gyro_bias_core.v",
+    "D:\\学习资料\\AI\\AI-study\\projects\\tiny-int8-npu\\study\\step012\\tb_gyro_bias.v"
+  ],
+  [
+    "D:\\vivado\\2025.1\\Vivado\\bin\\xelab.bat",
+    "tb_gyro_bias",
+    "--timescale",
+    "1ns/1ps",
+    "-s",
+    "gyro_sim"
+  ],
+  [
+    "D:\\vivado\\2025.1\\Vivado\\bin\\xsim.bat",
+    "gyro_sim",
+    "-runall"
+  ]
+]
