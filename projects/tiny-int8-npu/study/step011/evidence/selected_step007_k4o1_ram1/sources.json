@@ -1,0 +1,7 @@
+{
+  "step004/dot_banked_core.v": "470843df4376d547189f1d5d2d720c67673bd0dd1c81c4d85c3d34ae4872fa69",
+  "optimization/step006_pipelined/requant_i8.v": "9353eac5f84d7ccdbaf5496aed467bbd039086d2252c8300db833a2ae8eaae59",
+  "step007/sync_ram_style.v": "eb787372c3ee5859038b3722556e6721677af739735e4dccf6538bc673756b34",
+  "step007/fc_shared.v": "09c7a48291d0cd27ba4b96bd3ea20a85f8405d6ffe1b6b9a25f4a71acda305f3",
+  "step007/mlp2_top.v": "dfe2b4e4ba40cadd147aedeb86269a866715578494c7bf0dcbf2a18b50c40fe3"
+}

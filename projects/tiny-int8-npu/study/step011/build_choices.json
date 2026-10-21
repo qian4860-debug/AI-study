@@ -1,0 +1,107 @@
+[
+  {
+    "reuse": 1,
+    "choice": {
+      "core": "step008b_k2o2",
+      "ram_name": "hybrid",
+      "ram_mode": 1,
+      "resources": {
+        "RAM_MODE": 1,
+        "Slice_LUTs": 1395,
+        "FF": 496,
+        "DSP": 2,
+        "RAMB_cells": 4,
+        "WNS_ns": 1.749,
+        "tile_core_instances": 1,
+        "quantizer_instances": 1
+      },
+      "provenance": "step008b/synthesis_results.json",
+      "source_report_sha256": "c502eae32f4af4d791f466d42d7c981a95e19e0029a8ea400e6280eff697e8db",
+      "timing_scope": "Reused OOC synthesis estimate; not routed or board frequency",
+      "part": "xc7a100tcsg324-1",
+      "clock_period_ns": 10.0,
+      "compute_cycles": 105,
+      "macs": 192,
+      "parameter_writes": 206,
+      "weight_bytes": 192,
+      "bias_bytes": 56,
+      "input_bytes": 18,
+      "expected_x_reads": 96,
+      "expected_w_reads": 192,
+      "cold_occupied": 330,
+      "warm_occupied": 124,
+      "reuse": 1,
+      "total_occupied_edges": 330
+    }
+  },
+  {
+    "reuse": 16,
+    "choice": {
+      "core": "step008b_k2o2",
+      "ram_name": "hybrid",
+      "ram_mode": 1,
+      "resources": {
+        "RAM_MODE": 1,
+        "Slice_LUTs": 1395,
+        "FF": 496,
+        "DSP": 2,
+        "RAMB_cells": 4,
+        "WNS_ns": 1.749,
+        "tile_core_instances": 1,
+        "quantizer_instances": 1
+      },
+      "provenance": "step008b/synthesis_results.json",
+      "source_report_sha256": "c502eae32f4af4d791f466d42d7c981a95e19e0029a8ea400e6280eff697e8db",
+      "timing_scope": "Reused OOC synthesis estimate; not routed or board frequency",
+      "part": "xc7a100tcsg324-1",
+      "clock_period_ns": 10.0,
+      "compute_cycles": 105,
+      "macs": 192,
+      "parameter_writes": 206,
+      "weight_bytes": 192,
+      "bias_bytes": 56,
+      "input_bytes": 18,
+      "expected_x_reads": 96,
+      "expected_w_reads": 192,
+      "cold_occupied": 330,
+      "warm_occupied": 124,
+      "reuse": 16,
+      "total_occupied_edges": 2190
+    }
+  },
+  {
+    "reuse": 1024,
+    "choice": {
+      "core": "step008b_k2o2",
+      "ram_name": "hybrid",
+      "ram_mode": 1,
+      "resources": {
+        "RAM_MODE": 1,
+        "Slice_LUTs": 1395,
+        "FF": 496,
+        "DSP": 2,
+        "RAMB_cells": 4,
+        "WNS_ns": 1.749,
+        "tile_core_instances": 1,
+        "quantizer_instances": 1
+      },
+      "provenance": "step008b/synthesis_results.json",
+      "source_report_sha256": "c502eae32f4af4d791f466d42d7c981a95e19e0029a8ea400e6280eff697e8db",
+      "timing_scope": "Reused OOC synthesis estimate; not routed or board frequency",
+      "part": "xc7a100tcsg324-1",
+      "clock_period_ns": 10.0,
+      "compute_cycles": 105,
+      "macs": 192,
+      "parameter_writes": 206,
+      "weight_bytes": 192,
+      "bias_bytes": 56,
+      "input_bytes": 18,
+      "expected_x_reads": 96,
+      "expected_w_reads": 192,
+      "cold_occupied": 330,
+      "warm_occupied": 124,
+      "reuse": 1024,
+      "total_occupied_edges": 127182
+    }
+  }
+]

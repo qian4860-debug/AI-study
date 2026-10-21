@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/ѧϰ����/AI/AI-study/projects/tiny-int8-npu/study/step008b/dot_tile_core.v" into library work
+INFO: [VRFC 10-311] analyzing module dot_tile_core
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/ѧϰ����/AI/AI-study/projects/tiny-int8-npu/study/optimization/step006_pipelined/requant_i8.v" into library work
+INFO: [VRFC 10-311] analyzing module requant_i8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/ѧϰ����/AI/AI-study/projects/tiny-int8-npu/study/step007/sync_ram_style.v" into library work
+INFO: [VRFC 10-311] analyzing module sync_ram_style
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/ѧϰ����/AI/AI-study/projects/tiny-int8-npu/study/step008b/fc_shared.v" into library work
+INFO: [VRFC 10-311] analyzing module fc_shared
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/ѧϰ����/AI/AI-study/projects/tiny-int8-npu/study/step007/mlp2_top.v" into library work
+INFO: [VRFC 10-311] analyzing module mlp2_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/ѧϰ����/AI/AI-study/projects/tiny-int8-npu/study/step011/build/baseline010_step008b_k2o2_ram0/tb_resident.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_mlp
+INFO: [VRFC 10-311] analyzing module tb_mode0
+INFO: [VRFC 10-311] analyzing module tb_mode1
+INFO: [VRFC 10-311] analyzing module tb_mode2

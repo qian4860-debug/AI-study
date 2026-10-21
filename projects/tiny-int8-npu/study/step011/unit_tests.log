@@ -1,0 +1,10 @@
+test_build_policy_constraints_and_reuse_accounting (__main__.Contracts.test_build_policy_constraints_and_reuse_accounting) ... ok
+test_exact_integer_negative_ties_saturation_vs_independent_reference (__main__.Contracts.test_exact_integer_negative_ties_saturation_vs_independent_reference) ... ok
+test_folds_do_not_split_subjects_or_duplicate_validation_rows (__main__.Contracts.test_folds_do_not_split_subjects_or_duplicate_validation_rows) ... ok
+test_metrics_imbalance_and_absent_classes (__main__.Contracts.test_metrics_imbalance_and_absent_classes) ... ok
+test_preprocessing_does_not_fit_validation_extreme (__main__.Contracts.test_preprocessing_does_not_fit_validation_extreme) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.115s
+
+OK

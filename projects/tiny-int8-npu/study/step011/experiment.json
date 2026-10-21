@@ -1,0 +1,20 @@
+{
+  "seed": 20261021,
+  "folds": 3,
+  "epochs": 800,
+  "learning_rate": 0.01,
+  "l2": 0.0001,
+  "candidates": [
+    {"id": "all18_h4", "feature_indices": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17], "hidden": 4},
+    {"id": "all18_h8", "feature_indices": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17], "hidden": 8},
+    {"id": "body12_h4", "feature_indices": [0,1,2,3,4,5,12,13,14,15,16,17], "hidden": 4},
+    {"id": "body12_h8", "feature_indices": [0,1,2,3,4,5,12,13,14,15,16,17], "hidden": 8}
+  ],
+  "selection": "mean fold INT8 macro-F1; tie: fewer predicted auto cycles, then candidate id",
+  "refit": "all official training subjects; epochs=median selected fold best epochs; scales fitted on training only",
+  "representative_rtl_samples": 64,
+  "resource_limits": {"Slice_LUTs": 1600, "FF": 600, "DSP": 2, "RAMB_cells": 4},
+  "minimum_synthesis_wns_ns": 0.0,
+  "reuse_counts": [1,16,1024],
+  "scope": "Predeclared limited experiment, not an exhaustive search. Official test already used in step010: regression only. CV folds also select epochs and candidates; CV score is not an unbiased generalization estimate."
+}

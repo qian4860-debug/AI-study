@@ -1,0 +1,175 @@
+{
+  "status": "PASS",
+  "winner": {
+    "candidate": "all18_h8",
+    "shape": [
+      18,
+      8,
+      6
+    ],
+    "mean_int8_macro_f1": 0.8411608591339436,
+    "std_fold_macro_f1": 0.02673533993760621,
+    "mean_int8_accuracy": 0.8482367603043555,
+    "auto_compute_cycles": 105,
+    "best_epochs": [
+      349,
+      305,
+      184
+    ]
+  },
+  "refit_epochs": 305,
+  "fit_subjects": [
+    1,
+    3,
+    5,
+    6,
+    7,
+    8,
+    11,
+    14,
+    15,
+    16,
+    17,
+    19,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "candidate_summaries": [
+    {
+      "candidate": "all18_h4",
+      "shape": [
+        18,
+        4,
+        6
+      ],
+      "mean_int8_macro_f1": 0.8032642680939904,
+      "std_fold_macro_f1": 0.027966785351052233,
+      "mean_int8_accuracy": 0.8145547059248873,
+      "auto_compute_cycles": 67,
+      "best_epochs": [
+        488,
+        691,
+        795
+      ]
+    },
+    {
+      "candidate": "all18_h8",
+      "shape": [
+        18,
+        8,
+        6
+      ],
+      "mean_int8_macro_f1": 0.8411608591339436,
+      "std_fold_macro_f1": 0.02673533993760621,
+      "mean_int8_accuracy": 0.8482367603043555,
+      "auto_compute_cycles": 105,
+      "best_epochs": [
+        349,
+        305,
+        184
+      ]
+    },
+    {
+      "candidate": "body12_h4",
+      "shape": [
+        12,
+        4,
+        6
+      ],
+      "mean_int8_macro_f1": 0.5197165758552184,
+      "std_fold_macro_f1": 0.03806174400127962,
+      "mean_int8_accuracy": 0.529360399923362,
+      "auto_compute_cycles": 61,
+      "best_epochs": [
+        800,
+        800,
+        795
+      ]
+    },
+    {
+      "candidate": "body12_h8",
+      "shape": [
+        12,
+        8,
+        6
+      ],
+      "mean_int8_macro_f1": 0.6336981303517347,
+      "std_fold_macro_f1": 0.01538028559281813,
+      "mean_int8_accuracy": 0.6336823550637772,
+      "auto_compute_cycles": 93,
+      "best_epochs": [
+        793,
+        799,
+        793
+      ]
+    }
+  ],
+  "train_data_sha256": "159dcea455bf36bfe63e2f91d308e59f8c3baa3890017b1a29d135c7c8742c79",
+  "artifacts_sha256": {
+    "experiment.json": "49af7f4f87a28c388be46e696282b2d8ec4c782be23bf90d21c172ce98219ff1",
+    "common.py": "e8cbd263728ae5f1a1f7f04844560c64d66f460361fbbb4efa838277c6458dc2",
+    "train_compare.py": "2620b17bb746cf638cc8c7f10dac29fd3389ff5df7417bc38d28b3ebe0838038",
+    "cv_splits.json": "56bf697585662090d89f63640f5677499acc3ef66fb886ee382c68095703556d",
+    "cv_summary.csv": "47f13df922e36ea8b6b7fa5ae21db241b853a01aba4e9c783fb7750b8a0c2476",
+    "selected_fit.json": "3108b5fdbe5856abeb8a9aa2916e0ecabfd5f5c37ba7ac21585d2f4bf0ce062b",
+    "selected_deployment.json": "5fd3d59fe75329a840e26dc835d6fcfe0917a6e1eb06a0279e19bc6cf9f5201e",
+    "models/all18_h4/fold0/fit.json": "a5b2347dfbd551dde981c497ed38c9aca95ecb9256bbd2e13cb5ca991416eb1a",
+    "models/all18_h4/fold0/history.csv": "9421120ae29afcac94cef226f0bdea1e475fb83dfaf1a035aea33133357cd938",
+    "models/all18_h4/fold0/metrics.json": "b447effa751f495fb39482d9bc4ed52821f3fcd18746481d98b9a272f43dccfe",
+    "models/all18_h4/fold0/predictions.csv": "68bfb0dbf8b5f89d7282bdf004498648b239bd0f703f655e241886046fe811e3",
+    "models/all18_h4/fold1/fit.json": "a78954512b731a66c2640609781bfadc6eac20e6eca9df0f716e1b2ae11ab9ee",
+    "models/all18_h4/fold1/history.csv": "4cd197aa5fa0bdff4e36a77e3ef6b150cd88b156fd13e6bd99775c75c7831129",
+    "models/all18_h4/fold1/metrics.json": "2d8378098785c92624f11e5721d685f3ce61296810a4fa7b6443a64b8da24b7a",
+    "models/all18_h4/fold1/predictions.csv": "467ee3eea10ea491824dedd6aee0dfc83d93717a89845602cb0a2cbd8db15a5c",
+    "models/all18_h4/fold2/fit.json": "0f58f8ee7a4cb52f9169d3fae62906e8637a9ee6bfbef38aff2ed483a9a78528",
+    "models/all18_h4/fold2/history.csv": "7f0f5aa80432d44701f6e3762d1281a38df587c7762362fabeea02da56bbe8ae",
+    "models/all18_h4/fold2/metrics.json": "a202517829f92d468d7ce08729f4aed1c818c6757cdfa01d9d753faee06d7a13",
+    "models/all18_h4/fold2/predictions.csv": "512a5c7960459058537b0d3f26fee7e79c9681483341ee0b6385d6a64587c769",
+    "models/all18_h8/fold0/fit.json": "a64ba7f6e2392b0c01fb70a369a0f715e72c7f96b5b8571c5c25f8ec96eeb35f",
+    "models/all18_h8/fold0/history.csv": "90669ea2a5abbfccf2802fa013349d98b346058e5ef458816ab382a4a1b406e0",
+    "models/all18_h8/fold0/metrics.json": "3d164f0f961013aea45e90a687415ed3b66ed7433df5cea6f489d96eae79db00",
+    "models/all18_h8/fold0/predictions.csv": "6693da082807795b31c356e35dc32f1b065dfc1325e604583be096ca3f99f9ac",
+    "models/all18_h8/fold1/fit.json": "497a24b2f8f61b9d279774e57f41a9a29c8d822c44d5f6cf1bdbeb5370d08e60",
+    "models/all18_h8/fold1/history.csv": "7723e93ab21cf55103be46bbbd6096346b3824bd6b30bdb712158061b84604e1",
+    "models/all18_h8/fold1/metrics.json": "52f8f508ed9d599e930d52038f45a6e280c20ec2955ba36819fea954cc107290",
+    "models/all18_h8/fold1/predictions.csv": "82a994780586f11521dafab997b50e3a7e88966c353b07a118e528be41ba98d7",
+    "models/all18_h8/fold2/fit.json": "7cd83c1a4ddbac73838e0156e4eb8c6e9f5bbe7128d363c681d6ecda3bd49d31",
+    "models/all18_h8/fold2/history.csv": "52eb5d2114a2bb81e66b9279f062e96d95d5c34c52f48e7b8b17bdd3a17dffc9",
+    "models/all18_h8/fold2/metrics.json": "631cc284f32224adfc1c2bb04358a0f562afaa047458ab20060e07b953613bcc",
+    "models/all18_h8/fold2/predictions.csv": "54d2a12e43472ce96682b316ad8fa6fee21be817e7e5f1067c679cb7bfbf03a5",
+    "models/body12_h4/fold0/fit.json": "2d6a30e28e37b7ed962e88ee282759deed46d52775ac8122c4a9bf2d08b4703b",
+    "models/body12_h4/fold0/history.csv": "f9e6ee6bb2b5b13ddd8a6e12dac14f5f216b4adf312c6d4b7fbe305dd71def8a",
+    "models/body12_h4/fold0/metrics.json": "bf918ee896e26d2398fc4144fe829447f6c117c2d23ce5ef8fdaa2862bdad328",
+    "models/body12_h4/fold0/predictions.csv": "67d7ea01779b2b3631742d1802d8ec6ff92e4598f487e200318771cfc91e5429",
+    "models/body12_h4/fold1/fit.json": "6155868a51c7a8d0a076e52e01b7920a22168ce388d26ffc75998303fc92c2b4",
+    "models/body12_h4/fold1/history.csv": "9fd92794f730f212aa6ad0f6c3aa95a20f17b36d5bd3b766f2c87a6da6bd1b8c",
+    "models/body12_h4/fold1/metrics.json": "500612acf5aa3fa16731717cfc198abc110336ecf695f90bc0f6f60022d5a87b",
+    "models/body12_h4/fold1/predictions.csv": "b6ba94da3461e4865bd69bcde93321adf172b416f443cd107a4800ff7609a3aa",
+    "models/body12_h4/fold2/fit.json": "fbfa03cb8ab0e30ca1ea300b70017e1258d596877ea0f65d8cfeb124c126eb73",
+    "models/body12_h4/fold2/history.csv": "d1f5e590153dbf1ce20e76c05dc010561bfe0d5e6a4cd5e715af6139f875ccd9",
+    "models/body12_h4/fold2/metrics.json": "3c223b19e1695b16258153a866c29b276838d368303d76c0dc92f63796bd23ee",
+    "models/body12_h4/fold2/predictions.csv": "85073491527baf31b33c9f0899a87b33506bf493f5372318fd83c2ff18e81e89",
+    "models/body12_h8/fold0/fit.json": "9c0cab11b069794dfdcf12bcce10b5260d3d7101c9a75109c1b35ca86eff77f8",
+    "models/body12_h8/fold0/history.csv": "a87b9559e1848a411cccb0f9a3e88e52098bf8d28de6253e4961096adb21f57e",
+    "models/body12_h8/fold0/metrics.json": "ef60f04d9b888b0687227552e1bc17a334cefd022a4d2db47754dc2d05c14256",
+    "models/body12_h8/fold0/predictions.csv": "66879221c0568fcc56b2337188d46d9cb6dda0c48cec89fa3ac20af19fa3e948",
+    "models/body12_h8/fold1/fit.json": "6695b7f18a55c051613bd830479e0612849058db3e552140fc285a508c46cff0",
+    "models/body12_h8/fold1/history.csv": "b560c7ed476c0877f6952782b08e3a5707c79051344e2438364dc15cffbdfc93",
+    "models/body12_h8/fold1/metrics.json": "f32a3260a9703d3eddf32f288c5922bf3bc3b368710c17b9c7e1fcb34f36f368",
+    "models/body12_h8/fold1/predictions.csv": "6dd40c6cbc4468d37bdb05216946bb895cf1f52f6cad29eda2127f7a88885d39",
+    "models/body12_h8/fold2/fit.json": "f74f8b5e6a71544943811642c3681431d0432b218996a2490f2bbb76df41b6f0",
+    "models/body12_h8/fold2/history.csv": "970840dae54d0d5e0cf6129741ae62519b9d71cd984740f833d25afdfb147334",
+    "models/body12_h8/fold2/metrics.json": "42c716c2d789f2ed83299a7b082d58d6672f0843137c44e931ab270797dac4a0",
+    "models/body12_h8/fold2/predictions.csv": "14094bdc8f68e806710938373752aba68d512107ac96e537b0418a0972a8b61d"
+  },
+  "scope": "Predeclared limited experiment, not an exhaustive search. Official test already used in step010: regression only. CV folds also select epochs and candidates; CV score is not an unbiased generalization estimate.",
+  "numpy": "2.3.5",
+  "official_test_opened_during_selection": false
+}
