@@ -1,0 +1,4 @@
+*.pdf
+*.part
+__pycache__/
+private_exports/

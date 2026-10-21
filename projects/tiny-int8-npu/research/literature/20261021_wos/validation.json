@@ -1,0 +1,17 @@
+{
+  "local_collection_status": "PASS",
+  "requested_wos_task_complete": false,
+  "wos_access_status": "HTTP403; no local browser-control runtime; foreground retry did not provide UI access",
+  "candidates": 20,
+  "new_fulltexts": 15,
+  "existing_fulltexts": 2,
+  "metadata_only": 3,
+  "existing_library_records": 305,
+  "checks": [
+    "17 complete PDFs hash/title/page checks",
+    "20 RIS and 20 BibTeX entries",
+    "3 importer tests including refusal without WoS accession",
+    "636 original project file hashes and original-history retention"
+  ],
+  "pdf_redistributed_to_github": false
+}

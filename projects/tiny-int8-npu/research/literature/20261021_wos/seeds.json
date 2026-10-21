@@ -1,0 +1,247 @@
+[
+  {
+    "id": "AI-20261021-001",
+    "slug": "survey",
+    "category": "systems",
+    "title": "Efficient Processing of Deep Neural Networks: A Tutorial and Survey",
+    "doi": "10.1109/JPROC.2017.2761740",
+    "arxiv": "1703.09039",
+    "year": 2017,
+    "pdf_urls": [
+      "https://arxiv.org/pdf/1703.09039"
+    ]
+  },
+  {
+    "id": "AI-20261021-002",
+    "slug": "eyeriss",
+    "category": "systems",
+    "title": "Eyeriss: A Spatial Architecture for Energy-Efficient Dataflow for Convolutional Neural Networks",
+    "doi": "10.1109/ISCA.2016.40",
+    "arxiv": "",
+    "year": 2016,
+    "pdf_urls": [
+      "https://people.csail.mit.edu/emer/media/papers/2016.06.isca.eyeriss_architecture.pdf",
+      "https://www.rle.mit.edu/eems/wp-content/uploads/2016/04/eyeriss_isca_2016.pdf"
+    ]
+  },
+  {
+    "id": "AI-20261021-003",
+    "slug": "eyeriss2",
+    "category": "systems",
+    "title": "Eyeriss v2: A Flexible Accelerator for Emerging Deep Neural Networks on Mobile Devices",
+    "doi": "10.1109/JETCAS.2019.2910232",
+    "arxiv": "1807.07928",
+    "year": 2019,
+    "pdf_urls": [
+      "https://arxiv.org/pdf/1807.07928"
+    ]
+  },
+  {
+    "id": "AI-20261021-004",
+    "slug": "roofline",
+    "category": "systems",
+    "title": "Roofline: An Insightful Visual Performance Model for Multicore Architectures",
+    "doi": "10.1145/1498765.1498785",
+    "arxiv": "",
+    "year": 2009,
+    "pdf_urls": [
+      "https://escholarship.org/content/qt78h8v7mr/qt78h8v7mr.pdf",
+      "https://people.eecs.berkeley.edu/~waterman/papers/roofline.pdf",
+      "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-134.pdf"
+    ]
+  },
+  {
+    "id": "AI-20261021-005",
+    "slug": "dsp",
+    "category": "circuits",
+    "title": "DSP-Packing: Squeezing Low-precision Arithmetic into FPGA DSP Blocks",
+    "doi": "10.1109/FPL57034.2022.00035",
+    "arxiv": "2203.11028",
+    "year": 2022,
+    "pdf_urls": [
+      "https://arxiv.org/pdf/2203.11028"
+    ]
+  },
+  {
+    "id": "AI-20261021-006",
+    "slug": "finn",
+    "category": "circuits",
+    "title": "FINN: A Framework for Fast, Scalable Binarized Neural Network Inference",
+    "doi": "10.1145/3020078.3021744",
+    "arxiv": "1612.07119",
+    "year": 2017,
+    "pdf_urls": [
+      "https://arxiv.org/pdf/1612.07119"
+    ]
+  },
+  {
+    "id": "AI-20261021-007",
+    "slug": "finnr",
+    "category": "circuits",
+    "title": "FINN-R: An End-to-End Deep-Learning Framework for Fast Exploration of Quantized Neural Networks",
+    "doi": "10.1145/3242897",
+    "arxiv": "1809.04570",
+    "year": 2018,
+    "pdf_urls": [
+      "https://arxiv.org/pdf/1809.04570"
+    ]
+  },
+  {
+    "id": "AI-20261021-008",
+    "slug": "hls4ml",
+    "category": "deployment",
+    "title": "Fast inference of deep neural networks in FPGAs for particle physics",
+    "doi": "10.1088/1748-0221/13/07/P07027",
+    "arxiv": "1804.06913",
+    "year": 2018,
+    "pdf_urls": [
+      "https://arxiv.org/pdf/1804.06913"
+    ]
+  },
+  {
+    "id": "AI-20261021-009",
+    "slug": "tvm",
+    "category": "deployment",
+    "title": "TVM: An Automated End-to-End Optimizing Compiler for Deep Learning",
+    "doi": "",
+    "arxiv": "1802.04799",
+    "year": 2018,
+    "pdf_urls": [
+      "https://www.usenix.org/system/files/osdi18-chen.pdf",
+      "https://arxiv.org/pdf/1802.04799"
+    ],
+    "source_url": "https://www.usenix.org/conference/osdi18/presentation/chen"
+  },
+  {
+    "id": "AI-20261021-010",
+    "slug": "jacob",
+    "category": "quantization",
+    "title": "Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference",
+    "doi": "10.1109/CVPR.2018.00286",
+    "arxiv": "1712.05877",
+    "year": 2018,
+    "pdf_urls": [
+      "https://openaccess.thecvf.com/content_cvpr_2018/papers/Jacob_Quantization_and_Training_CVPR_2018_paper.pdf",
+      "https://arxiv.org/pdf/1712.05877"
+    ]
+  },
+  {
+    "id": "AI-20261021-011",
+    "slug": "hawq",
+    "category": "quantization",
+    "title": "HAWQ: Hessian AWare Quantization of Neural Networks With Mixed-Precision",
+    "doi": "",
+    "arxiv": "1905.03696",
+    "year": 2019,
+    "pdf_urls": [
+      "https://openaccess.thecvf.com/content_ICCV_2019/papers/Dong_HAWQ_Hessian_AWare_Quantization_of_Neural_Networks_With_Mixed-Precision_ICCV_2019_paper.pdf",
+      "https://arxiv.org/pdf/1905.03696"
+    ]
+  },
+  {
+    "id": "AI-20261021-012",
+    "slug": "mcunet",
+    "category": "systems",
+    "title": "MCUNet: Tiny Deep Learning on IoT Devices",
+    "doi": "",
+    "arxiv": "2007.10319",
+    "year": 2020,
+    "pdf_urls": [
+      "https://arxiv.org/pdf/2007.10319"
+    ]
+  },
+  {
+    "id": "AI-20261021-013",
+    "slug": "har",
+    "category": "imu",
+    "title": "A Public Domain Dataset for Human Activity Recognition Using Smartphones",
+    "doi": "",
+    "arxiv": "",
+    "year": 2013,
+    "pdf_urls": [
+      "https://www.esann.org/sites/default/files/proceedings/legacy/es2013-84.pdf"
+    ]
+  },
+  {
+    "id": "AI-20261021-014",
+    "slug": "denoise",
+    "category": "gyro",
+    "title": "Denoising IMU Gyroscopes with Deep Learning for Open-Loop Attitude Estimation",
+    "doi": "",
+    "arxiv": "2002.10718",
+    "year": 2020,
+    "pdf_urls": [
+      "https://arxiv.org/pdf/2002.10718"
+    ]
+  },
+  {
+    "id": "AI-20261021-015",
+    "slug": "huang",
+    "category": "gyro",
+    "title": "A MEMS IMU Gyroscope Calibration Method Based on Deep Learning",
+    "doi": "10.1109/TIM.2022.3160538",
+    "arxiv": "",
+    "year": 2022,
+    "pdf_urls": [],
+    "local_pdf": "D:/学习资料/AI/A_MEMS_IMU_Gyroscope_Calibration_Method_Based_on_Deep_Learning.pdf"
+  },
+  {
+    "id": "AI-20261021-016",
+    "slug": "temp",
+    "category": "gyro",
+    "title": "Microgyroscope Temperature Effects and Compensation-Control Methods",
+    "doi": "10.3390/s91008349",
+    "arxiv": "",
+    "year": 2009,
+    "pdf_urls": [
+      "https://www.mdpi.com/1424-8220/9/10/8349/pdf",
+      "https://mdpi-res.com/d_attachment/sensors/sensors-09-08349/article_deploy/sensors-09-08349.pdf"
+    ]
+  },
+  {
+    "id": "AI-20261021-017",
+    "slug": "kalman",
+    "category": "gyro",
+    "title": "An Adaptive Compensation Algorithm for Temperature Drift of Micro-Electro-Mechanical Systems Gyroscopes Using a Strong Tracking Kalman Filter",
+    "doi": "10.3390/s150511222",
+    "arxiv": "",
+    "year": 2015,
+    "pdf_urls": [
+      "https://www.mdpi.com/1424-8220/15/5/11222/pdf",
+      "https://mdpi-res.com/d_attachment/sensors/sensors-15-11222/article_deploy/sensors-15-11222.pdf"
+    ]
+  },
+  {
+    "id": "AI-20261021-018",
+    "slug": "transformer",
+    "category": "gyro",
+    "title": "A Robust Transformer-Based Error Compensation Method for Gyroscope of IMUs",
+    "doi": "10.1002/rob.70082",
+    "arxiv": "",
+    "year": 2026,
+    "pdf_urls": [],
+    "local_pdf": "D:/学习资料/AI/Journal of Field Robotics - 2025 - Ye - A Robust Transformer Based Error Compensation Method for Gyroscope of IMUs.pdf"
+  },
+  {
+    "id": "AI-20261021-019",
+    "slug": "codesign",
+    "category": "deployment",
+    "title": "End-to-end codesign of Hessian-aware quantized neural networks for FPGAs and ASICs",
+    "doi": "",
+    "arxiv": "2304.06745",
+    "year": 2023,
+    "pdf_urls": [
+      "https://arxiv.org/pdf/2304.06745"
+    ]
+  },
+  {
+    "id": "AI-20261021-020",
+    "slug": "dpvsa",
+    "category": "circuits",
+    "title": "DP-VSA: DSP Packing-Based Vector Systolic Accelerator with Dual Precision Support on FPGAs",
+    "doi": "10.1109/VLSID68508.2026.00034",
+    "arxiv": "",
+    "year": 2026,
+    "pdf_urls": []
+  }
+]

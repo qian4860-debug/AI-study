@@ -1,0 +1,285 @@
+TY  - GEN
+ID  - AI-20261021-001
+TI  - Efficient Processing of Deep Neural Networks: A Tutorial and Survey
+PY  - 2017
+AU  - Vivienne Sze
+AU  - Yu-Hsin Chen
+AU  - Tien-Ju Yang
+AU  - Joel S. Emer
+DO  - 10.1109/jproc.2017.2761740
+UR  - https://doi.org/10.1109/jproc.2017.2761740
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-002
+TI  - Eyeriss: A Spatial Architecture for Energy-Efficient Dataflow for Convolutional Neural Networks
+PY  - 2016
+AU  - Yu-Hsin Chen
+AU  - Joel Emer
+AU  - Vivienne Sze
+DO  - 10.1109/isca.2016.40
+UR  - https://doi.org/10.1109/isca.2016.40
+N1  - WoS unverified; 仅书目，全文未取得
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-003
+TI  - Eyeriss v2: A Flexible Accelerator for Emerging Deep Neural Networks on Mobile Devices
+PY  - 2019
+AU  - Yu-Hsin Chen
+AU  - Tien-Ju Yang
+AU  - Joel S. Emer
+AU  - Vivienne Sze
+DO  - 10.1109/jetcas.2019.2910232
+UR  - https://doi.org/10.1109/jetcas.2019.2910232
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-004
+TI  - Roofline: an insightful visual performance model for multicore architectures
+PY  - 2009
+AU  - Samuel Williams
+AU  - Andrew Waterman
+AU  - David Patterson
+DO  - 10.1145/1498765.1498785
+UR  - https://doi.org/10.1145/1498765.1498785
+N1  - WoS unverified; 仅书目，全文未取得
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-005
+TI  - DSP-Packing: Squeezing Low-precision Arithmetic into FPGA DSP Blocks
+PY  - 2022
+AU  - Jan Sommer
+AU  - M. Akif Ozkan
+AU  - Oliver Keszocze
+AU  - Jurgen Teich
+DO  - 10.1109/fpl57034.2022.00035
+UR  - https://doi.org/10.1109/fpl57034.2022.00035
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-006
+TI  - FINN: A Framework for Fast, Scalable Binarized Neural Network Inference
+PY  - 2017
+AU  - Yaman Umuroglu
+AU  - Nicholas J. Fraser
+AU  - Giulio Gambardella
+AU  - Michaela Blott
+AU  - Philip Leong
+AU  - Magnus Jahre
+AU  - Kees Vissers
+DO  - 10.1145/3020078.3021744
+UR  - https://doi.org/10.1145/3020078.3021744
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-007
+TI  - FINN- R: An End-to-End Deep-Learning Framework for Fast Exploration of Quantized Neural Networks
+PY  - 2018
+AU  - Michaela Blott
+AU  - Thomas B. Preußer
+AU  - Nicholas J. Fraser
+AU  - Giulio Gambardella
+AU  - Kenneth O’brien
+AU  - Yaman Umuroglu
+AU  - Miriam Leeser
+AU  - Kees Vissers
+DO  - 10.1145/3242897
+UR  - https://doi.org/10.1145/3242897
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-008
+TI  - Fast inference of deep neural networks in FPGAs for particle physics
+PY  - 2018
+AU  - J. Duarte
+AU  - S. Han
+AU  - P. Harris
+AU  - S. Jindariani
+AU  - E. Kreinar
+AU  - B. Kreis
+AU  - J. Ngadiuba
+AU  - M. Pierini
+AU  - R. Rivera
+AU  - N. Tran
+AU  - Z. Wu
+DO  - 10.1088/1748-0221/13/07/p07027
+UR  - https://doi.org/10.1088/1748-0221/13/07/p07027
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-009
+TI  - TVM: An Automated End-to-End Optimizing Compiler for Deep Learning
+PY  - 2018
+AU  - Chen, Tianqi
+AU  - Moreau, Thierry
+AU  - Jiang, Ziheng
+AU  - Zheng, Lianmin
+AU  - Yan, Eddie
+AU  - Cowan, Meghan
+AU  - Shen, Haichen
+AU  - Wang, Leyuan
+AU  - Hu, Yuwei
+AU  - Ceze, Luis
+AU  - Guestrin, Carlos
+AU  - Krishnamurthy, Arvind
+UR  - https://www.usenix.org/conference/osdi18/presentation/chen
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-010
+TI  - Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference
+PY  - 2018
+AU  - Benoit Jacob
+AU  - Skirmantas Kligys
+AU  - Bo Chen
+AU  - Menglong Zhu
+AU  - Matthew Tang
+AU  - Andrew Howard
+AU  - Hartwig Adam
+AU  - Dmitry Kalenichenko
+DO  - 10.1109/cvpr.2018.00286
+UR  - https://doi.org/10.1109/cvpr.2018.00286
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-011
+TI  - HAWQ: Hessian AWare Quantization of Neural Networks With Mixed-Precision
+PY  - 2019
+AU  - Zhen Dong
+AU  - Zhewei Yao
+AU  - Amir Gholami
+AU  - Michael Mahoney
+AU  - Kurt Keutzer
+DO  - 10.1109/iccv.2019.00038
+UR  - https://doi.org/10.1109/iccv.2019.00038
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-012
+TI  - MCUNet: Tiny Deep Learning on IoT Devices
+PY  - 2020
+AU  - Lin, Ji
+AU  - Chen, Wei-Ming
+AU  - Lin, Yujun
+AU  - Cohn, John
+AU  - Gan, Chuang
+AU  - Han, Song
+UR  - https://arxiv.org/abs/2007.10319
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-013
+TI  - A Public Domain Dataset for Human Activity Recognition Using Smartphones
+PY  - 2013
+AU  - Davide Anguita
+AU  - Alessandro Ghio
+AU  - Luca Oneto
+AU  - Xavier Parra
+AU  - Jorge L. Reyes-Ortiz
+UR  - https://www.esann.org/sites/default/files/proceedings/legacy/es2013-84.pdf
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-014
+TI  - Denoising IMU Gyroscopes with Deep Learning for Open-Loop Attitude Estimation
+PY  - 2020
+AU  - Martin Brossard
+AU  - Silvere Bonnabel
+AU  - Axel Barrau
+DO  - 10.1109/lra.2020.3003256
+UR  - https://doi.org/10.1109/lra.2020.3003256
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-015
+TI  - A MEMS IMU Gyroscope Calibration Method Based on Deep Learning
+PY  - 2022
+AU  - Fengrong Huang
+AU  - Zhen Wang
+AU  - Luran Xing
+AU  - Chunyan Gao
+DO  - 10.1109/tim.2022.3160538
+UR  - https://doi.org/10.1109/tim.2022.3160538
+N1  - WoS unverified; 已有本地全文
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-016
+TI  - Microgyroscope Temperature Effects and Compensation-Control Methods
+PY  - 2009
+AU  - Dunzhu Xia
+AU  - Shuling Chen
+AU  - Shourong Wang
+AU  - Hongsheng Li
+DO  - 10.3390/s91008349
+UR  - https://doi.org/10.3390/s91008349
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-017
+TI  - An Adaptive Compensation Algorithm for Temperature Drift of Micro-Electro-Mechanical Systems Gyroscopes Using a Strong Tracking Kalman Filter
+PY  - 2015
+AU  - Yibo Feng
+AU  - Xisheng Li
+AU  - Xiaojuan Zhang
+DO  - 10.3390/s150511222
+UR  - https://doi.org/10.3390/s150511222
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-018
+TI  - A Robust Transformer–Based Error Compensation Method for Gyroscope of IMUs
+PY  - 2025
+AU  - Xin Ye
+AU  - Weijia Xing
+AU  - Zhilou Yu
+AU  - Jichen Chen
+AU  - Qingyue Ma
+DO  - 10.1002/rob.70082
+UR  - https://doi.org/10.1002/rob.70082
+N1  - WoS unverified; 已有本地全文
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-019
+TI  - End-to-end codesign of Hessian-aware quantized neural networks for FPGAs
+PY  - 2024
+AU  - Javier Campos
+AU  - Jovan Mitrevski
+AU  - Nhan Tran
+AU  - Zhen Dong
+AU  - Amir Gholaminejad
+AU  - Michael W. Mahoney
+AU  - Javier Duarte
+DO  - 10.1145/3662000
+UR  - https://doi.org/10.1145/3662000
+N1  - WoS unverified; 新下载公开PDF
+ER  - 
+
+TY  - GEN
+ID  - AI-20261021-020
+TI  - DP-VSA: DSP Packing-Based Vector Systolic Accelerator with Dual Precision Support on FPGAs
+PY  - 2026
+AU  - Aashish Kumar Tiwary
+AU  - Yathin Kumar Attuluri
+AU  - Nanditha Rao
+DO  - 10.1109/vlsid68508.2026.00034
+UR  - https://doi.org/10.1109/vlsid68508.2026.00034
+N1  - WoS unverified; 仅书目，全文未取得
+ER  - 

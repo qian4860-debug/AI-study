@@ -1,0 +1,11 @@
+{
+  "prior_records": 285,
+  "added": 20,
+  "total": 305,
+  "prior_file_sha256": {
+    "catalog_current.json": "f2c7b21bdeb1dbf598257a6b15fbac3b9f0bf1fc2af1a82abb014e1714f01e44",
+    "index.html": "c92b018f244df26f968e891beeba054e2f2c306ffcbc46427f8af9705d3e138e"
+  },
+  "index": "C:/Users/11725/Documents/ChatGPT/设计规范/reference_library/index.html",
+  "collection": "C:/Users/11725/Documents/ChatGPT/设计规范/reference_library/ai_study_20261021/index.html"
+}

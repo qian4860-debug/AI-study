@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-21",
+  "requested_platform": "Web of Science Core Collection",
+  "requested_url": "https://www.webofscience.com/wos/woscc/smart-search",
+  "execution_status": "blocked_http403_not_executed_in_authenticated_WoS",
+  "wos_records_exported": 0,
+  "queries": [
+    {
+      "id": "systems",
+      "topic": "Systems and co-design",
+      "query": "TS=((\"neural network\" OR \"deep learning\") AND (accelerator* OR \"hardware-software co-design\") AND (FPGA OR ASIC OR embedded))"
+    },
+    {
+      "id": "dataflow",
+      "topic": "Dataflow, reuse and memory",
+      "query": "TS=((\"neural network\" OR \"matrix multiplication\") AND (accelerator* OR FPGA OR ASIC) AND (dataflow OR tiling OR \"data reuse\" OR \"memory banking\"))"
+    },
+    {
+      "id": "circuits",
+      "topic": "Fixed-point MAC circuits",
+      "query": "TS=((\"multiply-accumulate\" OR \"dot product\" OR \"processing element\") AND (FPGA OR ASIC OR RTL OR VLSI) AND (\"fixed-point\" OR INT8 OR quantiz* OR pipeline*))"
+    },
+    {
+      "id": "quantization",
+      "topic": "Quantization and integer inference",
+      "query": "TS=((\"neural network\" OR \"multilayer perceptron\") AND (\"integer-only inference\" OR INT8 OR \"quantization-aware training\" OR \"post-training quantization\") AND (FPGA OR accelerator* OR embedded))"
+    },
+    {
+      "id": "deployment",
+      "topic": "Compiler and deployment",
+      "query": "TS=((\"neural network\" OR \"deep learning\") AND (FPGA OR accelerator*) AND (\"tensor compiler\" OR \"operator fusion\" OR \"operator scheduling\" OR \"design space exploration\"))"
+    },
+    {
+      "id": "imu",
+      "topic": "IMU activity recognition",
+      "query": "TS=((\"human activity recognition\" OR \"activity classification\") AND (IMU OR \"inertial sensor*\" OR gyroscop*) AND (\"neural network\" OR TinyML OR quantiz*))"
+    },
+    {
+      "id": "gyro_baseline",
+      "topic": "Gyroscope traditional baselines",
+      "query": "TS=((gyroscop* OR \"inertial measurement unit\") AND (calibrat* OR compensat*) AND (\"temperature drift\" OR \"bias drift\" OR \"scale factor\") AND (polynomial OR regression OR \"least squares\" OR \"Kalman filter\"))"
+    },
+    {
+      "id": "gyro_nn",
+      "topic": "Gyroscope neural compensation",
+      "query": "TS=((gyroscop* OR \"inertial measurement unit\") AND (calibrat* OR compensat* OR denois*) AND (\"neural network\" OR \"deep learning\" OR \"machine learning\"))"
+    }
+  ]
+}

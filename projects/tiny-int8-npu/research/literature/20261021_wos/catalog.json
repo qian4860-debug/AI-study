@@ -1,0 +1,1323 @@
+{
+  "date": "2026-10-21",
+  "wos_url": "https://www.webofscience.com/wos/woscc/smart-search",
+  "wos_access": {
+    "status": "blocked",
+    "http_status": 403,
+    "wos_result_count": null,
+    "explanation": "No available node_repl/browser automation runtime; no authenticated WoS results obtained",
+    "retry_on_user_foreground_notice": "2026-10-21: smart-search and homepage again HTTP403; no browser-control runtime available; no current UI state observed"
+  },
+  "records": [
+    {
+      "id": "AI-20261021-001",
+      "slug": "survey",
+      "category": "systems",
+      "title": "Efficient Processing of Deep Neural Networks: A Tutorial and Survey",
+      "doi": "10.1109/jproc.2017.2761740",
+      "arxiv": "1703.09039",
+      "year": 2017,
+      "pdf_urls": [
+        "https://arxiv.org/pdf/1703.09039"
+      ],
+      "authors": [
+        "Vivienne Sze",
+        "Yu-Hsin Chen",
+        "Tien-Ju Yang",
+        "Joel S. Emer"
+      ],
+      "venue": "Proceedings of the IEEE",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1109%2FJPROC.2017.2761740"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2017,
+            12
+          ]
+        ],
+        "published-print": [
+          [
+            2017,
+            12
+          ]
+        ],
+        "issued": [
+          [
+            2017,
+            12
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://arxiv.org/pdf/1703.09039",
+          "result": "PDF verified"
+        }
+      ],
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-001_survey.pdf",
+        "sha256": "16830fd45533cd29a294c4c24306df741bf66f165e99e868903027980a37c4ff",
+        "pages": 32,
+        "bytes": 6325765,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "downloaded_fulltext",
+      "download_url": "https://arxiv.org/pdf/1703.09039",
+      "version": "author preprint"
+    },
+    {
+      "id": "AI-20261021-002",
+      "slug": "eyeriss",
+      "category": "systems",
+      "title": "Eyeriss: A Spatial Architecture for Energy-Efficient Dataflow for Convolutional Neural Networks",
+      "doi": "10.1109/isca.2016.40",
+      "arxiv": "",
+      "year": 2016,
+      "pdf_urls": [
+        "https://people.csail.mit.edu/emer/media/papers/2016.06.isca.eyeriss_architecture.pdf",
+        "https://www.rle.mit.edu/eems/wp-content/uploads/2016/04/eyeriss_isca_2016.pdf"
+      ],
+      "authors": [
+        "Yu-Hsin Chen",
+        "Joel Emer",
+        "Vivienne Sze"
+      ],
+      "venue": "2016 ACM/IEEE 43rd Annual International Symposium on Computer Architecture (ISCA)",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1109%2FISCA.2016.40"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2016,
+            6
+          ]
+        ],
+        "published-print": [
+          [
+            2016,
+            6
+          ]
+        ],
+        "issued": [
+          [
+            2016,
+            6
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://people.csail.mit.edu/emer/media/papers/2016.06.isca.eyeriss_architecture.pdf",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.rle.mit.edu/eems/wp-content/uploads/2016/04/eyeriss_isca_2016.pdf",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+        },
+        {
+          "url": "https://www.rle.mit.edu/eems/wp-content/uploads/2016/04/eyeriss_isca_2016.pdf",
+          "client": "Windows curl 8.21 Schannel; certificate verification enabled",
+          "result": "timeout; incomplete bytes not counted as fulltext",
+          "partial_bytes": 1505720,
+          "partial_path": "D:/学习资料/资料/AI_Study_文献库/20261021/incomplete/AI-20261021-002_eyeriss.pdf.part"
+        }
+      ],
+      "access_status": "metadata_only_fulltext_not_obtained"
+    },
+    {
+      "id": "AI-20261021-003",
+      "slug": "eyeriss2",
+      "category": "systems",
+      "title": "Eyeriss v2: A Flexible Accelerator for Emerging Deep Neural Networks on Mobile Devices",
+      "doi": "10.1109/jetcas.2019.2910232",
+      "arxiv": "1807.07928",
+      "year": 2019,
+      "pdf_urls": [
+        "https://arxiv.org/pdf/1807.07928"
+      ],
+      "authors": [
+        "Yu-Hsin Chen",
+        "Tien-Ju Yang",
+        "Joel S. Emer",
+        "Vivienne Sze"
+      ],
+      "venue": "IEEE Journal on Emerging and Selected Topics in Circuits and Systems",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1109%2FJETCAS.2019.2910232"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2019,
+            6
+          ]
+        ],
+        "published-print": [
+          [
+            2019,
+            6
+          ]
+        ],
+        "issued": [
+          [
+            2019,
+            6
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://arxiv.org/pdf/1807.07928",
+          "result": "PDF verified"
+        }
+      ],
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-003_eyeriss2.pdf",
+        "sha256": "70b0b93e545a598a9b0d8d9048666e512a30489611b7ae3595f5b9e55e130d10",
+        "pages": 21,
+        "bytes": 3072769,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "downloaded_fulltext",
+      "download_url": "https://arxiv.org/pdf/1807.07928",
+      "version": "author preprint"
+    },
+    {
+      "id": "AI-20261021-004",
+      "slug": "roofline",
+      "category": "systems",
+      "title": "Roofline: an insightful visual performance model for multicore architectures",
+      "doi": "10.1145/1498765.1498785",
+      "arxiv": "",
+      "year": 2009,
+      "pdf_urls": [
+        "https://escholarship.org/content/qt78h8v7mr/qt78h8v7mr.pdf",
+        "https://people.eecs.berkeley.edu/~waterman/papers/roofline.pdf",
+        "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-134.pdf"
+      ],
+      "authors": [
+        "Samuel Williams",
+        "Andrew Waterman",
+        "David Patterson"
+      ],
+      "venue": "Communications of the ACM",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1145%2F1498765.1498785"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2009,
+            4
+          ]
+        ],
+        "published-print": [
+          [
+            2009,
+            4
+          ]
+        ],
+        "published-online": [
+          [
+            2009,
+            4
+          ]
+        ],
+        "issued": [
+          [
+            2009,
+            4
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://escholarship.org/content/qt78h8v7mr/qt78h8v7mr.pdf",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://people.eecs.berkeley.edu/~waterman/papers/roofline.pdf",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www2.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-134.pdf",
+          "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+        }
+      ],
+      "access_status": "metadata_only_fulltext_not_obtained"
+    },
+    {
+      "id": "AI-20261021-005",
+      "slug": "dsp",
+      "category": "circuits",
+      "title": "DSP-Packing: Squeezing Low-precision Arithmetic into FPGA DSP Blocks",
+      "doi": "10.1109/fpl57034.2022.00035",
+      "arxiv": "2203.11028",
+      "year": 2022,
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2203.11028"
+      ],
+      "authors": [
+        "Jan Sommer",
+        "M. Akif Ozkan",
+        "Oliver Keszocze",
+        "Jurgen Teich"
+      ],
+      "venue": "2022 32nd International Conference on Field-Programmable Logic and Applications (FPL)",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1109%2FFPL57034.2022.00035"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2022,
+            8
+          ]
+        ],
+        "published-print": [
+          [
+            2022,
+            8
+          ]
+        ],
+        "issued": [
+          [
+            2022,
+            8
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://arxiv.org/pdf/2203.11028",
+          "result": "PDF verified"
+        }
+      ],
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-005_dsp.pdf",
+        "sha256": "50230af0e3761c9dfbfdafeb5c9ffbeb74b523b6c5e2d73031267b8f216df752",
+        "pages": 7,
+        "bytes": 595798,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "downloaded_fulltext",
+      "download_url": "https://arxiv.org/pdf/2203.11028",
+      "version": "author preprint",
+      "visual_spot_check": "first page rendered with Poppler and inspected; not full-paper review"
+    },
+    {
+      "id": "AI-20261021-006",
+      "slug": "finn",
+      "category": "circuits",
+      "title": "FINN: A Framework for Fast, Scalable Binarized Neural Network Inference",
+      "doi": "10.1145/3020078.3021744",
+      "arxiv": "1612.07119",
+      "year": 2017,
+      "pdf_urls": [
+        "https://arxiv.org/pdf/1612.07119"
+      ],
+      "authors": [
+        "Yaman Umuroglu",
+        "Nicholas J. Fraser",
+        "Giulio Gambardella",
+        "Michaela Blott",
+        "Philip Leong",
+        "Magnus Jahre",
+        "Kees Vissers"
+      ],
+      "venue": "Proceedings of the 2017 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1145%2F3020078.3021744"
+      ],
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://arxiv.org/pdf/1612.07119",
+          "result": "PDF verified"
+        }
+      ],
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-006_finn.pdf",
+        "sha256": "051fcdd962807b88222a47bc1a76f47a12d923ad110ee8e39e0237b3772baede",
+        "pages": 10,
+        "bytes": 648842,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "downloaded_fulltext",
+      "download_url": "https://arxiv.org/pdf/1612.07119",
+      "version": "author preprint",
+      "publication_dates": {
+        "published": [
+          [
+            2017,
+            2,
+            22
+          ]
+        ],
+        "published-print": [
+          [
+            2017,
+            2,
+            22
+          ]
+        ],
+        "published-online": [
+          [
+            2017,
+            2,
+            22
+          ]
+        ],
+        "issued": [
+          [
+            2017,
+            2,
+            22
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0
+    },
+    {
+      "id": "AI-20261021-007",
+      "slug": "finnr",
+      "category": "circuits",
+      "title": "FINN- R: An End-to-End Deep-Learning Framework for Fast Exploration of Quantized Neural Networks",
+      "doi": "10.1145/3242897",
+      "arxiv": "1809.04570",
+      "year": 2018,
+      "pdf_urls": [
+        "https://arxiv.org/pdf/1809.04570"
+      ],
+      "authors": [
+        "Michaela Blott",
+        "Thomas B. Preußer",
+        "Nicholas J. Fraser",
+        "Giulio Gambardella",
+        "Kenneth O’brien",
+        "Yaman Umuroglu",
+        "Miriam Leeser",
+        "Kees Vissers"
+      ],
+      "venue": "ACM Transactions on Reconfigurable Technology and Systems",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1145%2F3242897"
+      ],
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://arxiv.org/pdf/1809.04570",
+          "result": "PDF verified"
+        }
+      ],
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-007_finnr.pdf",
+        "sha256": "8958602fb06d12b9de53adad56ebe5c91ec9b55bd2fad94b6996658639aadcbf",
+        "pages": 22,
+        "bytes": 1525517,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "downloaded_fulltext",
+      "download_url": "https://arxiv.org/pdf/1809.04570",
+      "version": "author preprint",
+      "publication_dates": {
+        "published": [
+          [
+            2018,
+            9,
+            30
+          ]
+        ],
+        "published-print": [
+          [
+            2018,
+            9,
+            30
+          ]
+        ],
+        "published-online": [
+          [
+            2018,
+            12,
+            15
+          ]
+        ],
+        "issued": [
+          [
+            2018,
+            9,
+            30
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0
+    },
+    {
+      "id": "AI-20261021-008",
+      "slug": "hls4ml",
+      "category": "deployment",
+      "title": "Fast inference of deep neural networks in FPGAs for particle physics",
+      "doi": "10.1088/1748-0221/13/07/p07027",
+      "arxiv": "1804.06913",
+      "year": 2018,
+      "pdf_urls": [
+        "https://arxiv.org/pdf/1804.06913"
+      ],
+      "authors": [
+        "J. Duarte",
+        "S. Han",
+        "P. Harris",
+        "S. Jindariani",
+        "E. Kreinar",
+        "B. Kreis",
+        "J. Ngadiuba",
+        "M. Pierini",
+        "R. Rivera",
+        "N. Tran",
+        "Z. Wu"
+      ],
+      "venue": "Journal of Instrumentation",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1088%2F1748-0221%2F13%2F07%2FP07027"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2018,
+            7,
+            27
+          ]
+        ],
+        "published-online": [
+          [
+            2018,
+            7,
+            27
+          ]
+        ],
+        "issued": [
+          [
+            2018,
+            7,
+            27
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://arxiv.org/pdf/1804.06913",
+          "result": "PDF verified"
+        }
+      ],
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-008_hls4ml.pdf",
+        "sha256": "176916e8af92fac4d515cb7b63d7067a026f1a416f312074c3b520051318fc69",
+        "pages": 30,
+        "bytes": 1290324,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "downloaded_fulltext",
+      "download_url": "https://arxiv.org/pdf/1804.06913",
+      "version": "author preprint"
+    },
+    {
+      "id": "AI-20261021-009",
+      "slug": "tvm",
+      "category": "deployment",
+      "title": "TVM: An Automated End-to-End Optimizing Compiler for Deep Learning",
+      "doi": "",
+      "arxiv": "1802.04799",
+      "year": 2018,
+      "pdf_urls": [
+        "https://www.usenix.org/system/files/osdi18-chen.pdf",
+        "https://arxiv.org/pdf/1802.04799"
+      ],
+      "source_url": "https://www.usenix.org/conference/osdi18/presentation/chen",
+      "authors": [
+        "Chen, Tianqi",
+        "Moreau, Thierry",
+        "Jiang, Ziheng",
+        "Zheng, Lianmin",
+        "Yan, Eddie",
+        "Cowan, Meghan",
+        "Shen, Haichen",
+        "Wang, Leyuan",
+        "Hu, Yuwei",
+        "Ceze, Luis",
+        "Guestrin, Carlos",
+        "Krishnamurthy, Arvind"
+      ],
+      "venue": "",
+      "metadata_status": "arXiv author metadata/title matched",
+      "metadata_sources": [
+        "https://arxiv.org/abs/1802.04799"
+      ],
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://www.usenix.org/system/files/osdi18-chen.pdf",
+          "result": "PDF verified"
+        }
+      ],
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-009_tvm.pdf",
+        "sha256": "0ddc28deb2d66ce460d019588ea326ce59bb08290dad09bc2f6ca372b64333c6",
+        "pages": 17,
+        "bytes": 1292153,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "downloaded_fulltext",
+      "download_url": "https://www.usenix.org/system/files/osdi18-chen.pdf",
+      "version": "public publisher/author-hosted PDF; see source/version"
+    },
+    {
+      "id": "AI-20261021-010",
+      "slug": "jacob",
+      "category": "quantization",
+      "title": "Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference",
+      "doi": "10.1109/cvpr.2018.00286",
+      "arxiv": "1712.05877",
+      "year": 2018,
+      "pdf_urls": [
+        "https://openaccess.thecvf.com/content_cvpr_2018/papers/Jacob_Quantization_and_Training_CVPR_2018_paper.pdf",
+        "https://arxiv.org/pdf/1712.05877"
+      ],
+      "authors": [
+        "Benoit Jacob",
+        "Skirmantas Kligys",
+        "Bo Chen",
+        "Menglong Zhu",
+        "Matthew Tang",
+        "Andrew Howard",
+        "Hartwig Adam",
+        "Dmitry Kalenichenko"
+      ],
+      "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1109%2FCVPR.2018.00286"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2018,
+            6
+          ]
+        ],
+        "published-print": [
+          [
+            2018,
+            6
+          ]
+        ],
+        "issued": [
+          [
+            2018,
+            6
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://openaccess.thecvf.com/content_cvpr_2018/papers/Jacob_Quantization_and_Training_CVPR_2018_paper.pdf",
+          "result": "PDF verified"
+        }
+      ],
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-010_jacob.pdf",
+        "sha256": "da05250ea738ea6507647822864f08afba0197b13e02f0f96bb48a81e40fb9ba",
+        "pages": 10,
+        "bytes": 424336,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "downloaded_fulltext",
+      "download_url": "https://openaccess.thecvf.com/content_cvpr_2018/papers/Jacob_Quantization_and_Training_CVPR_2018_paper.pdf",
+      "version": "public publisher/author-hosted PDF; see source/version"
+    },
+    {
+      "id": "AI-20261021-011",
+      "slug": "hawq",
+      "category": "quantization",
+      "title": "HAWQ: Hessian AWare Quantization of Neural Networks With Mixed-Precision",
+      "doi": "10.1109/iccv.2019.00038",
+      "arxiv": "1905.03696",
+      "year": 2019,
+      "pdf_urls": [
+        "https://openaccess.thecvf.com/content_ICCV_2019/papers/Dong_HAWQ_Hessian_AWare_Quantization_of_Neural_Networks_With_Mixed-Precision_ICCV_2019_paper.pdf",
+        "https://arxiv.org/pdf/1905.03696"
+      ],
+      "authors": [
+        "Zhen Dong",
+        "Zhewei Yao",
+        "Amir Gholami",
+        "Michael Mahoney",
+        "Kurt Keutzer"
+      ],
+      "venue": "2019 IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works?query.title=HAWQ%3A+Hessian+AWare+Quantization+of+Neural+Networks+With+Mixed-Precision&rows=3"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2019,
+            10
+          ]
+        ],
+        "published-print": [
+          [
+            2019,
+            10
+          ]
+        ],
+        "issued": [
+          [
+            2019,
+            10
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://openaccess.thecvf.com/content_ICCV_2019/papers/Dong_HAWQ_Hessian_AWare_Quantization_of_Neural_Networks_With_Mixed-Precision_ICCV_2019_paper.pdf",
+          "error": "Stream has ended unexpectedly"
+        },
+        {
+          "url": "https://arxiv.org/pdf/1905.03696",
+          "result": "PDF verified"
+        }
+      ],
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-011_hawq.pdf",
+        "sha256": "e7778c4f2a4c376212df3e4b967ed5619133d21240965ec7b78d5e66c5360a91",
+        "pages": 12,
+        "bytes": 3305916,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "downloaded_fulltext",
+      "download_url": "https://arxiv.org/pdf/1905.03696",
+      "version": "author preprint"
+    },
+    {
+      "id": "AI-20261021-012",
+      "slug": "mcunet",
+      "category": "systems",
+      "title": "MCUNet: Tiny Deep Learning on IoT Devices",
+      "doi": "",
+      "arxiv": "2007.10319",
+      "year": 2020,
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2007.10319"
+      ],
+      "authors": [
+        "Lin, Ji",
+        "Chen, Wei-Ming",
+        "Lin, Yujun",
+        "Cohn, John",
+        "Gan, Chuang",
+        "Han, Song"
+      ],
+      "venue": "",
+      "metadata_status": "arXiv author metadata/title matched",
+      "metadata_sources": [
+        "https://arxiv.org/abs/2007.10319"
+      ],
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://arxiv.org/pdf/2007.10319",
+          "result": "PDF verified"
+        }
+      ],
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-012_mcunet.pdf",
+        "sha256": "83953792caea32d613a2ed5678e05a956386eec9e10e5aba87ed788f02aac8c0",
+        "pages": 15,
+        "bytes": 2809348,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "downloaded_fulltext",
+      "download_url": "https://arxiv.org/pdf/2007.10319",
+      "version": "author preprint"
+    },
+    {
+      "id": "AI-20261021-013",
+      "slug": "har",
+      "category": "imu",
+      "title": "A Public Domain Dataset for Human Activity Recognition Using Smartphones",
+      "doi": "",
+      "arxiv": "",
+      "year": 2013,
+      "pdf_urls": [
+        "https://www.esann.org/sites/default/files/proceedings/legacy/es2013-84.pdf"
+      ],
+      "authors": [
+        "Davide Anguita",
+        "Alessandro Ghio",
+        "Luca Oneto",
+        "Xavier Parra",
+        "Jorge L. Reyes-Ortiz"
+      ],
+      "venue": "ESANN 2013",
+      "metadata_status": "ESANN official paper title/author entry",
+      "metadata_sources": [
+        "https://www.esann.org/sites/default/files/proceedings/legacy/es2013-84.pdf"
+      ],
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://www.esann.org/sites/default/files/proceedings/legacy/es2013-84.pdf",
+          "result": "PDF verified"
+        }
+      ],
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-013_har.pdf",
+        "sha256": "f27f659d1387e2b23ec00855b1a7e26f32223b5257caf261a5f7c47333a35e9f",
+        "pages": 6,
+        "bytes": 149128,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "downloaded_fulltext",
+      "download_url": "https://www.esann.org/sites/default/files/proceedings/legacy/es2013-84.pdf",
+      "version": "public publisher/author-hosted PDF; see source/version"
+    },
+    {
+      "id": "AI-20261021-014",
+      "slug": "denoise",
+      "category": "gyro",
+      "title": "Denoising IMU Gyroscopes with Deep Learning for Open-Loop Attitude Estimation",
+      "doi": "10.1109/lra.2020.3003256",
+      "arxiv": "2002.10718",
+      "year": 2020,
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2002.10718"
+      ],
+      "authors": [
+        "Martin Brossard",
+        "Silvere Bonnabel",
+        "Axel Barrau"
+      ],
+      "venue": "IEEE Robotics and Automation Letters",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works?query.title=Denoising+IMU+Gyroscopes+with+Deep+Learning+for+Open-Loop+Attitude+Estimation&rows=3"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2020
+          ]
+        ],
+        "published-print": [
+          [
+            2020
+          ]
+        ],
+        "issued": [
+          [
+            2020
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://arxiv.org/pdf/2002.10718",
+          "result": "PDF verified"
+        }
+      ],
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-014_denoise.pdf",
+        "sha256": "0f8c8841b9644f16c4aff07ea17fc140fdba97de1a709448c3199dd77c465ae0",
+        "pages": 9,
+        "bytes": 1938870,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "downloaded_fulltext",
+      "download_url": "https://arxiv.org/pdf/2002.10718",
+      "version": "author preprint"
+    },
+    {
+      "id": "AI-20261021-015",
+      "slug": "huang",
+      "category": "gyro",
+      "title": "A MEMS IMU Gyroscope Calibration Method Based on Deep Learning",
+      "doi": "10.1109/tim.2022.3160538",
+      "arxiv": "",
+      "year": 2022,
+      "pdf_urls": [],
+      "local_pdf": "D:/学习资料/AI/A_MEMS_IMU_Gyroscope_Calibration_Method_Based_on_Deep_Learning.pdf",
+      "authors": [
+        "Fengrong Huang",
+        "Zhen Wang",
+        "Luran Xing",
+        "Chunyan Gao"
+      ],
+      "venue": "IEEE Transactions on Instrumentation and Measurement",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1109%2FTIM.2022.3160538"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2022
+          ]
+        ],
+        "published-print": [
+          [
+            2022
+          ]
+        ],
+        "issued": [
+          [
+            2022
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [],
+      "pdf": {
+        "path": "D:/学习资料/AI/A_MEMS_IMU_Gyroscope_Calibration_Method_Based_on_Deep_Learning.pdf",
+        "sha256": "c60313bbf8c0220014a85068b0d79dfeffc9fa8f09cd26d438f2f684bc85a2ad",
+        "pages": 9,
+        "bytes": 2537674,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "existing_local_fulltext",
+      "version": "existing local article; original acquisition route not revalidated"
+    },
+    {
+      "id": "AI-20261021-016",
+      "slug": "temp",
+      "category": "gyro",
+      "title": "Microgyroscope Temperature Effects and Compensation-Control Methods",
+      "doi": "10.3390/s91008349",
+      "arxiv": "",
+      "year": 2009,
+      "pdf_urls": [
+        "https://www.mdpi.com/1424-8220/9/10/8349/pdf",
+        "https://mdpi-res.com/d_attachment/sensors/sensors-09-08349/article_deploy/sensors-09-08349.pdf"
+      ],
+      "authors": [
+        "Dunzhu Xia",
+        "Shuling Chen",
+        "Shourong Wang",
+        "Hongsheng Li"
+      ],
+      "venue": "Sensors",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.3390%2Fs91008349"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2009,
+            10,
+            21
+          ]
+        ],
+        "published-online": [
+          [
+            2009,
+            10,
+            21
+          ]
+        ],
+        "issued": [
+          [
+            2009,
+            10,
+            21
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://www.mdpi.com/1424-8220/9/10/8349/pdf",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://mdpi-res.com/d_attachment/sensors/sensors-09-08349/article_deploy/sensors-09-08349.pdf",
+          "result": "PDF verified"
+        }
+      ],
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-016_temp.pdf",
+        "sha256": "f91cea1a90cb279c60adb768ac9852f51825af8021d4ed7daf28f51dd204a798",
+        "pages": 28,
+        "bytes": 840020,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "downloaded_fulltext",
+      "download_url": "https://mdpi-res.com/d_attachment/sensors/sensors-09-08349/article_deploy/sensors-09-08349.pdf",
+      "version": "public publisher/author-hosted PDF; see source/version"
+    },
+    {
+      "id": "AI-20261021-017",
+      "slug": "kalman",
+      "category": "gyro",
+      "title": "An Adaptive Compensation Algorithm for Temperature Drift of Micro-Electro-Mechanical Systems Gyroscopes Using a Strong Tracking Kalman Filter",
+      "doi": "10.3390/s150511222",
+      "arxiv": "",
+      "year": 2015,
+      "pdf_urls": [
+        "https://www.mdpi.com/1424-8220/15/5/11222/pdf",
+        "https://mdpi-res.com/d_attachment/sensors/sensors-15-11222/article_deploy/sensors-15-11222.pdf"
+      ],
+      "authors": [
+        "Yibo Feng",
+        "Xisheng Li",
+        "Xiaojuan Zhang"
+      ],
+      "venue": "Sensors",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.3390%2Fs150511222"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2015,
+            5,
+            13
+          ]
+        ],
+        "published-online": [
+          [
+            2015,
+            5,
+            13
+          ]
+        ],
+        "issued": [
+          [
+            2015,
+            5,
+            13
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://www.mdpi.com/1424-8220/15/5/11222/pdf",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://mdpi-res.com/d_attachment/sensors/sensors-15-11222/article_deploy/sensors-15-11222.pdf",
+          "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+        },
+        {
+          "url": "https://mdpi-res.com/d_attachment/sensors/sensors-15-11222/article_deploy/sensors-15-11222.pdf",
+          "result": "PDF verified",
+          "client": "Windows curl 8.21 Schannel; certificate validation enabled"
+        }
+      ],
+      "access_status": "downloaded_fulltext",
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-017_kalman.pdf",
+        "sha256": "e6a9574fb3b135e6e1967852ef83d60eb5d5c23d513b747d5f8de208a6c5e894",
+        "pages": 17,
+        "bytes": 1861795,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "download_url": "https://mdpi-res.com/d_attachment/sensors/sensors-15-11222/article_deploy/sensors-15-11222.pdf",
+      "version": "publisher open-access PDF; downloaded with Windows Schannel TLS verification",
+      "visual_spot_check": "first page rendered with Poppler and inspected; not full-paper review"
+    },
+    {
+      "id": "AI-20261021-018",
+      "slug": "transformer",
+      "category": "gyro",
+      "title": "A Robust Transformer–Based Error Compensation Method for Gyroscope of IMUs",
+      "doi": "10.1002/rob.70082",
+      "arxiv": "",
+      "year": 2025,
+      "pdf_urls": [],
+      "local_pdf": "D:/学习资料/AI/Journal of Field Robotics - 2025 - Ye - A Robust Transformer Based Error Compensation Method for Gyroscope of IMUs.pdf",
+      "authors": [
+        "Xin Ye",
+        "Weijia Xing",
+        "Zhilou Yu",
+        "Jichen Chen",
+        "Qingyue Ma"
+      ],
+      "venue": "Journal of Field Robotics",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1002%2Frob.70082"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2025,
+            9,
+            18
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            3
+          ]
+        ],
+        "published-online": [
+          [
+            2025,
+            9,
+            18
+          ]
+        ],
+        "issued": [
+          [
+            2025,
+            9,
+            18
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [],
+      "pdf": {
+        "path": "D:/学习资料/AI/Journal of Field Robotics - 2025 - Ye - A Robust Transformer Based Error Compensation Method for Gyroscope of IMUs.pdf",
+        "sha256": "d3a58df38f24b73e6d03e7e132c5f36b6dc112dd53c7d444835be5c461e2af32",
+        "pages": 17,
+        "bytes": 2431428,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "existing_local_fulltext",
+      "version": "existing local article; original acquisition route not revalidated"
+    },
+    {
+      "id": "AI-20261021-019",
+      "slug": "codesign",
+      "category": "deployment",
+      "title": "End-to-end codesign of Hessian-aware quantized neural networks for FPGAs",
+      "doi": "10.1145/3662000",
+      "arxiv": "2304.06745",
+      "year": 2024,
+      "pdf_urls": [
+        "https://arxiv.org/pdf/2304.06745"
+      ],
+      "authors": [
+        "Javier Campos",
+        "Jovan Mitrevski",
+        "Nhan Tran",
+        "Zhen Dong",
+        "Amir Gholaminejad",
+        "Michael W. Mahoney",
+        "Javier Duarte"
+      ],
+      "venue": "ACM Transactions on Reconfigurable Technology and Systems",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works?query.title=End-to-end+codesign+of+Hessian-aware+quantized+neural+networks+for+FPGAs+and+ASICs&rows=3"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2024,
+            6,
+            25
+          ]
+        ],
+        "published-print": [
+          [
+            2024,
+            9,
+            30
+          ]
+        ],
+        "published-online": [
+          [
+            2024,
+            6,
+            25
+          ]
+        ],
+        "issued": [
+          [
+            2024,
+            6,
+            25
+          ]
+        ]
+      },
+      "metadata_title_similarity": 0.9385,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [
+        {
+          "url": "https://arxiv.org/pdf/2304.06745",
+          "result": "PDF verified"
+        }
+      ],
+      "pdf": {
+        "path": "D:/学习资料/资料/AI_Study_文献库/20261021/pdf/AI-20261021-019_codesign.pdf",
+        "sha256": "ebe1da95d30436d0c9f327911cb0c96970163a65c7c4e188c7ac045ce9fa0418",
+        "pages": 19,
+        "bytes": 1132259,
+        "title_check": "normalized exact title",
+        "title_check_score": 1.0,
+        "reading_status": "file integrity and first-page title checked; full paper not reviewed"
+      },
+      "access_status": "downloaded_fulltext",
+      "download_url": "https://arxiv.org/pdf/2304.06745",
+      "version": "author preprint"
+    },
+    {
+      "id": "AI-20261021-020",
+      "slug": "dpvsa",
+      "category": "circuits",
+      "title": "DP-VSA: DSP Packing-Based Vector Systolic Accelerator with Dual Precision Support on FPGAs",
+      "doi": "10.1109/vlsid68508.2026.00034",
+      "arxiv": "",
+      "year": 2026,
+      "pdf_urls": [],
+      "authors": [
+        "Aashish Kumar Tiwary",
+        "Yathin Kumar Attuluri",
+        "Nanditha Rao"
+      ],
+      "venue": "2026 39th International Conference on VLSI Design &amp;amp; 25th International Conference on Embedded Systems (VLSID)",
+      "metadata_status": "DOI/title matched Crossref publisher deposit",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1109%2FVLSID68508.2026.00034"
+      ],
+      "publication_dates": {
+        "published": [
+          [
+            2026,
+            1,
+            3
+          ]
+        ],
+        "published-print": [
+          [
+            2026,
+            1,
+            3
+          ]
+        ],
+        "issued": [
+          [
+            2026,
+            1,
+            3
+          ]
+        ]
+      },
+      "metadata_title_similarity": 1.0,
+      "metadata_notes": [],
+      "wos_status": "not_verified; smart-search HTTP403; no WoS export imported",
+      "discovery": "keyword-guided primary-source web search; NOT a WoS search hit",
+      "attempts": [],
+      "access_status": "metadata_only_fulltext_not_obtained"
+    }
+  ]
+}
